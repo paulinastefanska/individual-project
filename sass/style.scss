@@ -4,10 +4,8 @@
 @import "layout";
 
 /* Components */
-@import "components/form_field";
+@import "components/buttons";
+@import "components/links";
 
 /* Sections */
 @import "section/registration_form";
-
-/* Pages / Views */
-@import "pages/registration";
