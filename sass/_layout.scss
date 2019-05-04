@@ -3,7 +3,7 @@
 }
 body {
     margin: 0;
-    font: $main-font;
+    font: $main_font;
     text-align: center;
 }
 .container {
@@ -23,9 +23,9 @@ body {
 }
 
 // grid 
-$grid-columns: 12;    
-@for $i from 1 through $grid-columns {
+$grid_columns: 12;    
+@for $i from 1 through $grid_columns {
     .col-#{$i} {
-        width: percentage($i / $grid-columns);
+        width: percentage($i / $grid_columns);
     }
 }

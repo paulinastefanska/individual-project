@@ -1,0 +1,13 @@
+.header {
+	float: right;
+	background: $black;
+	position: fixed;
+	font-size: $paragraph_font_size;
+}
+.top {
+	float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
