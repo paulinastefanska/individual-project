@@ -1,0 +1,7 @@
+@mixin centerAbsolutely($top, $left, $right, $transform) { 
+    position: absolute; 
+    top: $top; 
+    left: $left;
+    right: $right;
+    transform: $transform; 
+}
