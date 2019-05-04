@@ -1,0 +1,47 @@
+.menu {
+	top: 0;
+	background: $black;
+	height: 100%;
+	position: fixed;
+	line-height: 50px;
+	text-align: left;
+	padding: 0 15px;
+	font-size: $paragraph_font_size;
+	&_header {
+		padding: 5px 20px; 
+	}
+	&_logo {
+		padding-left: 10px;
+		padding-top: 20px;
+	}
+	&_hamburger {
+		padding-left: 70px;
+	}
+	&_img {
+		height: 20px;
+    	width: 20px;
+    	margin: 0 12px;
+    	filter: invert(60%) sepia(6%) saturate(17%) hue-rotate(53deg) brightness(90%) contrast(88%);
+	}
+	&_pages {
+		
+	}
+	&_link {
+		text-decoration: none;
+		font-weight: 300;
+		color: $dark_grey;
+	}
+	&_span {
+		text-transform: uppercase;
+		font-weight: 500;
+		padding-left: 10px;
+		color: $dark_grey;
+	}
+	&_paragraph {
+		padding-left: 10px;
+		font-weight: 300;
+		color: $blue;
+
+	}
+	
+}

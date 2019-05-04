@@ -3,8 +3,9 @@
 }
 body {
     margin: 0;
-    font: $main_font;
+    font-family: $main_font;
     text-align: center;
+    background: $light_grey;
 }
 .container {
     width: 100%;

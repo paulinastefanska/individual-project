@@ -1,0 +1,30 @@
+.statistic {
+	border: 2px solid $grey;
+	&_header {
+		display: flex;
+		justify-content: flex-start;
+		text-transform: uppercase;
+		margin: 15px 20px;
+		font-size: $header_font_size;
+		color: $dark_grey;
+	}
+	&_date {
+		margin: 30px auto;
+	}
+	&_table {
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+        text-align: left;
+        font-size: 20px;
+        line-height: 50px;
+	}
+	&_tbody {
+		padding: 30px 40px;
+		color: $dark_grey;
+		td {
+			padding-right: 150px;
+			border-bottom: 1px solid $grey;
+		}
+	}
+}

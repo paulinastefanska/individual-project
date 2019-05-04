@@ -1,13 +1,37 @@
 .header {
-	float: right;
-	background: $black;
+	background: white;
 	position: fixed;
-	font-size: $paragraph_font_size;
+	float: right;
+	top: 0;
+    right: 0;
 }
 .top {
-	float: right;
-    display: flex;
+	display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+	list-style-type: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+    &_item {
+    	display: inline-block;
+    	border: 1px solid $grey;
+    }
+    &_img {
+    	height: 20px;
+    	width: 20px;
+    	margin: 14px 6px 0;
+    }
+    &_link {
+    	display: block;
+        line-height: 50px;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+    &_money {
+    	font-size: 18px;
+    }
+    &_name {
+    	font-size: 14px;
+    }
 }
