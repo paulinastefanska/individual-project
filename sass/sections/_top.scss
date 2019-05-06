@@ -17,21 +17,28 @@
     	display: inline-block;
     	border: 1px solid $grey;
     }
-    &_img {
-    	height: 20px;
-    	width: 20px;
-    	margin: 14px 6px 0;
-    }
     &_link {
-    	display: block;
+        display: block;
         line-height: 50px;
         padding: 0 20px;
         text-decoration: none;
     }
     &_money {
-    	font-size: 18px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $dark_grey;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    &_img {
+    	height: 20px;
+    	width: 20px;
+        filter: invert(60%) sepia(6%) saturate(17%) hue-rotate(53deg) brightness(90%) contrast(88%);
     }
     &_name {
+        color: $blue;
     	font-size: 14px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }

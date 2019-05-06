@@ -1,0 +1,29 @@
+.date_refresh {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    background: $orange;
+    transition: all .5s;
+    &:hover {
+        background: $dark_orange;
+    }
+}
+.links_add {
+    height: 40px;
+    width: 125px;
+    border: none;
+    margin: 25px auto;
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+    background: $orange;
+    color: #fff;
+    transition: all .5s;
+    &:hover {
+        background-color: $dark_orange;
+    }
+}

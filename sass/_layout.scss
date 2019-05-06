@@ -2,15 +2,15 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: $main_font;
     text-align: center;
     background: $light_grey;
 }
 .container {
+    margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
 }
 .row::before, .row::after {
     content: " ";
