@@ -60,7 +60,6 @@
 	    			<div class="menu_item">
 	    				<a class="menu_link" href="#"><img class="menu_img" src="images/postback.svg" alt="postback">Postback</a>
 	    			</div>
-	    			<hr>
 	    			<div class="menu_manager">
 	    				<span class="menu_span">Your manager</span>
 	    				<p class="menu_paragraph"><img src="images/avatar.png" alt="mikhael">Mikhael E.</p>
@@ -69,47 +68,45 @@
 	    	</aside>
 	    </nav>
 	    <main class="main">
-	    	<section class="statistic container">
+	    	<section class="section statistic">
 	    		<h1 class=statistic_header>general statistic</h1>
-	    		<hr>
-	    		<div class="statistic_date">
+	    		<div class="statistic_date container row">
 		    		<input type="date" name="from" class="date-input">
 	                <input type="date" name="to" class="date-input">
-	                <button class="btn date-refresh">
+	                <button class="btn date_refresh">
 	                    <img src="images/refresh.svg" alt="refresh">
 	                </button>
 		    	</div>
-		    	<hr>
-		    	<table class="statistic_table row">
-		        	<tbody class="statistic_tbody col-6">
-		            	<tr>
-		                    <td>Visit Signups</td>
-		                    <td>476</td>
-		                </tr>
-		                <tr>
-		                    <td>FTD</td>
-		                    <td>370</td>
-		                </tr>
-		            </tbody>
-		            <tbody class="statistic_tbody col-6">
-		                <tr>
-		                    <td>New deposit</td>
-		                    <td>564</td>
-		                </tr>
-		                <tr>
-		                    <td>Turn over</td>
-		                    <td>432</td>
-		                </tr>
-		            </tbody>
-		        </table/>
-		        <div class="graphs">
-		        	<h3>Earnings chart</h3>
+		    	<table class="statistic_table">
+	                <tbody>
+	                    <tr>
+	                        <td>Visit Signups</td>
+	                        <td>124</td>
+	                    </tr>
+	                    <tr>
+	                        <td>FTD</td>
+	                        <td>445</td>
+	                    </tr>
+	                </tbody>
+	                <tbody>
+	                    <tr>
+	                        <td>New deposit</td>
+	                        <td>564</td>
+	                    </tr>
+	                    <tr>
+	                        <td>Turn over</td>
+	                        <td>432</td>
+	                    </tr>
+	                </tbody>
+            	</table>
+		        <div class="graphs container">
+		        	<h2 class="graphs_header">Earnings chart</h2>
 		        	<img src="images/tabs.png" alt="graphs">
 		        </div>
 	    	</section>
-	    	<section class="links">
-	    		<h1>links</h1>
-	    		<button>+ add new</button>
+	    	<section class="section links">
+	    		<h1 class=links_header>links</h1>
+	    		<button class="links_add">+ add new</button>
 	    		<table class="links_table">
                     <tbody>
                         <tr>
@@ -194,7 +191,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <button>+ add new</button>
+                <button class="links_add">+ add new</button>
 	    	</section>
 	    </main>
 	</body>
