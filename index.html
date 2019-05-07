@@ -15,7 +15,8 @@
 			    		<li class="top_item">
 			    			<a class="top_link" href="#"><img class="top_img" src="images/wallet.svg" alt="wallet">
 			    				<span class="top_money">$1,500.00</span>
-			    				<img class="top_img" src="images/arrow-down-small.svg" alt="arrow-down"></a>
+			    				<img class="top_img" src="images/arrow-down-small.svg" alt="arrow-down">
+			    			</a>
 			    		</li>
 			    		<li class="top_item">
 			    			<a class="top_link" href="#"><img class="top_img" src="images/notification.svg" alt="notification"></a>
@@ -36,33 +37,23 @@
 	    	<aside class="menu">
 	    		<div>
 	    			<img class="menu_logo" src="images/logo.png" alt="logo">
-	    			<img class="menu_hamburger" src="images/hamburger.png" alt="logo">
+	    			<img class="menu_hamburger" src="images/hamburger.png" alt="hamgurger">
 	    		</div>
-	    		<div class="menu_pages row">
-	    			<div class="menu_item">
-	    				<a class="menu_link" href="#"><img class="menu_img" src="images/general.svg" alt="general">General</a>
-	    			</div>
-	    			<div class="menu_item">
-	    				<a class="menu_link" href="#"><img class="menu_img" src="images/details.svg" alt="details">Details</a>
-	    			</div> 
-	    			<div class="menu_item">
-	    				<a class="menu_link" href="#"><img class="menu_img" src="images/links.svg" alt="links">Links</a>
-	    			</div> 
-	    			<div class="menu_item">
-	    				<a class="menu_link" href="#"><img class="menu_img" src="images/banners.svg" alt="banners">Banners</a>
-	    			</div> 
-	    			<div class="menu_item">
-	    				<a class="menu_link" href="#"><img class="menu_img" src="images/personaldata.svg" alt="personal_data">Personal data</a>
-	    			</div> 
-	    			<div class="menu_item">
-	    				<a class="menu_link" href="#"><img class="menu_img" src="images/payout.svg" alt="payout">Payout</a>
-	    			</div> 
-	    			<div class="menu_item">
-	    				<a class="menu_link" href="#"><img class="menu_img" src="images/postback.svg" alt="postback">Postback</a>
-	    			</div>
-	    			<div class="menu_manager">
-	    				<span class="menu_span">Your manager</span>
-	    				<p class="menu_paragraph"><img src="images/avatar.png" alt="mikhael">Mikhael E.</p>
+	    		<div class="row">
+	    			<ul class="menu_pages">
+	    				<li><a class="menu_link" href="#"><img class="menu_img" src="images/general.svg" alt="general">General</a></li>
+	    				<li><a class="menu_link" href="#"><img class="menu_img" src="images/details.svg" alt="details">Details</a></li>
+	    				<li><a class="menu_link" href="#"><img class="menu_img" src="images/links.svg" alt="links">Links</a></li>
+	    				<li><a class="menu_link" href="#"><img class="menu_img" src="images/banners.svg" alt="banners">Banners</a></li>
+	    				<li><a class="menu_link" href="#"><img class="menu_img" src="images/personaldata.svg" alt="personal_data">Personal data</a></li>
+	    				<li><a class="menu_link" href="#"><img class="menu_img" src="images/payout.svg" alt="payout">Payout</a></li>
+	    				<li><a class="menu_link" href="#"><img class="menu_img" src="images/postback.svg" alt="postback">Postback</a></li>
+	    				<li class="menu_manager">Your manager</li>
+	    				<li class="menu_avatar">
+	    					<img src="images/avatar.png" alt="mikhael">
+	    					<span class="menu_name">Mikhael E.</span>
+	    				</li>
+	    			</ul>
 	    			</div>
 	    		</div>
 	    	</aside>
@@ -70,127 +61,109 @@
 	    <main class="main">
 	    	<section class="section statistic">
 	    		<h1 class=statistic_header>general statistic</h1>
-	    		<div class="statistic_date container row">
+	    		<div class="statistic_date">
 		    		<input type="date" name="from" class="date-input">
 	                <input type="date" name="to" class="date-input">
 	                <button class="btn date_refresh">
 	                    <img src="images/refresh.svg" alt="refresh">
 	                </button>
 		    	</div>
-		    	<table class="statistic_table">
-	                <tbody>
-	                    <tr>
-	                        <td>Visit Signups</td>
-	                        <td>124</td>
-	                    </tr>
-	                    <tr>
-	                        <td>FTD</td>
-	                        <td>445</td>
-	                    </tr>
-	                </tbody>
-	                <tbody>
-	                    <tr>
-	                        <td>New deposit</td>
-	                        <td>564</td>
-	                    </tr>
-	                    <tr>
-	                        <td>Turn over</td>
-	                        <td>432</td>
-	                    </tr>
-	                </tbody>
-            	</table>
+		    	<div class="statistic_result container">
+		    		<div class="row">
+		                <div class="col-6">
+		                    <p class="statistic_text">Visit Signups <span class="statistic_no">124</span></p>
+		                    <p class="statistic_text">FTD <span class="statistic_no">445</span></p>
+		                </div>    
+		                <div class="col-6">
+		                    <p class="statistic_text">New deposit <span class="statistic_no">564</span></p>
+		                    <p class="statistic_text">Turn over <span class="statistic_no">432</span></p>
+		              	</div>
+	            	</div>
+	            </div>	
 		        <div class="graphs container">
 		        	<h2 class="graphs_header">Earnings chart</h2>
-		        	<img src="images/tabs.png" alt="graphs">
+		        	<img class="graphs_img" src="images/tabs.png" alt="graphs">
 		        </div>
 	    	</section>
 	    	<section class="section links">
 	    		<h1 class=links_header>links</h1>
 	    		<button class="links_add">+ add new</button>
-	    		<table class="links_table">
-                    <tbody>
-                        <tr>
-                            <td>Home page</td>
-                            <td>
-                                http://www.homepage.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Currently offer</td>
-                            <td>
-                                http://www.currently.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Blurpix</td>
-                            <td>
-                                http://www.blurpix.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Your Site</td>
-                            <td>
-                                http://www.yoursite.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Google</td>
-                            <td>
-                                http://www.google.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>
-                                http://www.facebook.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Dashboard</td>
-                            <td>
-                                http://www.dashboard.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Blurax</td>
-                            <td>
-                                http://www.blurax.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Piece of Wine</td>
-                            <td>
-                                http://www.pieceofwine.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Twitter</td>
-                            <td>
-                                http://www.twitter.com
-                                <img src="images/links.svg" alt="links">
-                                <img src="images/trash.svg" alt="trash">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+	    		<div class="links_list container">
+                    <div class="row">
+						<div class="col-5 links_column">
+							<ul class="links_ulist">
+								<li class="links_name">Home page</li>
+								<li class="links_name">Currently offer</li>
+								<li class="links_name">Blurpix</li>
+								<li class="links_name">Your Site</li>
+								<li class="links_name">Google</li>
+								<li class="links_name">Facebook</li>
+								<li class="links_name">Dashboard</li>
+								<li class="links_name">Blurax</li>
+								<li class="links_name">Piece of Wine</li>
+								<li class="links_name">Twitter</li>
+							</ul>	
+						</div>
+						<div class="col-5 links_column">
+							<ul class="links_ulist">
+								<li class="links_link"><a class="links_site" href="http://www.homepage.com">http://www.homepage.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.currently.com">http://www.currently.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.blurpix.com">http://www.blurpix.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.yoursite.com">http://www.yoursite.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.google.com">http://www.google.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.facebook.com">http://www.facebook.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.dashboard.com">http://www.dashboard.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.blurax.com">http://www.blurax.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></li>
+								<li class="links_link"><a class="links_site" href="http://www.twitter.com">http://www.twitter.com</a></li>
+							</ul>
+						</div>
+						<div class="col-2 links_column">
+							<ul class="links_ulist">
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+								<li class="links_icons">
+									<a href="#"><img class=" links_icon" src="images/links.svg" alt="links"></a>
+	                                <a href="#"><img class=" links_icon" src="images/trash.svg" alt="trash"></a>
+								</li>
+							</ul>
+						</div>
+                    </div>
+                </div>
                 <button class="links_add">+ add new</button>
 	    	</section>
 	    </main>
