@@ -47,6 +47,9 @@
     	margin: 0 12px;
     	filter: invert(60%) saturate(20%) brightness(90%) contrast(80%);
     }
+    &_name:hover, &_link:hover, &_icons:hover {
+    	background-color: $grey;
+    }
 }
 		/*img 
            	opacity: 0;
