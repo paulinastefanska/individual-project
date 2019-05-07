@@ -10,7 +10,9 @@
 		border-bottom: 2px solid $grey;
 	}
 	&_date {
-		margin: 40px auto;
+		margin: 0 auto;
+    	padding: 30px 0;
+		border-bottom: 2px solid $grey;
 		img {
             width: 16px;
             height: 16px;
@@ -18,51 +20,31 @@
             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(103%) contrast(102%);
             }
 	}
-	&_table {
-        display: flex;
-    	align-items: center;
-    	justify-content: center;
-        flex-wrap: wrap;
+	&_result {
         text-align: left;
         color: $dark_grey;
         font-size: $header_font_size;
         line-height: 30px;
-        border-collapse: collapse;
-        border-top: 2px solid $grey;
-        tbody {
-            margin: 30px 50px;
-            &:hover > * {
-             	opacity: .5;
-                transition: all .3s ease-in-out;
-                &:hover {
-                    opacity: 1;
-                }
-            }
-            tr {
-                border-bottom: 2px solid $grey;
-                &:hover {
-                    background: #f1f3f3;
-                }
-            }
-            td {
-                width: 200px;
-                &:last-of-type {
-                    text-align: right;
-                }
-            }
-        }
+    }
+    &_text {
+    	border-bottom: 2px solid $grey;
+    	font-weight: 700;
+    }
+    &_no {
+    	float: right;
+    	font-weight: normal;
+    	color: $black;
     }
 }
 .graphs {
 	margin: 30px auto;
 	&_header {
 		text-align: left;
-		margin-left: 130px;
         padding: 20px 20px;
 		font-size: $header_font_size;
 		color: $dark_grey;
 	}
-	img {
+	&_img {
 		padding-bottom: 40px;
 	}
 }

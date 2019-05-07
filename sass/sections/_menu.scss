@@ -6,10 +6,7 @@
 	line-height: 50px;
 	text-align: left;
 	padding: 0 15px;
-	font-size: $paragraph_font_size;
-	&_header {
-		padding: 5px 20px; 
-	}
+	font-size: $header_font_size;
 	&_logo {
 		padding-left: 10px;
 		padding-top: 20px;
@@ -17,31 +14,36 @@
 	&_hamburger {
 		padding-left: 60px;
 	}
-	&_img {
-		height: 20px;
-    	width: 20px;
-    	margin: 0 12px;
-    	filter: invert(60%) sepia(6%) saturate(17%) hue-rotate(53deg) brightness(90%) contrast(88%);
+	&_pages {
+		margin: 0;
+        padding: 0;
+        list-style-type: none;
 	}
 	&_link {
 		text-decoration: none;
 		font-weight: 300;
 		color: $dark_grey;
 	}
+	&_img {
+		height: 20px;
+    	width: 20px;
+    	margin: 0 12px;
+    	filter: invert(60%) saturate(20%) brightness(90%) contrast(80%);
+	}
 	&_manager {
 		border-top: 1px solid $dark_grey;
-	}
-	&_span {
 		text-transform: uppercase;
 		font-weight: 500;
+		margin-top: 20px;
 		padding-left: 10px;
 		color: $dark_grey;
 	}
-	&_paragraph {
+	&_avatar {
 		padding-left: 10px;
+	}
+	&_name {
 		font-weight: 300;
 		color: $blue;
-
 	}
 	
 }
