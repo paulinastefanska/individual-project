@@ -1,0 +1,41 @@
+.details {
+	&_header {
+		display: flex;
+		justify-content: flex-start;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 20px 20px;
+		font-size: $header_font_size;
+		color: $dark_grey;
+		border-bottom: 2px solid $grey;
+	}
+	&_date {
+		margin: 0 auto;
+    	padding: 30px 0;
+		border-bottom: 2px solid $grey;
+	}
+	&_img {
+        width: 16px;
+        height: 16px;
+        margin: 0 auto;
+        filter: invert(100%) brightness(100%) contrast(100%);
+	}
+	&_table {
+        font-size: $paragraph_font_size;
+        border-collapse: collapse;
+        line-height: 60px;
+	}
+	&_row:hover {
+		background: $grey;
+        transition: all .3s ease-in-out;
+	}
+	&_name {
+		color: $dark_grey;
+		font-weight: 500;
+	}
+	td {
+        border-bottom: 2px solid $grey;
+        padding-left: 15px;
+		padding-right: 15px;
+    }
+}
