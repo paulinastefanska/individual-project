@@ -231,4 +231,6 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .links_name:hover, .links_link:hover, .links_icons:hover { background-color: #E3E3E3; }
 
+.links:active { color: white; }
+
 /*img  opacity: 0; position: absolute; top: 10px; right: 85px; height: 20px; width: 20px; cursor: pointer; filter: invert(55%) sepia(40%) saturate(1023%) hue-rotate(346deg) brightness(98%) contrast(97%); &:last-of-type  { margin-left: 50px; right: 35px; filter: invert(60%) sepia(6%) saturate(17%) hue-rotate(53deg) brightness(90%) contrast(88%);*/
