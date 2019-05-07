@@ -11,6 +11,27 @@ body {
     margin: 0 auto;
     width: 100%;
     max-width: 1024px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main {
+    margin: 85px 0 0 230px;
+    width: calc(100% - 250px);
+    background: #fff;
+}
+.section {
+    box-shadow: 0 0 1em $grey;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 .row::before, .row::after {
     content: " ";

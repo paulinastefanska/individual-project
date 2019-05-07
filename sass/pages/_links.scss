@@ -1,6 +1,4 @@
 .links {
-	padding-bottom: 10px;
-	margin-bottom: 30px;
 	&_header {
 		display: flex;
 		justify-content: flex-start;
@@ -11,59 +9,48 @@
 		color: $dark_grey;
 		border-bottom: 2px solid $grey;
 	}
-	&_list {
+	&_table {
+        max-width: 800px;
         text-align: left;
         font-size: $paragraph_font_size;
         color: $dark_grey;
-        padding: 25px;
+        line-height: 60px;
+        border-collapse: collapse;
+        &:first-of-type {
+            border-top: 2px solid $grey;
+        }
     }
-    &_column {
-    	margin: 0;
-    	padding: 0;
+    &_icons {
+        opacity: 0;
     }
-    &_ulist {
-    	padding: 0;
-    	list-style-type: none;
-    	line-height: 60px;
+    &_row:hover {
+        background: $grey;
+        transition: all .3s ease-in-out;
+    }
+    &_row:hover &_icons {
+        transition: all .3s ease-in-out;
+        opacity: 1;
+    }
+    &_line {
+        border-bottom: 2px solid $grey;
     }
     &_name {
-    	border-bottom: 2px solid $grey;
         font-weight: 700;
         padding-left: 20px;
-    }
-    &_link {
-    	border-bottom: 2px solid $grey;
     }
     &_site {
     	text-decoration: none;
     	color: $blue;
     }
-    &_icons {
-    	border-bottom: 2px solid $grey;
-    }
-    &_icon {
+    &_img {
     	width: 20px;
     	height: 20px;
     	margin: 0 12px;
     	filter: invert(60%) saturate(20%) brightness(90%) contrast(80%);
-    }
-    &_name:hover, &_link:hover, &_icons:hover {
-    	background-color: $grey;
+        &:hover {
+            filter: invert(55%) sepia(40%) saturate(1000%) hue-rotate(350deg) brightness(98%) contrast(98%);
+            transition: all .3s ease-in-out;
+        }
     }
 }
-.links:active {
-	color: white;
-}
-		/*img 
-           	opacity: 0;
-           	position: absolute;
-            top: 10px;
-            right: 85px;
-                    height: 20px;
-					width: 20px;
-                    cursor: pointer;
-                    filter: invert(55%) sepia(40%) saturate(1023%) hue-rotate(346deg) brightness(98%) contrast(97%);
-                    &:last-of-type  {
-                        margin-left: 50px;
-                        right: 35px;
-                       	filter: invert(60%) sepia(6%) saturate(17%) hue-rotate(53deg) brightness(90%) contrast(88%);*/
+            

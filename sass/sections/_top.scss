@@ -1,9 +1,14 @@
 .header {
 	background: white;
 	position: fixed;
-	float: right;
+	//float: right;
 	top: 0;
     right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid $grey;
 }
 .top {
 	display: flex;
@@ -15,11 +20,12 @@
 	padding: 0;
     &_item {
     	display: inline-block;
-    	border: 1px solid $grey;
+    	border-right: 1px solid $grey;
+    	border-left: 1px solid $grey;
     }
     &_link {
         display: block;
-        line-height: 50px;
+        line-height: 60px;
         padding: 0 20px;
         text-decoration: none;
     }
