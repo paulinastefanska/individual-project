@@ -153,13 +153,19 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .col-12 { width: 100%; }
 
 /* Components */
-.date_refresh { width: 30px; height: 30px; border: none; margin: 0 auto; display: inline-block; border-radius: 4px; cursor: pointer; background: #F58220; transition: all .5s; }
+.btn_refresh { width: 30px; height: 30px; border: none; margin: 0 auto; display: inline-block; border-radius: 4px; cursor: pointer; background: #F58220; transition: all .5s; }
 
-.date_refresh:hover { background: #FFA200; }
+.btn_refresh:hover { background: #FFA200; }
 
-.links_add { height: 40px; width: 125px; border: none; margin: 20px auto; display: block; border-radius: 4px; cursor: pointer; background: #F58220; color: #fff; transition: all .5s; }
+.btn_add { height: 40px; width: 125px; border: none; margin: 20px auto; display: block; border-radius: 4px; cursor: pointer; background: #F58220; color: #fff; transition: all .5s; }
 
-.links_add:hover { background-color: #FFA200; }
+.btn_add:hover { background-color: #FFA200; }
+
+.section_header { display: flex; justify-content: flex-start; text-transform: uppercase; margin: 0; padding: 20px 20px; font-size: 16px; color: #979797; border-bottom: 2px solid #E3E3E3; }
+
+.date_input { margin: 0 auto; padding: 30px 0; border-bottom: 2px solid #E3E3E3; }
+
+.refresh_img { width: 16px; height: 16px; margin: 0 auto; filter: invert(100%) brightness(100%) contrast(100%); }
 
 /* Sections */
 .header { background: white; position: fixed; top: 0; right: 0; width: 100%; display: flex; align-items: center; justify-content: flex-end; border-bottom: 1px solid #E3E3E3; }
@@ -195,12 +201,6 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .menu_name { font-weight: 300; color: #56819F; }
 
 /* Pages / Views */
-.general_header { display: flex; justify-content: flex-start; text-transform: uppercase; margin: 0; padding: 20px 20px; font-size: 16px; color: #979797; border-bottom: 2px solid #E3E3E3; }
-
-.general_date { margin: 0 auto; padding: 30px 0; border-bottom: 2px solid #E3E3E3; }
-
-.general_img { width: 16px; height: 16px; margin: 0 auto; filter: invert(100%) brightness(100%) contrast(100%); }
-
 .general_result { max-width: 800px; text-align: left; color: #979797; font-size: 16px; line-height: 30px; }
 
 .general_text { border-bottom: 2px solid #E3E3E3; font-weight: 700; }
@@ -211,13 +211,11 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .graphs_header { text-align: left; padding: 20px 20px; font-size: 16px; color: #979797; }
 
-.details_header { display: flex; justify-content: flex-start; text-transform: uppercase; margin: 0; padding: 20px 20px; font-size: 16px; color: #979797; border-bottom: 2px solid #E3E3E3; }
-
 .details_date { margin: 0 auto; padding: 30px 0; border-bottom: 2px solid #E3E3E3; }
 
 .details_img { width: 16px; height: 16px; margin: 0 auto; filter: invert(100%) brightness(100%) contrast(100%); }
 
-.details_table { font-size: 14px; border-collapse: collapse; line-height: 60px; }
+.details_table { margin-top: 20px; font-size: 14px; border-collapse: collapse; line-height: 60px; }
 
 .details_row:hover { background: #E3E3E3; transition: all .3s ease-in-out; }
 
@@ -225,7 +223,13 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .details td { border-bottom: 2px solid #E3E3E3; padding-left: 15px; padding-right: 15px; }
 
-.links_header { display: flex; justify-content: flex-start; text-transform: uppercase; margin: 0; padding: 20px 20px; font-size: 16px; color: #979797; border-bottom: 2px solid #E3E3E3; }
+.details_pagination { display: inline-block; padding-top: 30px; padding-bottom: 10px; }
+
+.details_pagination a { color: #56819F; padding: 8px 16px; text-decoration: none; }
+
+.details_pagination a:hover:not(.active) { background: #F5F5F2; }
+
+.details_pagination a.active { background: #F5F5F2; color: #979797; }
 
 .links_table { max-width: 800px; text-align: left; font-size: 14px; color: #979797; line-height: 60px; border-collapse: collapse; }
 
