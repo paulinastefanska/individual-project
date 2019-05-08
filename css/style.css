@@ -231,10 +231,6 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .graphs_header { text-align: left; padding: 20px 20px; font-size: 16px; color: #979797; }
 
-.details_date { margin: 0 auto; padding: 30px 0; border-bottom: 2px solid #E3E3E3; }
-
-.details_img { width: 16px; height: 16px; margin: 0 auto; filter: invert(100%) brightness(100%) contrast(100%); }
-
 .details_table { margin-top: 20px; font-size: 14px; border-collapse: collapse; line-height: 60px; }
 
 .details_row:hover { background: #E3E3E3; transition: all .3s ease-in-out; }
