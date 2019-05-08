@@ -1,14 +1,4 @@
 .details {
-	&_header {
-		display: flex;
-		justify-content: flex-start;
-		text-transform: uppercase;
-		margin: 0;
-		padding: 20px 20px;
-		font-size: $header_font_size;
-		color: $dark_grey;
-		border-bottom: 2px solid $grey;
-	}
 	&_date {
 		margin: 0 auto;
     	padding: 30px 0;
@@ -21,6 +11,7 @@
         filter: invert(100%) brightness(100%) contrast(100%);
 	}
 	&_table {
+		margin-top: 20px;
         font-size: $paragraph_font_size;
         border-collapse: collapse;
         line-height: 60px;
@@ -38,4 +29,21 @@
         padding-left: 15px;
 		padding-right: 15px;
     }
+    &_pagination {
+		display: inline-block;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		a {
+			color: $blue;
+		  	padding: 8px 16px;
+		  	text-decoration: none;
+		}
+		a:hover:not(.active) {
+			background: $light_grey;
+		}
+		a.active {
+			background: $light_grey;
+		  	color: $dark_grey;
+		}
+	}
 }
