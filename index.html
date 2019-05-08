@@ -49,7 +49,7 @@
 	    					</a>
 	    				</li>
 	    				<li>
-	    					<a class="menu_link" href="#">
+	    					<a class="menu_link" href="#details">
 	    						<img class="menu_img" src="images/details.svg" alt="details">Details
 	    					</a>
 	    				</li>
@@ -92,12 +92,12 @@
 
 	<!-- GENERAL PAGE-->
 	    	<section class="section general" id="general">
-	    		<h1 class=general_header>general statistic</h1>
-	    		<div class="general_date">
+	    		<h1 class=section_header>general statistic</h1>
+	    		<div class="date_input">
 		    		<input type="date" name="from" class="date-input">
 	                <input type="date" name="to" class="date-input">
-	                <button class="btn date_refresh">
-	                    <img class="general_img" src="images/refresh.svg" alt="refresh">
+	                <button class="btn_refresh">
+	                    <img class="refresh_img" src="images/refresh.svg" alt="refresh">
 	                </button>
 		    	</div>
 		    	<div class="general_result container">
@@ -120,12 +120,12 @@
 
 	<!-- DETAILS PAGE-->
 			<section class="section details hidden" id="details">
-	            <h1 class="details_header">detail statistics</h2>
-	            <div class="details_date">
+	            <h1 class="section_header">detail statistics</h2>
+	            <div class="date_input">
 	                <input type="date" name="from" class="date-input">
 	                <input type="date" name="to" class="date-input">
-	                <button class="btn date_refresh">
-	                    <img class="details_img" src="images/refresh.svg" alt="refresh">
+	                <button class="btn_refresh">
+	                    <img class="refresh_img" src="images/refresh.svg" alt="refresh">
 	                </button>
 	            </div>
 	            <table class="details_table container">
@@ -251,12 +251,25 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="details_pagination">
+				  <a href="#">&lang;</a>
+				  <a class="active" href="#">1</a>
+				  <a href="#">2</a>
+				  <a href="#">3</a>
+				  <a href="#">4</a>
+				  <a href="#">5</a>
+				  <a href="#">6</a>
+				  <a href="#">7</a>
+				  <a href="#">8</a>
+				  <a href="#">9</a>
+				  <a href="#">&rang;</a>
+				</div>
 	        </section>
 
 	<!--LINKS PAGE-->
 	    	<section class="section links" id="links">
-	    		<h1 class=links_header>links</h1>
-	    		<button class="links_add">+ add new</button>
+	    		<h1 class="section_header">links</h1>
+	    		<button class="btn_add">+ add new</button>
 				<table class="links_table container">
                     <tbody>
                         <tr class="links_row">
@@ -361,9 +374,69 @@
                         </tr>
                     </tbody>
                 </table>
-                <button class="links_add">+ add new</button>
+                <button class="btn_add">+ add new</button>
 	    	</section>
 
+	<!--BANNERS PAGE-->    	
+			<section class="section banners" id="banners">
+	            <h1 class="section_header">banners</h1>
+	            <div class="container">
+	                <button class="btn_add">+ add new</button>
+	                <table class="banners_table">
+	                    <tbody>
+	                        <tr>
+	                            <td>Banner main</td>
+	                            <td>
+	                                http://www.website.com/bannermain.gif
+	                                <img src="images/solo-project-1/icons/links.svg" alt="links">
+	                                <img src="images/solo-project-1/icons/trash.svg" alt="trash">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>Signup banner</td>
+	                            <td>
+	                                http://www.website.com/signup.gif
+	                                <img src="images/solo-project-1/icons/links.svg" alt="links">
+	                                <img src="images/solo-project-1/icons/trash.svg" alt="trash">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>Banner left side</td>
+	                            <td>
+	                                http://www.website.com/leftside.gif
+	                                <img src="images/solo-project-1/icons/links.svg" alt="links">
+	                                <img src="images/solo-project-1/icons/trash.svg" alt="trash">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>Vertical banner</td>
+	                            <td>
+	                                http://www.website.com/vert.gif
+	                                <img src="images/solo-project-1/icons/links.svg" alt="links">
+	                                <img src="images/solo-project-1/icons/trash.svg" alt="trash">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>Front banner</td>
+	                            <td>
+	                                http://www.website.com/front.gif
+	                                <img src="images/solo-project-1/icons/links.svg" alt="links">
+	                                <img src="images/solo-project-1/icons/trash.svg" alt="trash">
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>Horizontal banner</td>
+	                            <td>
+	                                http://www.website.com/horizontal.gif
+	                                <img src="images/solo-project-1/icons/links.svg" alt="links">
+	                                <img src="images/solo-project-1/icons/trash.svg" alt="trash">
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	                <button class="btn_add">+ add new</button>
+	            </div>
+	        </section>
 
 
 	    </main>
