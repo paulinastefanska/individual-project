@@ -1,15 +1,4 @@
 .details {
-	&_date {
-		margin: 0 auto;
-    	padding: 30px 0;
-		border-bottom: 2px solid $grey;
-	}
-	&_img {
-        width: 16px;
-        height: 16px;
-        margin: 0 auto;
-        filter: invert(100%) brightness(100%) contrast(100%);
-	}
 	&_table {
 		margin-top: 20px;
         font-size: $paragraph_font_size;

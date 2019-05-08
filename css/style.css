@@ -167,6 +167,26 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .refresh_img { width: 16px; height: 16px; margin: 0 auto; filter: invert(100%) brightness(100%) contrast(100%); }
 
+.links_table { max-width: 800px; text-align: left; font-size: 14px; color: #979797; line-height: 60px; border-collapse: collapse; }
+
+.links_table:first-of-type { border-top: 2px solid #E3E3E3; }
+
+.links_icons { opacity: 0; }
+
+.links_row:hover { background: #E3E3E3; transition: all .3s ease-in-out; }
+
+.links_row:hover .links_icons { transition: all .3s ease-in-out; opacity: 1; }
+
+.links_line { border-bottom: 2px solid #E3E3E3; }
+
+.links_name { font-weight: 700; padding-left: 20px; }
+
+.links_site { text-decoration: none; color: #56819F; }
+
+.links_img { width: 20px; height: 20px; margin: 0 12px; filter: invert(60%) saturate(20%) brightness(90%) contrast(80%); }
+
+.links_img:hover { filter: invert(55%) sepia(40%) saturate(1000%) hue-rotate(350deg) brightness(98%) contrast(98%); transition: all .3s ease-in-out; }
+
 /* Sections */
 .header { background: white; position: fixed; top: 0; right: 0; width: 100%; display: flex; align-items: center; justify-content: flex-end; border-bottom: 1px solid #E3E3E3; }
 
@@ -230,23 +250,3 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .details_pagination a:hover:not(.active) { background: #F5F5F2; }
 
 .details_pagination a.active { background: #F5F5F2; color: #979797; }
-
-.links_table { max-width: 800px; text-align: left; font-size: 14px; color: #979797; line-height: 60px; border-collapse: collapse; }
-
-.links_table:first-of-type { border-top: 2px solid #E3E3E3; }
-
-.links_icons { opacity: 0; }
-
-.links_row:hover { background: #E3E3E3; transition: all .3s ease-in-out; }
-
-.links_row:hover .links_icons { transition: all .3s ease-in-out; opacity: 1; }
-
-.links_line { border-bottom: 2px solid #E3E3E3; }
-
-.links_name { font-weight: 700; padding-left: 20px; }
-
-.links_site { text-decoration: none; color: #56819F; }
-
-.links_img { width: 20px; height: 20px; margin: 0 12px; filter: invert(60%) saturate(20%) brightness(90%) contrast(80%); }
-
-.links_img:hover { filter: invert(55%) sepia(40%) saturate(1000%) hue-rotate(350deg) brightness(98%) contrast(98%); transition: all .3s ease-in-out; }
