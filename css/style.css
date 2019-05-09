@@ -169,6 +169,14 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .date_inputs .date_input { background: #fff; height: 40px; vertical-align: middle; }
 
+.personal_unit { display: flex; justify-content: center; flex-wrap: wrap; width: 600px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; font-size: 16px; }
+
+.personal_input { justify-content: space-around; padding-left: 20px; border: 1px solid #E3E3E3; width: 450px; height: 40px; margin: 10px 0; }
+
+.personal_label { width: 150px; height: 40px; line-height: 40px; text-align: left; margin: 10px 0; font-weight: 700; color: #979797; }
+
+.personal_line { border-top: 1px solid #E3E3E3; }
+
 .links_table { max-width: 800px; text-align: left; font-size: 14px; color: #979797; line-height: 60px; border-collapse: collapse; }
 
 .links_table:first-of-type { border-top: 2px solid #E3E3E3; }
@@ -262,11 +270,3 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .details_pagination a:hover:not(.active) { background: #F5F5F2; }
 
 .details_pagination a.active { background: #F5F5F2; color: #979797; }
-
-.personal_unit { display: flex; justify-content: center; flex-wrap: wrap; width: 600px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; font-size: 16px; }
-
-.personal_input { justify-content: space-around; padding-left: 20px; border: 1px solid #E3E3E3; width: 450px; height: 40px; margin: 10px 0; }
-
-.personal_label { width: 150px; height: 40px; line-height: 40px; text-align: left; margin: 10px 0; font-weight: 700; color: #979797; }
-
-.personal_line { border-top: 1px solid #E3E3E3; }

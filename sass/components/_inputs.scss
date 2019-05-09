@@ -1,3 +1,4 @@
+//Date inputs
 .date_inputs {
 	margin: 0 auto;
 	padding: 30px 0;
@@ -9,3 +10,36 @@
 	}
 }
 
+//Form inputs
+.personal {
+	&_unit {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 600px;
+		margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: $header_font_size;
+	}
+	&_input {
+		justify-content: space-around;
+		padding-left: 20px;
+		border: 1px solid $grey;
+		width: 450px;
+		height: 40px;
+		margin: 10px 0;
+	}
+	&_label {
+		width: 150px;
+		height: 40px;
+		line-height: 40px;
+		text-align: left;
+		margin: 10px 0;
+		font-weight: 700;
+		color: $dark_grey;
+	}
+	&_line {
+		border-top: 1px solid $grey;
+	}
+}
