@@ -259,7 +259,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .details th { padding-left: 5px; }
 
-.details td { border-bottom: 2px solid #E3E3E3; padding-left: 10px; border-collapse: collapse; }
+.details td { border-bottom: 2px solid #E3E3E3; padding-left: 10px; }
 
 .details td:first-of-type { border-top: 2px solid #E3E3E3; }
 
