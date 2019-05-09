@@ -16,14 +16,15 @@
 	}
 	th {
 		padding-left: 5px;
+		border-bottom: 2px solid $grey;
 	}
 	td {
         border-bottom: 2px solid $grey;
         padding-left: 10px;
 		//border-collapse: collapse;
-		&:first-of-type {
-			border-top: 2px solid $grey;
-		}
+		//&:first-of-type {
+			//border-top: 2px solid $grey;
+		//}
     }
     &_pagination {
     	width: 100%;
