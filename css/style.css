@@ -251,13 +251,17 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .graphs_header { text-align: left; padding: 20px 20px; font-size: 16px; color: #979797; }
 
-.details_table { margin-top: 20px; font-size: 14px; border-collapse: collapse; line-height: 60px; }
+.details_table { margin-top: 20px; font-size: 14px; border-collapse: collapse; line-height: 60px; text-align: left; }
 
 .details_row:hover { background: #E3E3E3; transition: all .3s ease-in-out; }
 
 .details_name { color: #979797; font-weight: 500; }
 
-.details td { border-bottom: 2px solid #E3E3E3; padding-left: 15px; padding-right: 15px; }
+.details th { padding-left: 5px; }
+
+.details td { border-bottom: 2px solid #E3E3E3; padding-left: 10px; border-collapse: collapse; }
+
+.details td:first-of-type { border-top: 2px solid #E3E3E3; }
 
 .details_pagination { width: 100%; display: inline-block; padding-top: 30px; padding-bottom: 10px; }
 
