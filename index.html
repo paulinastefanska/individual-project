@@ -78,6 +78,7 @@
 								<img class="menu_img" src="images/postback.svg" alt="postback">Postback
 							</a>
 						</li>
+						<div class="menu_line"></div>
 						<li class="menu_manager">Your manager</li>
 						<li class="menu_avatar">
 							<img src="images/avatar.png" alt="mikhael">
@@ -93,9 +94,9 @@
 	<!-- GENERAL PAGE-->
 			<section class="section general" id="general">
 				<h1 class=section_header>general statistic</h1>
-				<div class="date_input">
-					<input type="date" name="from" class="date-input" value="2019-05-08">
-					<input type="date" name="to" class="date-input" value="2019-05-08">
+				<div class="date_inputs">
+					<input type="date" name="from" class="date_input" value="2019-05-08">
+					<input type="date" name="to" class="date_input" value="2019-05-08">
 					<button class="btn_refresh">
 						<img class="refresh_img" src="images/refresh.svg" alt="refresh">
 					</button>
@@ -121,9 +122,9 @@
 	<!-- DETAILS PAGE-->
 			<section class="section details hidden" id="details">
 				<h1 class="section_header">detail statistics</h2>
-				<div class="date_input">
-					<input type="date" name="from" class="date-input" value="2019-05-08">
-					<input type="date" name="to" class="date-input" value="2019-05-08">
+				<div class="date_inputs">
+					<input type="date" name="from" class="date_input" value="2019-05-08">
+					<input type="date" name="to" class="date_input" value="2019-05-08">
 					<button class="btn_refresh">
 						<img class="refresh_img" src="images/refresh.svg" alt="refresh">
 					</button>
@@ -210,6 +211,7 @@
 							<td>421,342.00</td>
 							<td>cpl (200)</td>
 						</tr>
+						<tr class="details_row">
 							<td>aff/leo_test</td>
 							<td>15/08/02 (12:58)</td>
 							<td>232</td>
@@ -251,7 +253,7 @@
 					</tbody>
 				</table>
 				<div class="details_pagination">
-					<a href="#"><img class="top_img" src="images/arrow-left.svg" alt="arrow_left"></a>
+					<a href="#"><img class="details_img" src="images/arrow-left.svg" alt="arrow_left"></a>
 					<a class="active" href="#">1</a>
 					<a href="#">2</a>
 					<a href="#">3</a>
@@ -261,7 +263,7 @@
 					<a href="#">7</a>
 					<a href="#">8</a>
 					<a href="#">9</a>
-					<a href="#"><img class="top_img" src="images/arrow-right.svg" alt="arrow_left"></a>
+					<a href="#"><img class="details_img" src="images/arrow-right.svg" alt="arrow_right"></a>
 				</div>
 			</section>
 
@@ -450,39 +452,41 @@
 	<!--PERSONAL DATA PAGE-->
 			<section class="section personal_data" id="personal_data">
 				<h1 class="section_header">personal data</h1>
-				<!--<div class="container">-->
-					<form class="personal_form">
-						<div class="personal_unit">
-							<label class="personal_label" for="name">Name</label>
-							<input class="personal_input" type="text" placeholder="Leonardo" name="name" id="name" required>
-							<label class="personal_label" for="surname">Surname</label>
-							<input class="personal_input" type="text" placeholder="Dicaprio" name="surname" id="surname" required>
-							<label class="personal_label" for="email">E-mail</label>
-							<input class="personal_input" type="text" placeholder="leo@gmail.com" name="email" id="email" required>
-							<label class="personal_label" for="phone">Phone number</label>
-							<input class="personal_input" type="text" placeholder="+1 432 555 00 44" name="phone" id="phone" minlength="9">
-						</div>
-						<div class="personal_unit">
-							<label class="personal_label" for="skype">Skype</label>
-							<input class="personal_input" type="text" placeholder="Leonardo.D" name="skype" id="skype">
-							<label class="personal_label" for="icq">ICQ</label>
-							<input class="personal_input" type="text" name="icq" id="icq">
-							<label class="personal_label" for="msn">Msn</label>
-							<input class="personal_input" type="text" name="msn" id="msn">
-						</div>
-						<div class="personal_unit">
-							<label class="personal_label" for="wallet">Wallet</label>
-							<input class="personal_input" type="text" name="wallet" id="wallet">
-						</div>
-						<div class="personal_unit">
-							<label class="personal_label" for="password">Password</label>
-							<input class="personal_input" type="password" name="password" required id="password" minlength="6">
-							<label class="personal_label" for="repeat">Repeat</label>
-							<input class="personal_input" type="password" name="repeat" required id="repeat" minlength="6">
-						</div>
-						<button type="submit" class="btn_orange">Save</button>
-					</form>
-				<!--</div>-->
+				<form class="personal_form">
+					<div class="personal_unit">
+						<label class="personal_label" for="name">Name</label>
+						<input class="personal_input" type="text" placeholder="Leonardo" name="name" id="name" required>
+						<label class="personal_label" for="surname">Surname</label>
+						<input class="personal_input" type="text" placeholder="Dicaprio" name="surname" id="surname" required>
+						<label class="personal_label" for="email">E-mail</label>
+						<input class="personal_input" type="text" placeholder="leo@gmail.com" name="email" id="email" required>
+						<label class="personal_label" for="phone">Phone number</label>
+						<input class="personal_input" type="text" placeholder="+1 432 555 00 44" name="phone" id="phone" minlength="9">
+					</div>
+					<div class="personal_line"></div>
+					<div class="personal_unit">
+						<label class="personal_label" for="skype">Skype</label>
+						<input class="personal_input" type="text" placeholder="Leonardo.D" name="skype" id="skype">
+						<label class="personal_label" for="icq">ICQ</label>
+						<input class="personal_input" type="text" name="icq" id="icq">
+						<label class="personal_label" for="msn">Msn</label>
+						<input class="personal_input" type="text" name="msn" id="msn">
+					</div>
+					<div class="personal_line"></div>
+					<div class="personal_unit">
+						<label class="personal_label" for="wallet">Wallet</label>
+						<input class="personal_input" type="text" name="wallet" id="wallet">
+					</div>
+					<div class="personal_line"></div>
+					<div class="personal_unit">
+						<label class="personal_label" for="password">Password</label>
+						<input class="personal_input" type="password" name="password" required id="password" minlength="6">
+						<label class="personal_label" for="repeat">Repeat</label>
+						<input class="personal_input" type="password" name="repeat" required id="repeat" minlength="6">
+					</div>
+					<div class="personal_line"></div>
+					<button type="submit" class="btn_orange">Save</button>
+				</form>
 			</section>
 		</main>
 	</body>
