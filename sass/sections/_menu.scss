@@ -21,12 +21,13 @@
 	}
 	&_link {
 		display: block;
+		padding-left: 10px;
 		text-decoration: none;
 		font-weight: 300;
 		color: $dark_grey;
-		border-left: 5px solid $black;
+		border-left: 6px solid $black;
 		&:hover {
-			border-left: 5px solid $orange;
+			border-left: 6px solid $orange;
 			background: #414141;
 			color: #fff;
 			img {
@@ -37,6 +38,10 @@
 	&_img {
 		@include icons;
 		margin: 0 12px;
+	}
+	&_name {
+		padding-left: 5px;
+		vertical-align: middle;
 	}
 	&_line {
 		border-top: 1px solid #414141;
@@ -55,7 +60,7 @@
 			vertical-align: middle;
 		}
 	}	
-	&_name {
+	&_user {
 		padding-left: 10px;
 		color: $blue;		
 	}
