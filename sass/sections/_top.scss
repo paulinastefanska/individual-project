@@ -17,6 +17,7 @@
 	float: right;
 	margin: 0;
 	padding: 0;
+	color: $dark_grey;
 	&_item {
 		display: inline-block;
 		border-left: 1px solid $grey;
@@ -25,7 +26,7 @@
 	&_link {
 		display: block;
 		line-height: 60px;
-		padding: 0 20px;
+		padding: 0 10px;
 		text-decoration: none;
 	}
 	&_money {
@@ -36,19 +37,17 @@
 		margin-right: 8px;
         vertical-align: middle;
 	}
-	&_img {
-        @include icons;
-	}
 	&_name {
 		color: $blue;
 		font-size: $paragraph_font_size;
+		font-weight: 500;
 		margin-left: 8px;
 		margin-right: 8px;
     }
 }
 .notific_circle {
 	@include centerAbsolutely($top: 35%, $left: none, $right: 25%, $transform:translate(-50%, -50%));
-	background: $orange;
+	background: $dark_orange;
 	border-radius: 50%;
 	width: 10px;
 	height: 10px;

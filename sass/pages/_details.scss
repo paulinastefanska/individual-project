@@ -6,7 +6,7 @@
         line-height: 60px;
         text-align: left;
         th {
-			padding-left: 5px;
+			padding-left: 8px;
 			border-bottom: 1px solid $grey;
 		}
 		td {
@@ -37,6 +37,7 @@
 		}
 		a:hover:not(.active) {
 			background: $light_grey;
+			color: $dark_orange;
 		}
 		a.active {
 			background: $light_grey;
