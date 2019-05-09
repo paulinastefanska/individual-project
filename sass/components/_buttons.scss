@@ -35,3 +35,13 @@
         background-color: $orange;
     }
 }
+.btn_table {
+    @include btnReset;
+    .table_img {
+        width:10px;
+        height:10px;
+        margin-left: 5px;
+        vertical-align: middle;
+        filter: invert(60%) saturate(20%) brightness(90%) contrast(80%);
+    }
+}

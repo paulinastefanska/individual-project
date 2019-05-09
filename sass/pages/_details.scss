@@ -5,23 +5,23 @@
         border-collapse: collapse;
         line-height: 60px;
         text-align: left;
+        th {
+			padding-left: 5px;
+			border-bottom: 2px solid $grey;
+		}
+		td {
+			border-bottom: 2px solid $grey;
+	        padding-left: 10px;
+		}
+    }
+	&_name {
+		color: $dark_grey;
+		font-weight: 500;
 	}
 	&_row:hover {
 		background: $grey;
         transition: all .3s ease-in-out;
 	}
-	&_name {
-		color: $dark_grey;
-		font-weight: 500;
-	}
-	th {
-		padding-left: 5px;
-		border-bottom: 2px solid $grey;
-	}
-	td {
-        border-bottom: 2px solid $grey;
-        padding-left: 10px;
-    }
     &_pagination {
     	width: 100%;
 		display: inline-block;
@@ -35,10 +35,6 @@
 				padding: 8px;
 			}
 		}
-		.details_img {
-			@include icons;
-		}
-
 		a:hover:not(.active) {
 			background: $light_grey;
 		}
@@ -46,15 +42,8 @@
 			background: $light_grey;
 		  	color: $dark_grey;
 		}
-	}
-	.deposits {
-	@include btnReset;
-		&_img {
-			width:10px;
-			height:10px;
-			margin-left: 5px;
-			vertical-align: middle;
-			filter: invert(60%) saturate(20%) brightness(90%) contrast(80%);
+		.details_img {
+			@include icons;
 		}
 	}
 }

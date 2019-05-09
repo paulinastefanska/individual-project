@@ -163,6 +163,10 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .btn_orange:hover { background-color: #FFA200; }
 
+.btn_table { background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit; }
+
+.btn_table .table_img { width: 10px; height: 10px; margin-left: 5px; vertical-align: middle; filter: invert(60%) saturate(20%) brightness(90%) contrast(80%); }
+
 .section_header { display: flex; justify-content: flex-start; text-transform: uppercase; margin: 0; padding: 20px 20px; font-size: 16px; color: #979797; border-bottom: 2px solid #E3E3E3; }
 
 .date_inputs { margin: 0 auto; padding: 30px 0; border-bottom: 2px solid #E3E3E3; }
@@ -255,13 +259,13 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .details_table { margin-top: 20px; font-size: 14px; border-collapse: collapse; line-height: 60px; text-align: left; }
 
-.details_row:hover { background: #E3E3E3; transition: all .3s ease-in-out; }
+.details_table th { padding-left: 5px; border-bottom: 2px solid #E3E3E3; }
+
+.details_table td { border-bottom: 2px solid #E3E3E3; padding-left: 10px; }
 
 .details_name { color: #979797; font-weight: 500; }
 
-.details th { padding-left: 5px; border-bottom: 2px solid #E3E3E3; }
-
-.details td { border-bottom: 2px solid #E3E3E3; padding-left: 10px; }
+.details_row:hover { background: #E3E3E3; transition: all .3s ease-in-out; }
 
 .details_pagination { width: 100%; display: inline-block; padding-top: 30px; padding-bottom: 10px; }
 
@@ -269,12 +273,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .details_pagination a:first-of-type, .details_pagination a:last-of-type { padding: 8px; }
 
-.details_pagination .details_img { width: 20px; height: 20px; vertical-align: middle; filter: invert(60%) saturate(20%) brightness(90%) contrast(80%); }
-
 .details_pagination a:hover:not(.active) { background: #F5F5F2; }
 
 .details_pagination a.active { background: #F5F5F2; color: #979797; }
 
-.details .deposits { background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit; }
-
-.details .deposits_img { width: 10px; height: 10px; margin-left: 5px; vertical-align: middle; filter: invert(60%) saturate(20%) brightness(90%) contrast(80%); }
+.details_pagination .details_img { width: 20px; height: 20px; vertical-align: middle; filter: invert(60%) saturate(20%) brightness(90%) contrast(80%); }
