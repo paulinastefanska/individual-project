@@ -118,7 +118,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .container-fluid { width: 100%; padding-left: 15px; padding-right: 15px; }
 
-.main { margin: 85px 0 0 230px; width: calc(100% - 250px); background: #fff; }
+.main { margin: 85px 0 0 225px; width: calc(100% - 250px); background: #fff; }
 
 .section { box-shadow: 0 0 1em #E3E3E3; padding-bottom: 20px; margin-bottom: 20px; }
 
@@ -216,13 +216,13 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .menu { top: 0; background: #191919; height: 100%; position: fixed; line-height: 50px; text-align: left; font-size: 16px; }
 
-.menu_logo { padding-left: 20px; padding-top: 20px; }
+.menu_logo { padding-left: 25px; padding-top: 20px; }
 
-.menu_hamburger { padding-left: 60px; }
+.menu_hamburger { padding-left: 50px; }
 
-.menu_pages { width: 210px; margin: 0; padding: 0; list-style-type: none; }
+.menu_pages { width: 200px; margin: 0; padding: 0; list-style-type: none; }
 
-.menu_link { display: block; padding-left: 10px; text-decoration: none; font-weight: 300; color: #979797; border-left: 5px solid #191919; }
+.menu_link { display: block; padding-left: 5px; text-decoration: none; font-weight: 300; color: #979797; border-left: 5px solid #191919; }
 
 .menu_link:hover { border-left: 5px solid #FFA200; background: #333333; color: #fff; }
 
