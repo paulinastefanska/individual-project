@@ -44,7 +44,7 @@ body {
     float: left;   
 }
 
-// grid 
+// Grid 
 $grid_columns: 12;    
 @for $i from 1 through $grid_columns {
     .col-#{$i} {

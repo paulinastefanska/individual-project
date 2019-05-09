@@ -1,11 +1,11 @@
-.date_input {
-		margin: 0 auto;
-    	padding: 30px 0;
-		border-bottom: 2px solid $grey;
+.date_inputs {
+	margin: 0 auto;
+	padding: 30px 0;
+	border-bottom: 2px solid $grey;
+	.date_input {
+		background: #fff;
+		height: 40px;
+		vertical-align: middle;
+	}
 }
-.refresh_img {
-        width: 16px;
-        height: 16px;
-        margin: 0 auto;
-        filter: invert(100%) brightness(100%) contrast(100%);
-}
+

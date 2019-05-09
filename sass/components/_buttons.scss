@@ -1,6 +1,6 @@
 .btn_refresh {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: none;
     margin: 0 auto;
     display: inline-block;
@@ -11,7 +11,15 @@
     &:hover {
         background: $orange;
     }
+    .refresh_img {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    filter: invert(100%) brightness(100%) contrast(100%);
+    vertical-align: middle;
+    }
 }
+
 .btn_orange {
     height: 40px;
     width: 125px;
