@@ -28,7 +28,7 @@
 		border-left: 6px solid $black;
 		&:hover {
 			border-left: 6px solid $orange;
-			background: #414141;
+			background: $light_black;
 			color: #fff;
 			img {
 				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(103%) contrast(102%);

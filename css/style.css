@@ -212,7 +212,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .top_name { color: #56819F; font-size: 14px; margin-left: 8px; margin-right: 8px; }
 
-.menu { top: 0; background: #333333; height: 100%; position: fixed; line-height: 50px; text-align: left; font-size: 16px; }
+.menu { top: 0; background: #191919; height: 100%; position: fixed; line-height: 50px; text-align: left; font-size: 16px; }
 
 .menu_logo { padding-left: 20px; padding-top: 20px; }
 
@@ -220,9 +220,9 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .menu_pages { width: 210px; margin: 0; padding: 0; list-style-type: none; }
 
-.menu_link { display: block; padding-left: 10px; text-decoration: none; font-weight: 300; color: #979797; border-left: 6px solid #333333; }
+.menu_link { display: block; padding-left: 10px; text-decoration: none; font-weight: 300; color: #979797; border-left: 6px solid #191919; }
 
-.menu_link:hover { border-left: 6px solid #FFA200; background: #414141; color: #fff; }
+.menu_link:hover { border-left: 6px solid #FFA200; background: #333333; color: #fff; }
 
 .menu_link:hover img { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(103%) contrast(102%); }
 
@@ -245,7 +245,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .general_text { border-bottom: 2px solid #E3E3E3; font-weight: 700; }
 
-.general_no { float: right; font-weight: normal; color: #333333; }
+.general_no { float: right; font-weight: normal; color: #191919; }
 
 .graphs { max-width: 800px; margin: 20px auto; }
 
