@@ -47,7 +47,7 @@
 		margin-right: 8px;
     }
 }
-.orange_circle {
+.notific_circle {
 	@include centerAbsolutely($top: 35%, $left: none, $right: 25%, $transform:translate(-50%, -50%));
 	background: $orange;
 	border-radius: 50%;

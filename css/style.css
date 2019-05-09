@@ -212,7 +212,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .top_name { color: #56819F; font-size: 14px; margin-left: 8px; margin-right: 8px; }
 
-.orange_circle { position: absolute; top: 35%; left: none; right: 25%; transform: translate(-50%, -50%); background: #FFA200; border-radius: 50%; width: 10px; height: 10px; }
+.notific_circle { position: absolute; top: 35%; left: none; right: 25%; transform: translate(-50%, -50%); background: #FFA200; border-radius: 50%; width: 10px; height: 10px; }
 
 .menu { top: 0; background: #191919; height: 100%; position: fixed; line-height: 50px; text-align: left; font-size: 16px; }
 
@@ -222,9 +222,9 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .menu_pages { width: 210px; margin: 0; padding: 0; list-style-type: none; }
 
-.menu_link { display: block; padding-left: 10px; text-decoration: none; font-weight: 300; color: #979797; border-left: 6px solid #191919; }
+.menu_link { display: block; padding-left: 10px; text-decoration: none; font-weight: 300; color: #979797; border-left: 5px solid #191919; }
 
-.menu_link:hover { border-left: 6px solid #FFA200; background: #333333; color: #fff; }
+.menu_link:hover { border-left: 5px solid #FFA200; background: #333333; color: #fff; }
 
 .menu_link:hover img { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(103%) contrast(102%); }
 
@@ -274,3 +274,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .details_pagination a:hover:not(.active) { background: #F5F5F2; }
 
 .details_pagination a.active { background: #F5F5F2; color: #979797; }
+
+.details .deposits { background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit; }
+
+.details .deposits_img { width: 10px; height: 10px; margin-left: 5px; vertical-align: middle; filter: invert(60%) saturate(20%) brightness(90%) contrast(80%); }
