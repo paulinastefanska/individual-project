@@ -21,6 +21,7 @@
 		display: inline-block;
 		border-right: 1px solid $grey;
 		border-left: 1px solid $grey;
+		position: relative;
 	}
 	&_link {
 		display: block;
@@ -45,4 +46,11 @@
 		margin-left: 8px;
 		margin-right: 8px;
     }
+}
+.orange_circle {
+	@include centerAbsolutely($top: 35%, $left: none, $right: 25%, $transform:translate(-50%, -50%));
+	background: $orange;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
 }

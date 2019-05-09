@@ -202,7 +202,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .top { display: flex; align-items: center; justify-content: center; list-style-type: none; float: right; margin: 0; padding: 0; }
 
-.top_item { display: inline-block; border-right: 1px solid #E3E3E3; border-left: 1px solid #E3E3E3; }
+.top_item { display: inline-block; border-right: 1px solid #E3E3E3; border-left: 1px solid #E3E3E3; position: relative; }
 
 .top_link { display: block; line-height: 60px; padding: 0 20px; text-decoration: none; }
 
@@ -211,6 +211,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .top_img { width: 20px; height: 20px; vertical-align: middle; filter: invert(60%) saturate(20%) brightness(90%) contrast(80%); }
 
 .top_name { color: #56819F; font-size: 14px; margin-left: 8px; margin-right: 8px; }
+
+.orange_circle { position: absolute; top: 35%; left: none; right: 25%; transform: translate(-50%, -50%); background: #FFA200; border-radius: 50%; width: 10px; height: 10px; }
 
 .menu { top: 0; background: #191919; height: 100%; position: fixed; line-height: 50px; text-align: left; font-size: 16px; }
 
