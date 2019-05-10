@@ -278,19 +278,19 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .top [class*='icon-'] { padding: 0 10px; font-size: 16px; }
 
-.top .icon-arrow-down-small { font-size: 12px; }
+.top .icon-arrow-down-small { font-size: 10px; }
 
 .notific_circle { position: absolute; top: 38%; left: none; right: 33%; transform: translate(-50%, -50%); background: #F58220; border-radius: 50%; width: 8px; height: 8px; }
 
-.menu { top: 0; background: #191919; height: 100%; position: fixed; line-height: 45px; text-align: left; }
+.menu { top: 0; background: #191919; height: 100%; width: 200px; position: fixed; line-height: 45px; text-align: left; }
 
 .menu_logo { padding-left: 20px; padding-top: 20px; }
 
 .menu_hamburger { padding-left: 50px; }
 
-.menu_pages { width: 200px; margin: 0; padding: 0; list-style-type: none; }
+.menu_pages { width: 100%; margin: 0; padding: 0; list-style-type: none; }
 
-.menu_link { display: block; padding-left: 18px; text-decoration: none; font-weight: 300; color: #979797; border-left: 5px solid #191919; }
+.menu_link { display: block; padding-left: 18px; text-decoration: none; font-weight: 300; border-left: 5px solid #191919; color: #979797; }
 
 .menu_link:hover { border-left: 5px solid #F58220; background: #333333; color: #fff; }
 
