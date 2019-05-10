@@ -10,14 +10,8 @@
 	border-bottom: 1px solid $grey;
 }
 .top {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	list-style-type: none;
-	float: right;
 	margin: 0;
 	padding: 0;
-	color: $dark_grey;
 	&_item {
 		display: inline-block;
 		border-left: 1px solid $grey;
@@ -26,8 +20,11 @@
 	&_link {
 		display: block;
 		line-height: 60px;
-		padding: 0 10px;
+		padding: 0 20px;
 		text-decoration: none;
+		&:hover {
+			background: $light_grey;
+		}
 	}
 	&_money {
 		font-size: 18px;
@@ -38,11 +35,15 @@
         vertical-align: middle;
 	}
 	&_name {
-		color: $blue;
 		font-size: $paragraph_font_size;
-		font-weight: 500;
+        color: $blue;
 		margin-left: 8px;
 		margin-right: 8px;
+        vertical-align: middle;
+    }
+    [class*='icon-'] {
+        font-size: 18px;
+        color: $dark_grey; 
     }
 }
 .notific_circle {

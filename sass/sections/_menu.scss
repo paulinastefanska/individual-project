@@ -3,11 +3,10 @@
 	background: $black;
 	height: 100%;
 	position: fixed;
-	line-height: 50px;
+	line-height: 45px;
 	text-align: left;
-	font-size: $header_font_size;
 	&_logo {
-		padding-left: 25px;
+		padding-left: 20px;
 		padding-top: 20px;
 	}
 	&_hamburger {
@@ -21,7 +20,7 @@
 	}
 	&_link {
 		display: block;
-		padding-left: 5px;
+		padding-left: 18px;
 		text-decoration: none;
 		font-weight: 300;
 		color: $dark_grey;
@@ -30,18 +29,11 @@
 			border-left: 5px solid $dark_orange;
 			background: $light_black;
 			color: #fff;
-			img {
-				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(103%) contrast(102%);
-			}
 		}
 	}
-	&_img {
-		@include icons;
-		margin: 0 12px;
-	}
-	&_name {
-		padding-left: 5px;
+	&_page {
 		vertical-align: middle;
+		padding-left: 15px;
 	}
 	&_line {
 		border-top: 1px solid #414141;
@@ -51,17 +43,17 @@
 		text-transform: uppercase;
 		font-weight: 500;
 		margin-top: 20px;
-		padding-left: 20px;
+		padding-left: 18px;
 		color: $dark_grey;
 	}
 	&_avatar {
-		padding-left: 20px;		
+		padding-left: 18px;		
 		img {
 			vertical-align: middle;
 		}
 	}	
 	&_user {
-		padding-left: 10px;
+		padding-left: 8px;
 		color: $blue;		
 	}
 	
