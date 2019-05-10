@@ -223,15 +223,11 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .btn_orange:hover { background-color: #FFA200; }
 
-.btn_table { background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit; height: 40px; transition: all .4s; }
-
-.btn_table:hover { background: #F5F5F2; color: black; }
-
 .section_header { display: flex; justify-content: flex-start; text-transform: uppercase; margin: 0; padding: 20px 20px; font-size: 16px; color: #979797; border-bottom: 1px solid #E3E3E3; }
 
 .personal_unit { display: flex; justify-content: center; flex-wrap: wrap; width: 600px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; font-size: 16px; }
 
-.personal_input { justify-content: space-around; padding-left: 20px; border: 1px solid #E3E3E3; width: 450px; height: 40px; margin: 10px 0; }
+.personal_input { justify-content: space-around; padding-left: 20px; border: 1px solid #E3E3E3; border-radius: 4px; width: 450px; height: 40px; margin: 10px 0; }
 
 .personal_input:hover { transition: all .4s; border: 1px solid #979797; }
 
@@ -341,6 +337,10 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .details_row:hover { background: #F5F5F2; transition: all .2s ease-in-out; }
 
+.details_sorter { width: 100px; height: 40px; cursor: pointer; }
+
+.details_sorter:hover { background: #F5F5F2; }
+
 .details_pagination { width: 100%; display: inline-block; padding-top: 30px; padding-bottom: 10px; }
 
 .details_pagination a { color: #56819F; padding: 8px 16px; text-decoration: none; }
@@ -351,4 +351,4 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .details_pagination a.active { background: #F5F5F2; color: #979797; }
 
-.icon-arrow-up-small { font-size: 10px; margin: 0 5px; padding-bottom: 5px; }
+.icon-arrow-up-small { font-size: 10px; margin-left: 8px; padding-bottom: 5px; }
