@@ -2,24 +2,17 @@
     width: 40px;
     height: 40px;
     border: none;
-    margin: 0 auto;
+    margin: 10px;
     display: inline-block;
     border-radius: 4px;
     cursor: pointer;
+    color: #fff;
     background: $dark_orange;
     transition: all .5s;
     &:hover {
         background: $orange;
     }
-    .refresh_img {
-    width: 20px;
-    height: 20px;
-    margin: 0 auto;
-    filter: invert(100%) brightness(100%) contrast(100%);
-    vertical-align: middle;
-    }
 }
-
 .btn_orange {
     height: 40px;
     width: 125px;

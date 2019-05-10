@@ -16,6 +16,37 @@
     	color: $black;
     }
 }
+.date_section {
+    border-bottom: 1px solid $grey;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;  
+    &_inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        width: 340px;
+        border: 1px solid $grey;
+    }
+    &_start {
+        justify-content: flex-start;
+        padding: 5px 0 5px 15px;
+    }
+    &_end {
+        justify-content: flex-start;
+        padding: 5px 0 5px 15px;
+        border-left: 1px solid $grey;
+    }
+    &_icon {
+        justify-content: flex-end;
+        color: $dark_grey;
+        padding-right: 15px;
+    }
+}
 .graphs {
 	max-width: 800px;
 	margin: 20px auto;
@@ -27,28 +58,4 @@
 	}
 }
 
-[class^=calendar-icon__button] {
-    border-bottom: 1px solid #9b9b9b;
-}
 
-.calendar-icon {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.calendar-icon__row {
-    display: flex;
-}
-
-.calendar-icon__button--big {
-    width: 17px;
-    height: 4px;
-    border: 1px solid #9b9b9b;
-}
-
-.calendar-icon__button {
-    width: 5px;
-    height: 3px;
-    margin: 1px 1px 0 0;
-}

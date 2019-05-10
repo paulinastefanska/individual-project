@@ -215,11 +215,9 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .icon-wallet:before { content: '\0062'; }
 
 /* Components */
-.btn_refresh { width: 40px; height: 40px; border: none; margin: 0 auto; display: inline-block; border-radius: 4px; cursor: pointer; background: #F58220; transition: all .5s; }
+.btn_refresh { width: 40px; height: 40px; border: none; margin: 10px; display: inline-block; border-radius: 4px; cursor: pointer; color: #fff; background: #F58220; transition: all .5s; }
 
 .btn_refresh:hover { background: #FFA200; }
-
-.btn_refresh .refresh_img { width: 20px; height: 20px; margin: 0 auto; filter: invert(100%) brightness(100%) contrast(100%); vertical-align: middle; }
 
 .btn_orange { height: 40px; width: 125px; border: none; margin: 20px auto; display: block; border-radius: 4px; cursor: pointer; background: #F58220; color: #fff; transition: all .5s; }
 
@@ -230,10 +228,6 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .btn_table:hover { background: #E3E3E3; color: black; }
 
 .section_header { display: flex; justify-content: flex-start; text-transform: uppercase; margin: 0; padding: 20px 20px; font-size: 16px; color: #979797; border-bottom: 1px solid #E3E3E3; }
-
-.date_inputs { margin: 0 auto; padding: 30px 0; border-bottom: 1px solid #E3E3E3; }
-
-.date_inputs .date_input { background: #fff; height: 40px; vertical-align: middle; }
 
 .personal_unit { display: flex; justify-content: center; flex-wrap: wrap; width: 600px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; font-size: 16px; }
 
@@ -312,6 +306,18 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .general_text { border-bottom: 1px solid #E3E3E3; font-weight: 700; }
 
 .general_no { float: right; font-weight: normal; color: #191919; }
+
+.date_section { border-bottom: 1px solid #E3E3E3; }
+
+.date { display: flex; justify-content: center; align-items: center; margin: 10px auto; }
+
+.date_inputs { display: flex; justify-content: space-between; align-items: center; height: 40px; width: 340px; border: 1px solid #E3E3E3; }
+
+.date_start { justify-content: flex-start; padding: 5px 0 5px 15px; }
+
+.date_end { justify-content: flex-start; padding: 5px 0 5px 15px; border-left: 1px solid #E3E3E3; }
+
+.date_icon { justify-content: flex-end; color: #979797; padding-right: 15px; }
 
 .graphs { max-width: 800px; margin: 20px auto; }
 
