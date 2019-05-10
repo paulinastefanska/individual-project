@@ -18,10 +18,10 @@
     }
     &_row:hover {
         background: $light_grey;
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
     }
     &_row:hover &_icons {
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
         opacity: 1;
     }
     &_line {
@@ -34,13 +34,16 @@
     &_site {
     	text-decoration: none;
     	color: $blue;
+        &:hover {
+            color: $orange;
+        }
     }
     &_img {
         @include icons;
     	margin: 0 12px;
         &:hover {
             filter: invert(55%) sepia(40%) saturate(1000%) hue-rotate(350deg) brightness(98%) contrast(98%);
-            transition: all .3s ease-in-out;
+            transition: all .2s ease-in-out;
         }
     }
 }

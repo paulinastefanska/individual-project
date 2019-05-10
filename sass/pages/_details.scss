@@ -20,7 +20,7 @@
 	}
 	&_row:hover {
 		background: $light_grey;
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
 	}
     &_pagination {
     	width: 100%;
@@ -36,7 +36,6 @@
 			}
 		}
 		a:hover:not(.active) {
-			background: $light_grey;
 			color: $dark_orange;
 		}
 		a.active {

@@ -1,4 +1,4 @@
-//Form inputs
+// Personal data form inputs
 .personal {
 	&_unit {
 		display: flex;
@@ -17,6 +17,10 @@
 		width: 450px;
 		height: 40px;
 		margin: 10px 0;
+		&:hover {
+			transition: all .4s;
+			border: 1px solid $dark_grey;
+		}
 	}
 	&_label {
 		width: 150px;
