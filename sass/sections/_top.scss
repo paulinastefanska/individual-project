@@ -1,58 +1,53 @@
 .header {
-	background: white;
+	background: #fff;
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: 100%;
+	height: 60px;
 	display: flex;
-	align-items: center;
 	justify-content: flex-end;
 	border-bottom: 1px solid $grey;
 }
 .top {
+	display: flex;
+	flex-direction: row;
 	margin: 0;
 	padding: 0;
 	&_item {
-		display: inline-block;
-		border-left: 1px solid $grey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		position: relative;
-	}
-	&_link {
-		display: block;
-		line-height: 60px;
-		padding: 0 20px;
+		padding: 15px;
 		text-decoration: none;
+		cursor: pointer;
+		border-left: 1px solid $grey;
+		font-size: 18px;
+        color: $dark_grey;
 		&:hover {
 			background: $light_grey;
 		}
-		.icon-arrow-down-small {
-    	font-size: 12px;
-    }
 	}
 	&_money {
-		font-size: 18px;
 		font-weight: 700;
-		color: $dark_grey;
-		margin-left: 8px;
-		margin-right: 8px;
-        vertical-align: middle;
 	}
 	&_name {
 		font-size: $paragraph_font_size;
         color: $blue;
-		margin-left: 8px;
-		margin-right: 8px;
-        vertical-align: middle;
     }
     [class*='icon-'] {
-        font-size: 18px;
-        color: $dark_grey; 
+    	padding: 0 10px;
+    	font-size: 16px;
+    }
+    .icon-arrow-down-small {
+    	font-size: 12px;
     }
 }
 .notific_circle {
-	@include centerAbsolutely($top: 35%, $left: none, $right: 25%, $transform:translate(-50%, -50%));
+	@include centerAbsolutely($top: 38%, $left: none, $right: 33%, $transform:translate(-50%, -50%));
 	background: $dark_orange;
 	border-radius: 50%;
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 }

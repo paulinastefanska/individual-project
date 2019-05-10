@@ -22,12 +22,12 @@ body {
 .main {
     margin: 80px 0 0 220px;
     width: calc(100% - 240px);
-    background: #fff;
 }
 .section {
     box-shadow: 0 0 1em $grey;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    background: #fff;
 }
 .row {
   display: flex;
