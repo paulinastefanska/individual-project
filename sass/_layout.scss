@@ -14,11 +14,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.container-fluid {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+//.container-fluid {
+//  width: 100%;
+//  padding-left: 15px;
+//  padding-right: 15px;
+//}
 .main {
     margin: 80px 0 0 220px;
     width: calc(100% - 240px);
@@ -28,6 +28,9 @@ body {
     padding-bottom: 20px;
     margin-bottom: 20px;
     background: #fff;
+}
+.hidden {
+   display: none;
 }
 .row {
   display: flex;
