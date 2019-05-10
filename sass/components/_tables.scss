@@ -1,3 +1,73 @@
+// Details and payout page tables
+.details {
+    &_table {
+        margin-top: 20px;
+        font-size: $paragraph_font_size;
+        border-collapse: collapse;
+        line-height: 60px;
+        text-align: left;
+        th {
+            padding-left: 8px;
+            border-bottom: 1px solid $grey;
+        }
+        td {
+            border-bottom: 1px solid $grey;
+            padding-left: 10px;
+        }
+    }
+    &_name {
+        color: $dark_grey;
+        font-weight: 500;
+    }
+    &_row:hover {
+        background: $light_grey;
+        transition: all .2s ease-in-out;
+    }
+    &_sorter {
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:hover {
+            background: $light-grey;
+            color: $black;
+        }
+    }
+    &_pagination {
+        width: 100%;
+        display: inline-block;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        a {
+            color: $blue;
+            padding: 8px 16px;
+            text-decoration: none;
+            &:first-of-type, &:last-of-type {
+                padding: 8px;
+                color: $dark_grey;
+            }
+        }
+        a:hover:not(.active) {
+            color: $dark_orange;
+        }
+        a.active {
+            background: $light_grey;
+            color: $dark_grey;
+        }
+    }
+}
+.icon-arrow-up-small {
+    font-size: 10px;
+    margin-left: 8px;
+    @include centerAbsolutely($top: 40%, $left: none, $right: 0%, $transform:translate(-50%, -50%));
+}
+.payout_icon {
+    margin-left: 8px;
+    @include centerAbsolutely($top: 40%, $left: 50%, $right: none, $transform:translate(-50%, -50%));
+}
+
 // Links and banners page table
 .links {
 	&_table {
