@@ -38,12 +38,12 @@
             color: $orange;
         }
     }
-    &_img {
-        @include icons;
+    [class*='icon-'] {
+        font-size: 18px;
+        color: $dark_grey;
     	margin: 0 12px;
         &:hover {
-            filter: invert(55%) sepia(40%) saturate(1000%) hue-rotate(350deg) brightness(98%) contrast(98%);
-            transition: all .2s ease-in-out;
+            color: $orange;
         }
     }
 }

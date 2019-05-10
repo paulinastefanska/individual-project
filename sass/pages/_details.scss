@@ -42,8 +42,10 @@
 			background: $light_grey;
 		  	color: $dark_grey;
 		}
-		.details_img {
-			@include icons;
-		}
 	}
+}
+.icon-arrow-up-small {
+	font-size: 10px;
+	margin: 0 5px;
+	padding-bottom: 5px;
 }
