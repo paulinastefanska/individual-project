@@ -1,6 +1,6 @@
 'use strict';
 
-// Add active class to the current menu link to highlight it
+// Add active class to the current page to highlight it
 var menuLeft = document.getElementById("leftMenu");
 var menuPages = menuLeft.getElementsByClassName("menu_link");
 for (var i = 0; i < menuPages.length; i++) {
