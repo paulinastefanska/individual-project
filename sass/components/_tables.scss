@@ -10,6 +10,14 @@
         &:first-of-type {
             border-top: 1px solid $grey;
         }
+        [class*='icon-'] {
+            font-size: 18px;
+            color: $dark_grey;
+            margin: 0 12px;
+            &:hover {
+                color: $orange;
+            }
+        }
     }
     &_icons {
         opacity: 0;
@@ -34,14 +42,6 @@
     &_site {
     	text-decoration: none;
     	color: $blue;
-        &:hover {
-            color: $orange;
-        }
-    }
-    [class*='icon-'] {
-        font-size: 18px;
-        color: $dark_grey;
-    	margin: 0 12px;
         &:hover {
             color: $orange;
         }
