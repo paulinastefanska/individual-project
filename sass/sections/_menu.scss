@@ -57,51 +57,95 @@
 		color: $blue;		
 	}
 }
-
-// Hamburger 
+.hide {
+	display: none;
+}
 .hamburger {
-  display: inline-block;
-  width: 26px;
-  height: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  float: right;
-  margin-right: 18px;
+	display: inline-block;
+	padding-top: 16px;
+	float: right;
+	margin-right: 18px;
+	opacity: 0.6;
+	transition: all .4s;
+	&:hover {
+		opacity: 1;
+	}
 }
-.hamburger span:after,
-.hamburger span:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -9px;
+.menu_ham {
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	margin: 6px 0;
 }
-.hamburger span:after {	
-  top: 9px;
+
+// Short menu
+.short {
+	opacity: 0;
+  	visibility: hidden;
+	top: 0;
+	background: $black;
+	height: 100%;
+	width: 60px;
+	position: fixed;
+	line-height: 45px;
+	text-align: left;
+	z-index: 2;
+	&_pages {
+		margin: 66px 0 22px;
+        padding: 0;
+        list-style-type: none;
+	}
+	&_link {
+		display: block;
+		padding-left: 16px;
+		text-decoration: none;
+		font-weight: 300;
+		border-left: 5px solid $black;
+		color: $dark_grey;
+		//.active, .short_link:hover {
+		&:hover {	
+			border-left: 5px solid $dark_orange;
+			background: $light_black;
+			color: #fff;
+		}
+	}
+	&_avatar {
+		cursor: pointer;
+		margin-top: 30px;
+    	padding-left: 8px;	
+		img {
+			vertical-align: middle;
+		}
+	}
+	&_hamburger {
+		position:absolute;
+		width: 24px;
+		height: 30px;
+		top:15px;
+		left: 14px;
+		opacity: 0.6;
+		transition: all .4s;
+	}
+	&_hamburger:hover {
+	  	opacity: 1;
+	}
+	&_hamburger:before, &_hamburger:after {
+		position: absolute;
+		left: 15px;
+		content: ' ';
+		height: 30px;
+		width: 3px;
+		background-color: #fff;
+	}
+	&_hamburger:before {
+	  transform: rotate(45deg);
+	}
+	&_hamburger:after {
+	  transform: rotate(-45deg);
+	}	
 }
-.hamburger span {	
-  position: relative;
-  display: block;
-}
-.hamburger span,
-.hamburger span:after,
-.hamburger span:before, {	
-  width: 100%;
-  height: 3px;
-  background-color: #888;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-  border-radius: 2px;
-}
-.hamburger.on span {	
-  background-color: transparent;
-}
-.hamburger.on span:before {	
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.hamburger.on span:after {	
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-.hamburger.on + #menu {
-  opacity: 1;
-  visibility: visible;
+.show {
+	opacity: 1;
+	visibility: visible;
+	transition: all .4s ease;
 }
