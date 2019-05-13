@@ -53,11 +53,12 @@
 
 		<main class="main">
 
-	<!-- GENERAL PAGE-->
+	<!--GENERAL PAGE-->
 		<div class="general toggle" id="general_section">
 			<section class="section">
 				<h1 class=section_header>general statistic</h1>
 				<div class="date_section">
+					<!--add havascript to date-->
 					<div class="date">
 						<div class="date_inputs">
 							<div class="date_start">16.05.2016</div>
@@ -198,10 +199,11 @@
 			</section>
 		</div>
 
-	<!-- DETAILS PAGE-->
+	<!--DETAILS PAGE-->
 			<section class="section details toggle hidden" id="details_section">
 				<h1 class="section_header">detail statistics</h1>
 				<div class="date_section">
+					<!--add havascript to date-->
 					<div class="date">
 						<div class="date_inputs">
 							<div class="date_start">16.05.2016</div>
@@ -578,6 +580,7 @@
 			<section class="section payout toggle hidden" id="payout_section">
 				<h1 class="section_header">payout history</h1>
 				<div class="date_section">
+					<!--add havascript to date-->
 					<div class="date">
 						<div class="date_inputs">
 							<div class="date_start">16.05.2016</div>
@@ -672,19 +675,19 @@
 				<p class="postback_text">You can insert some parameters in this postback:</p>
 				<div class="row postback_inputs">
 					<div class="col-6">
-						<p class="postback_paragraph">Signup</p>
+						<p class="postback_paragraph">Signup:</p>
 						<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
 subid=%p%"></textarea>
 					</div>
 					<div class="col-6">
-						<p class="postback_paragraph">Deposit</p>
+						<p class="postback_paragraph">Deposit:</p>
 						<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
 subid=%p%"></textarea>
 					</div>
 				</div>
 				<div class="row postback_inputs">
 					<div class="col-4">
-						<p class="postback_paragraph">Postpack type</p>
+						<p class="postback_paragraph">Postback type:</p>
 						<select class="postback_select" name="postback-type">
 	                        <option value="1">S2S (http://..)</option>
 	                        <option value="2">S2S (http://..)</option>
@@ -694,7 +697,7 @@ subid=%p%"></textarea>
                     	</select>
 					</div>
 					<div class="col-4">
-						<p class="postback_paragraph">To countries</p>
+						<p class="postback_paragraph">To countries:</p>
 						<select class="postback_select" name="to-countries">
 	                        <option value="1">Select countries</option>
 	                        <option value="2">Select countries</option>
@@ -704,7 +707,7 @@ subid=%p%"></textarea>
                     	</select>
 					</div>
 					<div class="col-4">
-						<p class="postback_paragraph">Sending options</p>
+						<p class="postback_paragraph">Sending options:</p>
 						<select class="postback_select" name="sending-options">
 	                        <option value="1">Select</option>
 	                        <option value="2">Select</option>
@@ -715,28 +718,60 @@ subid=%p%"></textarea>
 					</div>
 				</div>
 				<div class="row postback_inputs">
-					<div class="col-6">
-						<fieldset>
+					<div class="col-6 postback_status">
+						<p class="postback_paragraph"><span>NOT</span> send statuses:</p>
+						<fieldset class="postback_checkbox">
 			                <div>
 			                <input type="checkbox" name="not-send" value="check-number">   
 			                    <span>checkNumber</span>
 			                </div>
+			                <br>
 			                <div>
 			                <input type="checkbox" name="not-send" value="no-answer">
 			                    <span>noAnswer</span>
 			                </div>
+			                <br>
 			                <div>
 			                <input type="checkbox" name="not-send" value="no-call">
 			                    <span>noCall</span>
 			                </div>
+			                <br>
+			                <div>
+			                <input type="checkbox" name="not-send" value="call-again">
+			                    <span>callAgain</span>
+			                </div>
+			                <br>
+			                <div>
+			                <input type="checkbox" name="not-send" value="check-number">   
+			                    <span>checkNumber</span>
+			                </div>
+			                <br>
+			                <div>
+			                <input type="checkbox" name="not-send" value="no-answer">
+			                    <span>noAnswer</span>
+			                </div>
+			                <br>
+			                <div>
+			                <input type="checkbox" name="not-send" value="no-call">
+			                    <span>noCall</span>
+			                </div>
+			                <br>
 			                <div>
 			                <input type="checkbox" name="not-send" value="call-again">
 			                    <span>callAgain</span>
 			                </div>
 		            	</fieldset>
 					</div>
-					<div class="col-6">
+					<div class="col-6 postback_status">
+						<p class="postback_paragraph">Send after:</p>
+						<label class="postback_label">0 <span class="postback_left">168</span></label>
+							<!-- add javascript -->
+						<input class="postback_range" type="range" min="1" max="168" value="104" id="myRange">
 					</div>
+					<div class="postback_button">
+						<button type="submit" class="btn_orange">Create Pixel</button>
+					</div>
+				</div>	
 			</section>
 
 			

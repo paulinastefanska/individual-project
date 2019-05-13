@@ -39,6 +39,10 @@
 
 // Postback inputs
 .postback {
+	[class*="col-"] {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 	&_text {
 		text-align: left;
 		padding: 20px 0 0 20px;
@@ -54,17 +58,26 @@
 	&_paragraph {
 		font-size: $header_font_size;
 		font-weight: 700;
+		margin-bottom: 30px;
+		span {
+			color: $red;
+		}
 	}
 	&_input {
 		width:100%;
 		border: 1px solid $grey;
-		color: $grey;
+		font-size: $paragraph_font_size;
+		color: $light_grey;
 		padding-left: 15px;
 		padding-top: 15px;
 		&:hover {
 			transition: all .4s;
 			border: 1px solid $dark_grey;
 		}
+	}
+	&_status {
+		border: 1px solid $grey;
+		margin-top: 30px;
 	}
 	&_select {
 		cursor: pointer;
@@ -76,5 +89,61 @@
 			transition: all .4s;
 			border: 1px solid $dark_grey;
 		}
+	}
+	&_checkbox {
+		width: 100%;
+		height: 150px;
+		border: none;
+		color: $black;
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+		  width: 15px;
+		}
+		&::-webkit-scrollbar-track {
+		  background: $grey; 
+		}
+		&::-webkit-scrollbar-thumb {
+		  background: $dark_grey; 
+		}
+	}
+	&::-webkit-scrollbar {
+		  width: 12px;
+	}
+	&::-webkit-scrollbar-track {
+	  background: $grey; 
+	}
+	&::-webkit-scrollbar-thumb {
+	  background: $dark_grey; 
+	}
+	&_range {
+		width: 100%;
+		-webkit-appearance: none;
+		width: 100%;
+		height: 6px;
+		background: $grey;
+		outline: none;
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 15px;
+			height: 15px;
+			background: $dark_orange;
+			cursor: pointer;
+		}
+		&::-moz-range-thumb {
+			width: 15px;
+			height: 15px;
+			background: $dark_orange;
+			cursor: pointer;
+		}
+	}
+	&_label {
+		width: 100%;
+	}
+	&_left {
+		float: right;
+	}
+	.btn_orange {
+		margin: 20px 0 0;
 	}
 }
