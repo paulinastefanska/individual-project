@@ -1,6 +1,6 @@
 'use strict';
 
-// Add active class to the current page to highlight it
+// Highlight current page
 var menuPages = document.getElementsByClassName("menu_link");
 
 for (var i = 0; i < menuPages.length; i++) {
@@ -29,7 +29,7 @@ for (var i = 0; i < menuPages.length; i++) {
   });
 }
 
-// Menu hide - short menu show
+// Short menu show
 function toggleMenu(visible) {
 	document.querySelector('.menu').classList.toggle('hide', visible)
   	document.querySelector('.short').classList.toggle('show', visible)

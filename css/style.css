@@ -332,7 +332,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .long .hamburger .menu_ham { width: 25px; height: 2px; background-color: #fff; margin: 6px 0; }
 
-.short { top: 0; background: #191919; height: 100%; width: 60px; position: fixed; line-height: 46px; text-align: left; z-index: 2; transition: all .55s ease; }
+.short { top: 0; background: #191919; height: 100%; width: 60px; position: fixed; line-height: 45px; text-align: left; z-index: 2; transition: all .55s ease; }
 
 .short .menu_pages { margin: 60px 0 24px; padding: 0; list-style-type: none; }
 
