@@ -235,6 +235,22 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .personal_line { border-top: 1px solid #E3E3E3; }
 
+.postback_text { text-align: left; padding: 20px 0 0 20px; margin-bottom: 0; }
+
+.postback_inputs { text-align: left; color: #979797; }
+
+.postback .col-6 { padding-left: 20px; }
+
+.postback_paragraph { font-size: 16px; font-weight: 700; }
+
+.postback_input { width: 100%; border: 1px solid #E3E3E3; color: #E3E3E3; padding-left: 15px; padding-top: 15px; }
+
+.postback_input:hover { transition: all .4s; border: 1px solid #979797; }
+
+.postback_select { cursor: pointer; background: #fff; width: 100%; height: 40px; border: 1px solid #E3E3E3; }
+
+.postback_select:hover { transition: all .4s; border: 1px solid #979797; }
+
 .details_table { margin-top: 20px; font-size: 14px; border-collapse: collapse; line-height: 60px; text-align: left; }
 
 .details_table th { padding-left: 8px; border-bottom: 1px solid #E3E3E3; }

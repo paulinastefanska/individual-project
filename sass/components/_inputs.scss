@@ -36,3 +36,45 @@
 		border-top: 1px solid $grey;
 	}
 }
+
+// Postback inputs
+.postback {
+	&_text {
+		text-align: left;
+		padding: 20px 0 0 20px;
+		margin-bottom: 0;
+	}
+	&_inputs {
+		text-align: left;
+		color: $dark_grey;
+	}
+	.col-6 {
+		padding-left: 20px;
+	}
+	&_paragraph {
+		font-size: $header_font_size;
+		font-weight: 700;
+	}
+	&_input {
+		width:100%;
+		border: 1px solid $grey;
+		color: $grey;
+		padding-left: 15px;
+		padding-top: 15px;
+		&:hover {
+			transition: all .4s;
+			border: 1px solid $dark_grey;
+		}
+	}
+	&_select {
+		cursor: pointer;
+		background: #fff;
+		width:100%;
+		height: 40px;
+		border: 1px solid $grey;
+		&:hover {
+			transition: all .4s;
+			border: 1px solid $dark_grey;
+		}
+	}
+}

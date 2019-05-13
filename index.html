@@ -666,18 +666,77 @@
 				</div>
 			</section>
 
-			<!--PAYOUT POSTBACK-->
+			<!--POSTBACK PAGE-->
 			<section class="section postback toggle hidden" id="postback_section">
 				<h1 class="section_header">new postback</h1>
-				<p>You can insert some parameters in this postback:</p>
-				<div class="col-6">
-					<p>Signup</p>
-					<input type="text" placeholder="crm_userld=%user_id% subid=%p%">
+				<p class="postback_text">You can insert some parameters in this postback:</p>
+				<div class="row postback_inputs">
+					<div class="col-6">
+						<p class="postback_paragraph">Signup</p>
+						<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
+subid=%p%"></textarea>
+					</div>
+					<div class="col-6">
+						<p class="postback_paragraph">Deposit</p>
+						<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
+subid=%p%"></textarea>
+					</div>
 				</div>
-				<div class="col-6">
-					<p>Deposit</p>
-					<input type="text" placeholder="crm_userld=%user_id% subid=%p%">
+				<div class="row postback_inputs">
+					<div class="col-4">
+						<p class="postback_paragraph">Postpack type</p>
+						<select class="postback_select" name="postback-type">
+	                        <option value="1">S2S (http://..)</option>
+	                        <option value="2">S2S (http://..)</option>
+	                        <option value="3">S2S (http://..)</option>
+	                        <option value="4">S2S (http://..)</option>
+	                        <option value="5">S2S (http://..)</option>
+                    	</select>
+					</div>
+					<div class="col-4">
+						<p class="postback_paragraph">To countries</p>
+						<select class="postback_select" name="to-countries">
+	                        <option value="1">Select countries</option>
+	                        <option value="2">Select countries</option>
+	                        <option value="3">Select countries</option>
+	                        <option value="4">Select countries</option>
+	                        <option value="5">Select countries</option>
+                    	</select>
+					</div>
+					<div class="col-4">
+						<p class="postback_paragraph">Sending options</p>
+						<select class="postback_select" name="sending-options">
+	                        <option value="1">Select</option>
+	                        <option value="2">Select</option>
+	                        <option value="3">Select</option>
+	                        <option value="4">Select</option>
+	                        <option value="5">Select</option>
+                    	</select>
+					</div>
 				</div>
+				<div class="row postback_inputs">
+					<div class="col-6">
+						<fieldset>
+			                <div>
+			                <input type="checkbox" name="not-send" value="check-number">   
+			                    <span>checkNumber</span>
+			                </div>
+			                <div>
+			                <input type="checkbox" name="not-send" value="no-answer">
+			                    <span>noAnswer</span>
+			                </div>
+			                <div>
+			                <input type="checkbox" name="not-send" value="no-call">
+			                    <span>noCall</span>
+			                </div>
+			                <div>
+			                <input type="checkbox" name="not-send" value="call-again">
+			                    <span>callAgain</span>
+			                </div>
+		            	</fieldset>
+					</div>
+					<div class="col-6">
+					</div>
 			</section>
 
 			

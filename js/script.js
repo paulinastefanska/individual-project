@@ -23,8 +23,8 @@ for (var i = 0; i < menuPages.length; i++) {
 
     for (var j = 0; j < all.length; j++) {
     	all[j].classList.add("hidden");
-      	}
-      	content.classList.remove("hidden");
+      }
+      content.classList.remove("hidden");
     	}
   });
 }
