@@ -25,9 +25,9 @@
 		</header>
 
 	<!--LEFT MENU-->	
-		<nav class="menu">
+		<nav class="long" id="navigation">
 			<div>
-				<a href="#"><img class="menu_logo" src="images/logo.png" alt="logo"></a>
+				<a href="#general"><img class="menu_logo" src="images/logo.png" alt="logo"></a>
 				<a href="#menu" id="toggle" class="hamburger">
 					<div class="menu_ham"></div>
 					<div class="menu_ham"></div>
@@ -50,28 +50,12 @@
 				<span class="menu_user">Mikhael E.</span>
 			</div>
 		</nav>
-		<!--SHORT MENU-->
-		<nav class="short">
-			<a href="#menu" id="toggle" class="short_hamburger"></a>
-			<ul class="short_pages">
-				<li><a class="short_link active" href="#general"><i class="icon-general"></i></a></li>
-				<li><a class="short_link" href="#details"><i class="icon-details"></i></a></li>
-				<li><a class="short_link" href="#links"><i class="icon-links"></i></a></li>
-				<li><a class="short_link" href="#banners"><i class="icon-banners"></i></a></li>
-				<li><a class="short_link" href="#personal_data"><i class="icon-personaldata"></i></a></li>
-				<li><a class="short_link" href="#payout"><i class="icon-payout"></i></a></li>
-				<li><a class="short_link" href="#postback"><i class="icon-postback"></i></a></li>
-			</ul>
-			<div class="menu_line"></div>
-			<div class="short_avatar">
-				<img src="images/avatar.png" alt="mikhael">
-			</div>
-		</nav>
 
 		<main class="main">
 
 	<!-- GENERAL PAGE-->
-			<section class="section general hidden" id="general_section">
+		<div class="general toggle" id="general_section">
+			<section class="section">
 				<h1 class=section_header>general statistic</h1>
 				<div class="date_section">
 					<div class="date">
@@ -104,9 +88,118 @@
 					<img src="images/tabs.png" alt="graphs">
 				</div>
 			</section>
+			<section class="section gen_links">
+				<h1 class="section_header">links</h1>
+				<button class="btn_orange">+ add new</button>
+				<table class="links_table container">
+					<tbody>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Home page</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.homepage.com">http://www.homepage.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Currently offer</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.currently.com">http://www.currently.com</a>
+							</td>    
+							<td class="links_line links_icons">    
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Blurpix</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.blurpix.com">http://www.blurpix.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Your Site</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.yoursite.com">http://www.yoursite.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Google</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.google.com">http://www.google.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Facebook</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.facebook.com">http://www.facebook.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Dashboard</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.dashboard.com">http://www.dashboard.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Blurax</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.blurax.com">http://www.blurax.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+						<tr class="links_row"> 
+							<td class="links_line"><span class="links_name">Piece of Wine</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.pieceofwine.com">http://www.pieceofwine.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+						</tr>
+						<tr class="links_row">
+							<td class="links_line"><span class="links_name">Twitter</span></td>
+							<td class="links_line">
+								<a class="links_site" href="http://www.twitter.com">http://www.twitter.com</a>
+							</td>    
+							<td class="links_line links_icons">
+								<a class="links_icon" href="#"><i class="icon-links"></i></a>
+								<a class="links_icon" href="#"><i class="icon-trash"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<button class="btn_orange">+ add new</button>
+			</section>
+		</div>
 
 	<!-- DETAILS PAGE-->
-			<section class="section details hidden" id="details_section">
+			<section class="section details toggle hidden" id="details_section">
 				<h1 class="section_header">detail statistics</h1>
 				<div class="date_section">
 					<div class="date">
@@ -261,7 +354,7 @@
 			</section>
 
 	<!--LINKS PAGE-->
-			<section class="section links hidden" id="links_section">
+			<section class="section links toggle hidden" id="links_section">
 				<h1 class="section_header">links</h1>
 				<button class="btn_orange">+ add new</button>
 				<table class="links_table container">
@@ -371,7 +464,7 @@
 			</section>
 
 	<!--BANNERS PAGE-->
-			<section class="section banners hidden" id="banners_section">
+			<section class="section banners toggle hidden" id="banners_section">
 				<h1 class="section_header">banners</h1>
 				<button class="btn_orange">+ add new</button>
 				<table class="links_table container">
@@ -442,7 +535,7 @@
 			</section>
 
 	<!--PERSONAL DATA PAGE-->
-			<section class="section personal_data hidden" id="personal_data_section">
+			<section class="section personal_data toggle hidden" id="personal_data_section">
 				<h1 class="section_header">personal data</h1>
 				<form class="personal_form">
 					<div class="personal_unit">
@@ -482,7 +575,7 @@
 			</section>
 
 	<!--PAYOUT PAGE-->
-			<section class="section payout hidden" id="payout_section">
+			<section class="section payout toggle hidden" id="payout_section">
 				<h1 class="section_header">payout history</h1>
 				<div class="date_section">
 					<div class="date">
@@ -570,6 +663,20 @@
 					<a href="#">8</a>
 					<a href="#">9</a>
 					<a href="#"><i class="icon-arrow-right"></i></a>
+				</div>
+			</section>
+
+			<!--PAYOUT POSTBACK-->
+			<section class="section postback toggle hidden" id="postback_section">
+				<h1 class="section_header">new postback</h1>
+				<p>You can insert some parameters in this postback:</p>
+				<div class="col-6">
+					<p>Signup</p>
+					<input type="text" placeholder="crm_userld=%user_id% subid=%p%">
+				</div>
+				<div class="col-6">
+					<p>Deposit</p>
+					<input type="text" placeholder="crm_userld=%user_id% subid=%p%">
 				</div>
 			</section>
 
