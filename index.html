@@ -51,7 +51,7 @@
 			</div>
 		</nav>
 
-		<main class="main">
+		<main class="main" id="fullscreen">
 
 	<!--GENERAL PAGE-->
 		<div class="general toggle" id="general_section">
@@ -203,7 +203,7 @@
 			<section class="section details toggle hidden" id="details_section">
 				<h1 class="section_header">detail statistics</h1>
 				<div class="date_section">
-					<!--add havascript to date-->
+					<!--add javascript date-->
 					<div class="date">
 						<div class="date_inputs">
 							<div class="date_start">16.05.2016</div>
@@ -217,6 +217,7 @@
 						</button>
 					</div>
 				</div>
+					<!--add table sorter-->
 				<table class="details_table container">
 					<thead>
 						<tr class="details_name">
@@ -594,6 +595,7 @@
 						</button>
 					</div>
 				</div>
+					<!--add table sorter-->
 				<table class="details_table container">
 					<thead>
 						<tr class="details_name">
@@ -718,7 +720,7 @@ subid=%p%"></textarea>
 					</div>
 				</div>
 				<div class="row postback_inputs">
-					<div class="col-6 postback_status">
+					<div class="col-6 postback_col_left">
 						<p class="postback_paragraph"><span>NOT</span> send statuses:</p>
 						<fieldset class="postback_checkbox">
 			                <div>
@@ -762,11 +764,15 @@ subid=%p%"></textarea>
 			                </div>
 		            	</fieldset>
 					</div>
-					<div class="col-6 postback_status">
+					<div class="col-6 postback_col_right">
 						<p class="postback_paragraph">Send after:</p>
 						<label class="postback_label">0 <span class="postback_left">168</span></label>
-							<!-- add javascript -->
-						<input class="postback_range" type="range" min="1" max="168" value="104" id="myRange">
+						<div class="postback_range">
+							<div class="postback_line"><div class="postback_orange" id="torange"></div></div>
+							<div class="postback_triangle" id="triangle">▲
+								<div class="postback_number">104 hours</div>
+							</div>
+						</div>
 					</div>
 					<div class="postback_button">
 						<button type="submit" class="btn_orange">Create Pixel</button>
