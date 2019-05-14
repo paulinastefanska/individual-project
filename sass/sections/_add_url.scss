@@ -1,0 +1,31 @@
+.alert_hide {
+	display: none;
+}
+.url {
+	width: 70%;
+	height: 500px;
+	z-index: 3;
+	background: #fff;
+	margin: 0 auto;
+	&_label {
+		font-size: $header_font_size;
+		font-weight: 500;
+		color: $dark_grey;
+		text-align: left;
+		margin-top: 5px;
+	}
+	.personal_input {
+		color: $dark_grey;
+		margin: 0;
+	}
+	.postback_select {
+		color: $dark_grey;
+		margin: 0;
+	}
+	&_inputs {
+		border-bottom: 1px solid #E3E3E3;
+	}
+	&_compain {
+		margin-top: 40px !important;
+	}
+}

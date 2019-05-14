@@ -257,17 +257,33 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .postback_col_right { border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3; margin-top: 30px; }
 
-.postback_select { cursor: pointer; background-color: #fff; width: 100%; height: 40px; border: 1px solid #E3E3E3; border-radius: 4px; outline-color: #979797; }
+.postback_select { cursor: pointer; background-color: #fff; width: 100%; height: 40px; border: 1px solid #E3E3E3; border-radius: 4px; outline-color: #979797; padding-left: 15px; }
 
 .postback_select:hover { transition: all .4s; border: 1px solid #979797; }
 
-.postback_checkbox { width: 100%; height: 150px; border: none; color: #191919; overflow-y: scroll; }
+.postback_checkbox { height: 150px; border: none; color: #191919; overflow-y: scroll; margin-left: 20px; }
 
 .postback_checkbox::-webkit-scrollbar { width: 15px; }
 
 .postback_checkbox::-webkit-scrollbar-track { background: #E3E3E3; }
 
 .postback_checkbox::-webkit-scrollbar-thumb { background: #979797; }
+
+.postback .checkbox_label { display: block; position: relative; padding-left: 35px; padding-top: 5px; margin-bottom: 20px; cursor: pointer; font-size: 14px; user-select: none; }
+
+.postback .checkbox_label input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+
+.postback .checkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: #fff; border: 1px solid #E3E3E3; }
+
+.postback .checkbox_label:hover input ~ .checkmark { background: #E3E3E3; }
+
+.postback .checkbox_label input:checked ~ .checkmark { background: #04AE00; }
+
+.postback .checkmark:after { content: ""; position: absolute; display: none; }
+
+.postback .checkbox_label input:checked ~ .checkmark:after { display: block; }
+
+.postback .checkbox_label .checkmark:after { left: 8px; top: 4px; width: 5px; height: 10px; border: solid #fff; border-width: 0 3px 3px 0; transform: rotate(45deg); }
 
 .postback::-webkit-scrollbar { width: 12px; }
 
@@ -281,9 +297,9 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .postback_range::-moz-range-thumb { width: 15px; height: 15px; background: #F58220; cursor: pointer; }
 
-.postback_label { width: 100%; }
+.postback_label { width: 100%; font-size: 14px; }
 
-.postback_left { float: right; }
+.postback_left { float: right; font-size: 14px; }
 
 .postback_button { width: 100%; }
 
@@ -297,7 +313,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .postback_triangle { color: #F58220; cursor: pointer; font-size: 40px; position: absolute; left: -20px; top: 0; }
 
-.postback_number { width: 80px; font-size: 16px; margin-left: -20px; text-align: center; color: #191919; }
+.postback_number { width: 80px; font-size: 14px; margin-left: -20px; text-align: center; color: #191919; }
 
 .details_table { margin-top: 20px; font-size: 14px; border-collapse: collapse; line-height: 60px; text-align: left; }
 
@@ -439,6 +455,20 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .date_end { justify-content: flex-start; padding: 5px 0 5px 15px; border-left: 1px solid #E3E3E3; }
 
 .date_icon { justify-content: flex-end; color: #979797; padding-right: 15px; }
+
+.alert_hide { display: none; }
+
+.url { width: 70%; height: 500px; z-index: 3; background: #fff; margin: 0 auto; }
+
+.url_label { font-size: 16px; font-weight: 500; color: #979797; text-align: left; margin-top: 5px; }
+
+.url .personal_input { color: #979797; margin: 0; }
+
+.url .postback_select { color: #979797; margin: 0; }
+
+.url_inputs { border-bottom: 1px solid #E3E3E3; }
+
+.url_compain { margin-top: 40px !important; }
 
 /* Pages / Views */
 .general_result { max-width: 800px; text-align: left; color: #979797; font-size: 16px; line-height: 30px; }

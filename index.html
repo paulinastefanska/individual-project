@@ -722,47 +722,40 @@ subid=%p%"></textarea>
 				<div class="row postback_inputs">
 					<div class="col-6 postback_col_left">
 						<p class="postback_paragraph"><span>NOT</span> send statuses:</p>
-						<fieldset class="postback_checkbox">
-			                <div>
-			                <input type="checkbox" name="not-send" value="check-number">   
-			                    <span>checkNumber</span>
-			                </div>
-			                <br>
-			                <div>
-			                <input type="checkbox" name="not-send" value="no-answer">
-			                    <span>noAnswer</span>
-			                </div>
-			                <br>
-			                <div>
-			                <input type="checkbox" name="not-send" value="no-call">
-			                    <span>noCall</span>
-			                </div>
-			                <br>
-			                <div>
-			                <input type="checkbox" name="not-send" value="call-again">
-			                    <span>callAgain</span>
-			                </div>
-			                <br>
-			                <div>
-			                <input type="checkbox" name="not-send" value="check-number">   
-			                    <span>checkNumber</span>
-			                </div>
-			                <br>
-			                <div>
-			                <input type="checkbox" name="not-send" value="no-answer">
-			                    <span>noAnswer</span>
-			                </div>
-			                <br>
-			                <div>
-			                <input type="checkbox" name="not-send" value="no-call">
-			                    <span>noCall</span>
-			                </div>
-			                <br>
-			                <div>
-			                <input type="checkbox" name="not-send" value="call-again">
-			                    <span>callAgain</span>
-			                </div>
-		            	</fieldset>
+						<div class="postback_checkbox">	
+							<label class="checkbox_label">checkNumber
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox_label">noAnswer
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox_label">noCall
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox_label">callAgain
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox_label">checkNumber
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox_label">noAnswer
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox_label">noCall
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="checkbox_label">callAgain
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
 					</div>
 					<div class="col-6 postback_col_right">
 						<p class="postback_paragraph">Send after:</p>
@@ -779,7 +772,46 @@ subid=%p%"></textarea>
 					</div>
 				</div>	
 			</section>
+			
+			<!--POPUPS-->
 
+			<!--ADD URL/LINK-->
+			<div class="url alert_hide" id="url_popup">
+				<h2 class="section_header">ADD URL</h2>
+				<div class="row url_inputs">
+					<div class="col-5">
+						<p class="url_label">Scheme name</p>
+						<input class="personal_input" type="text" placeholder="Name" name="name" id="name" required>
+					</div>
+					<div class="col-5">
+						<select class="postback_select url_compain" name="postback-type">
+	                        <option value="1">Select compain</option>
+	                        <option value="2">Select compain</option>
+	                        <option value="3">Select compain</option>
+	                        <option value="4">Select compain</option>
+	                        <option value="5">Select compain</option>
+	                    </select>
+	                </div>
+	                <div class="col-2">
+	                	<p class="url_label">Language</p>
+						<select class="postback_select" name="postback-type">
+	                        <option value="1">EN</option>								<!--wyjąć flagę z PS-->
+	                        <option value="2">EN</option>
+	                        <option value="3">EN</option>
+	                        <option value="4">EN</option>
+	                        <option value="5">EN</option>
+	                    </select>
+	                </div>
+	            </div>
+	            <div class="row url_inputs">
+	            	<p class="url_label">Select websites</p>
+	            	<div class="col-4">
+	            		
+	            	</div>
+
+	            </div>
+
+			</div>
 			
 		</main>
 	<script src="./js/script.js"></script>	

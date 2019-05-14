@@ -51,7 +51,7 @@ document.querySelector('#toggle').addEventListener('click', function(e) {
   toggleMenu();  
 });
 
-// Postback range slide
+// Postback slide
 document.querySelector('#triangle').style.marginLeft='61.9%';
 document.querySelector('#torange').style.width='61.9%';
 /*document.querySelector('#triangle').addEventListener('pointerdown', function(e){
