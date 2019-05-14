@@ -16,6 +16,7 @@
 		border: 1px solid $grey;
 		border-radius: 4px;
 		outline-color: $dark_grey;
+		outline-width: 1px;
 		width: 450px;
 		height: 40px;
 		margin: 10px 0;
@@ -59,7 +60,7 @@
 	&_paragraph {
 		font-size: $header_font_size;
 		font-weight: 700;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 		span {
 			color: $red;
 		}
@@ -71,8 +72,10 @@
 		font-size: $paragraph_font_size;
 		color: $light_grey;
 		outline-color: $dark_grey;
+		outline-width: 1px;
 		padding-left: 15px;
 		padding-top: 15px;
+		resize: none;
 		&:hover {
 			transition: all .4s;
 			border: 1px solid $dark_grey;
@@ -90,25 +93,39 @@
 		margin-top: 30px;
 	}
 	&_select {
-		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
 		background-color: #fff;
+		border: 1px solid $grey;
+		padding: 5px 30px 5px 10px;
+		font-size: 14px;
+		display: block;
+		border-radius: 4px;
+		background-image: url(https://image.flaticon.com/icons/png/128/118/118738.png);
+		background-size: 15px auto;
+		background-repeat: no-repeat;
+		background-position: right 5px center;
+		
+		cursor: pointer;
 		width:100%;
 		height: 40px;
-		border: 1px solid $grey;
-		border-radius: 4px;
 		outline-color: $dark_grey;
+		outline-width: 1px;
 		padding-left: 15px;
 		&:hover {
 			transition: all .4s;
 			border: 1px solid $dark_grey;
 		}
 	}
+	&_option {
+		padding: 2px 0;
+	}
 	&_checkbox {
 		height: 150px;
 		border: none;
 		color: $black;
 		overflow-y: scroll;
-		margin-left: 20px;
 		&::-webkit-scrollbar {
 		  width: 15px;
 		}
@@ -118,13 +135,18 @@
 		&::-webkit-scrollbar-thumb {
 		  background: $dark_grey; 
 		}
+		.checkbox_select {
+			padding: 8px 20px;
+			&:hover {
+				background: $light_grey;
+			}
+		}
 	}
 	.checkbox_label {
 		display: block;
 		position: relative;
 		padding-left: 35px;
 		padding-top: 5px;
-		margin-bottom: 20px;
 		cursor: pointer;
 		font-size: $paragraph_font_size;
 		user-select: none;
@@ -144,9 +166,6 @@
 		width: 25px;
 		background-color: #fff;
 		border: 1px solid $grey;
-	}
-	.checkbox_label:hover input ~ .checkmark {
-		background: $grey;
 	}
 	.checkbox_label input:checked ~ .checkmark {
 		background: $green;

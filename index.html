@@ -675,108 +675,128 @@
 			<section class="section postback toggle hidden" id="postback_section">
 				<h1 class="section_header">new postback</h1>
 				<p class="postback_text">You can insert some parameters in this postback:</p>
-				<div class="row postback_inputs">
-					<div class="col-6">
-						<p class="postback_paragraph">Signup:</p>
-						<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
+				<form>
+					<div class="row postback_inputs">
+						<div class="col-6">
+							<p class="postback_paragraph">Signup:</p>
+							<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
 subid=%p%"></textarea>
-					</div>
-					<div class="col-6">
-						<p class="postback_paragraph">Deposit:</p>
-						<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
+						</div>
+						<div class="col-6">
+							<p class="postback_paragraph">Deposit:</p>
+							<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
 subid=%p%"></textarea>
-					</div>
-				</div>
-				<div class="row postback_inputs">
-					<div class="col-4">
-						<p class="postback_paragraph">Postback type:</p>
-						<select class="postback_select" name="postback-type">
-	                        <option value="1">S2S (http://..)</option>
-	                        <option value="2">S2S (http://..)</option>
-	                        <option value="3">S2S (http://..)</option>
-	                        <option value="4">S2S (http://..)</option>
-	                        <option value="5">S2S (http://..)</option>
-                    	</select>
-					</div>
-					<div class="col-4">
-						<p class="postback_paragraph">To countries:</p>
-						<select class="postback_select" name="to-countries">
-	                        <option value="1">Select countries</option>
-	                        <option value="2">Select countries</option>
-	                        <option value="3">Select countries</option>
-	                        <option value="4">Select countries</option>
-	                        <option value="5">Select countries</option>
-                    	</select>
-					</div>
-					<div class="col-4">
-						<p class="postback_paragraph">Sending options:</p>
-						<select class="postback_select" name="sending-options">
-	                        <option value="1">Select</option>
-	                        <option value="2">Select</option>
-	                        <option value="3">Select</option>
-	                        <option value="4">Select</option>
-	                        <option value="5">Select</option>
-                    	</select>
-					</div>
-				</div>
-				<div class="row postback_inputs">
-					<div class="col-6 postback_col_left">
-						<p class="postback_paragraph"><span>NOT</span> send statuses:</p>
-						<div class="postback_checkbox">	
-							<label class="checkbox_label">checkNumber
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox_label">noAnswer
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox_label">noCall
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox_label">callAgain
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox_label">checkNumber
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox_label">noAnswer
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox_label">noCall
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-							<label class="checkbox_label">callAgain
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
 						</div>
 					</div>
-					<div class="col-6 postback_col_right">
-						<p class="postback_paragraph">Send after:</p>
-						<label class="postback_label">0 <span class="postback_left">168</span></label>
-						<div class="postback_range">
-							<div class="postback_line"><div class="postback_orange" id="torange"></div></div>
-							<div class="postback_triangle" id="triangle">▲
-								<div class="postback_number">104 hours</div>
+					<div class="row postback_inputs">
+						<div class="col-4">
+							<p class="postback_paragraph">Postback type:</p>
+							<select class="postback_select" name="postback-type">
+		                        <option value="1">S2S (http://..)</option>
+		                        <option value="2">S2S (http://..)</option>
+		                        <option value="3">S2S (http://..)</option>
+		                        <option value="4">S2S (http://..)</option>
+		                        <option value="5">S2S (http://..)</option>
+		                	</select>
+						</div>
+						<div class="col-4">
+							<p class="postback_paragraph">To countries:</p>
+							<select class="postback_select" name="to-countries">
+		                        <option value="select">Select countries</option>
+		                        <option value="select">Select countries</option>
+		                        <option value="select">Select countries</option>
+		                        <option value="select">Select countries</option>
+		                        <option value="select">Select countries</option>
+		                	</select>
+						</div>
+						<div class="col-4">
+							<p class="postback_paragraph">Sending options:</p>
+							<select class="postback_select" name="sending-options">
+		                        <option value="select">Select</option>
+		                        <option value="select">Select</option>
+		                        <option value="select">Select</option>
+		                        <option value="select">Select</option>
+		                        <option value="select">Select</option>
+		                	</select>
+						</div>
+					</div>
+					<div class="row postback_inputs">
+						<div class="col-6 postback_col_left">
+							<p class="postback_paragraph"><span>NOT</span> send statuses:</p>
+							<div class="postback_checkbox">
+								<div class="checkbox_select">	
+									<label class="checkbox_label">checkNumber
+										<input type="checkbox">
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<div class="checkbox_select">
+									<label class="checkbox_label">noAnswer
+										<input type="checkbox">
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<div class="checkbox_select">
+									<label class="checkbox_label">noCall
+										<input type="checkbox">
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<div class="checkbox_select">
+									<label class="checkbox_label">callAgain
+										<input type="checkbox">
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<div class="checkbox_select">
+									<label class="checkbox_label">checkNumber
+										<input type="checkbox">
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<div class="checkbox_select">
+									<label class="checkbox_label">noAnswer
+										<input type="checkbox">
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<div class="checkbox_select">
+									<label class="checkbox_label">noCall
+										<input type="checkbox">
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<div class="checkbox_select">
+									<label class="checkbox_label">callAgain
+										<input type="checkbox">
+										<div class="checkmark"></div>
+									</label>
+								</div>
 							</div>
 						</div>
+						<div class="col-6 postback_col_right">
+							<p class="postback_paragraph">Send after:</p>
+							<label class="postback_label">0 <span class="postback_left">168</span></label>
+							<div class="postback_range">
+								<div class="postback_line"><div class="postback_orange" id="torange"></div></div>
+								<div class="postback_triangle" id="triangle">▲
+									<div class="postback_number">104 hours</div>
+								</div>
+							</div>
+						</div>
+						<div class="postback_button">
+							<button type="submit" class="btn_orange">Create Pixel</button>
+						</div>
 					</div>
-					<div class="postback_button">
-						<button type="submit" class="btn_orange">Create Pixel</button>
-					</div>
-				</div>	
+				</form>		
 			</section>
-			
+		</main>
+
 			<!--POPUPS-->
 
 			<!--ADD URL/LINK-->
-			<div class="url alert_hide" id="url_popup">
+		<div class="url alert_hide" id="url_popup">
+			<form>
 				<h2 class="section_header">ADD URL</h2>
 				<div class="row url_inputs">
 					<div class="col-5">
@@ -795,11 +815,11 @@ subid=%p%"></textarea>
 	                <div class="col-2">
 	                	<p class="url_label">Language</p>
 						<select class="postback_select" name="postback-type">
-	                        <option value="1">EN</option>								<!--wyjąć flagę z PS-->
-	                        <option value="2">EN</option>
-	                        <option value="3">EN</option>
-	                        <option value="4">EN</option>
-	                        <option value="5">EN</option>
+	                        <option value="1">English</option>
+	                        <option value="2">English</option>
+	                        <option value="3">English</option>
+	                        <option value="4">English</option>
+	                        <option value="5">English</option>
 	                    </select>
 	                </div>
 	            </div>
@@ -808,12 +828,11 @@ subid=%p%"></textarea>
 	            	<div class="col-4">
 	            		
 	            	</div>
-
 	            </div>
-
-			</div>
+	        </form>
+		</div>
 			
-		</main>
+		
 	<script src="./js/script.js"></script>	
 	</body>
 </html>

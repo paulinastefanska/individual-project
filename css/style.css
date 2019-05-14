@@ -229,7 +229,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .personal_unit { display: flex; justify-content: center; flex-wrap: wrap; width: 600px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; font-size: 16px; }
 
-.personal_input { justify-content: space-around; padding-left: 20px; border: 1px solid #E3E3E3; border-radius: 4px; outline-color: #979797; width: 450px; height: 40px; margin: 10px 0; }
+.personal_input { justify-content: space-around; padding-left: 20px; border: 1px solid #E3E3E3; border-radius: 4px; outline-color: #979797; outline-width: 1px; width: 450px; height: 40px; margin: 10px 0; }
 
 .personal_input:hover { transition: all .4s; border: 1px solid #979797; }
 
@@ -245,11 +245,11 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .postback .col-6 { padding-left: 20px; }
 
-.postback_paragraph { font-size: 16px; font-weight: 700; margin-bottom: 30px; }
+.postback_paragraph { font-size: 16px; font-weight: 700; margin-bottom: 15px; }
 
 .postback_paragraph span { color: #FF0000; }
 
-.postback_input { width: 100%; border: 1px solid #E3E3E3; border-radius: 4px; font-size: 14px; color: #F5F5F2; outline-color: #979797; padding-left: 15px; padding-top: 15px; }
+.postback_input { width: 100%; border: 1px solid #E3E3E3; border-radius: 4px; font-size: 14px; color: #F5F5F2; outline-color: #979797; outline-width: 1px; padding-left: 15px; padding-top: 15px; resize: none; }
 
 .postback_input:hover { transition: all .4s; border: 1px solid #979797; }
 
@@ -257,11 +257,13 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .postback_col_right { border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3; margin-top: 30px; }
 
-.postback_select { cursor: pointer; background-color: #fff; width: 100%; height: 40px; border: 1px solid #E3E3E3; border-radius: 4px; outline-color: #979797; padding-left: 15px; }
+.postback_select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: #fff; border: 1px solid #E3E3E3; padding: 5px 30px 5px 10px; font-size: 14px; display: block; border-radius: 4px; background-image: url(https://image.flaticon.com/icons/png/128/118/118738.png); background-size: 15px auto; background-repeat: no-repeat; background-position: right 5px center; cursor: pointer; width: 100%; height: 40px; outline-color: #979797; outline-width: 1px; padding-left: 15px; }
 
 .postback_select:hover { transition: all .4s; border: 1px solid #979797; }
 
-.postback_checkbox { height: 150px; border: none; color: #191919; overflow-y: scroll; margin-left: 20px; }
+.postback_option { padding: 2px 0; }
+
+.postback_checkbox { height: 150px; border: none; color: #191919; overflow-y: scroll; }
 
 .postback_checkbox::-webkit-scrollbar { width: 15px; }
 
@@ -269,13 +271,15 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .postback_checkbox::-webkit-scrollbar-thumb { background: #979797; }
 
-.postback .checkbox_label { display: block; position: relative; padding-left: 35px; padding-top: 5px; margin-bottom: 20px; cursor: pointer; font-size: 14px; user-select: none; }
+.postback_checkbox .checkbox_select { padding: 8px 20px; }
+
+.postback_checkbox .checkbox_select:hover { background: #F5F5F2; }
+
+.postback .checkbox_label { display: block; position: relative; padding-left: 35px; padding-top: 5px; cursor: pointer; font-size: 14px; user-select: none; }
 
 .postback .checkbox_label input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
 
 .postback .checkmark { position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: #fff; border: 1px solid #E3E3E3; }
-
-.postback .checkbox_label:hover input ~ .checkmark { background: #E3E3E3; }
 
 .postback .checkbox_label input:checked ~ .checkmark { background: #04AE00; }
 
@@ -458,7 +462,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .alert_hide { display: none; }
 
-.url { width: 70%; height: 500px; z-index: 3; background: #fff; margin: 0 auto; }
+.url { width: calc(100% - 240px); height: 500px; z-index: 3; background: #fff; margin: 80px 120px 0 120px; }
 
 .url_label { font-size: 16px; font-weight: 500; color: #979797; text-align: left; margin-top: 5px; }
 
@@ -469,6 +473,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .url_inputs { border-bottom: 1px solid #E3E3E3; }
 
 .url_compain { margin-top: 40px !important; }
+
+.url_flag { width: 10px; }
 
 /* Pages / Views */
 .general_result { max-width: 800px; text-align: left; color: #979797; font-size: 16px; line-height: 30px; }

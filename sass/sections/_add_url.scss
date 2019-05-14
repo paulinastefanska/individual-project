@@ -2,11 +2,11 @@
 	display: none;
 }
 .url {
-	width: 70%;
+	width: calc(100% - 240px);
 	height: 500px;
 	z-index: 3;
 	background: #fff;
-	margin: 0 auto;
+	margin: 80px 120px 0 120px;
 	&_label {
 		font-size: $header_font_size;
 		font-weight: 500;
@@ -27,5 +27,8 @@
 	}
 	&_compain {
 		margin-top: 40px !important;
+	}
+	&_flag {
+		width: 10px;
 	}
 }
