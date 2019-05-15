@@ -91,7 +91,7 @@
 			</section>
 			<section class="section gen_links">
 				<h1 class="section_header">links</h1>
-				<button class="btn_orange">+ add new</button>
+				<button class="btn_orange" id="add_link1">+ add new</button>
 				<table class="links_table container">
 					<tbody>
 						<tr class="links_row">
@@ -195,7 +195,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<button class="btn_orange">+ add new</button>
+				<button class="btn_orange" id="add_link2">+ add new</button>
 			</section>
 		</div>
 
@@ -359,7 +359,7 @@
 	<!--LINKS PAGE-->
 			<section class="section links toggle hidden" id="links_section">
 				<h1 class="section_header">links</h1>
-				<button class="btn_orange">+ add new</button>
+				<button class="btn_orange" id="add_link3">+ add new</button>
 				<table class="links_table container">
 					<tbody>
 						<tr class="links_row">
@@ -463,7 +463,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<button class="btn_orange">+ add new</button>
+				<button class="btn_orange" id="add_link4">+ add new</button>
 			</section>
 
 	<!--BANNERS PAGE-->
@@ -795,15 +795,18 @@ subid=%p%"></textarea>
 			<!--POPUPS-->
 
 			<!--ADD URL/LINK-->
+	<div class="alert_wrapper alert_hide" id="url_popup_wrapper">		
 		<div class="url alert_hide" id="url_popup">
-			<form>
-				<h2 class="section_header">ADD URL<i class="icon-close"></i></h2>
-				<div class="row url_inputs">
-					<div class="col-5">
+			<h2 class="section_header">ADD URL<i class="icon-close" id="url_popup_x"></i></h2>
+			<div class="row url_inputs">
+				<div class="col-5">
+					<form>
 						<p class="url_label">Scheme name</p>
-						<input class="personal_input" type="text" placeholder="Name" name="name" id="name" required>
-					</div>
-					<div class="col-5">
+						<input class="personal_input" type="text" placeholder="Name" name="name" id="name2" required>
+					</form>
+				</div>
+				<div class="col-5">
+					<form>
 						<select class="postback_select url_compain" name="postback-type">
 	                        <option value="1">Select compain</option>
 	                        <option value="2">Select compain</option>
@@ -811,8 +814,10 @@ subid=%p%"></textarea>
 	                        <option value="4">Select compain</option>
 	                        <option value="5">Select compain</option>
 	                    </select>
-	                </div>
-	                <div class="col-2">
+	                </form>
+                </div>
+                <div class="col-2">
+                	<form>
 	                	<p class="url_label">Language</p>
 						<select class="postback_select" name="postback-type">
 	                        <option value="1">English</option>
@@ -821,10 +826,12 @@ subid=%p%"></textarea>
 	                        <option value="4">English</option>
 	                        <option value="5">English</option>
 	                    </select>
-	                </div>
-	            </div>
-	            <div class="url_select">
-	            	<p class="url_paragraph">Select websites</p>
+	                </form>
+                </div>
+            </div>
+            <div class="url_select">
+            	<p class="url_paragraph">Select websites</p>
+            	<form>
             		<div class="postback_checkbox">
 						<div class="checkbox">	
 							<label class="checkbox_label">Landing page Money<i class="icon-show"></i>
@@ -1007,19 +1014,21 @@ subid=%p%"></textarea>
 							</label>
 						</div>
 					</div>
-	            </div>
-	            <div class="row gener_link">
-	            	<div class="col-7">
-	            		<input class="personal_input" type="text" placeholder="Generated link" name="name" id="name">
-	            	</div>
-	            	<div class="col-3">
-	            		<button type="button" disabled class="btn_disabled"><i class="icon-links"></i>Copy link</button>
-	            	</div>
-	            	<div class="col-2">
-	            		<button type="submit" class="btn_orange">Save</button>
-	            	</div>
-	        </form>
+				</form>	
+	        </div>
+            <div class="row gener_link">
+            	<div class="col-8">
+            		<input class="personal_input" type="text" placeholder="Generated link" name="name" id="name3">
+            	</div>
+            	<div class="col-2">
+            		<button type="button" disabled class="btn_disabled"><i class="icon-links"></i>Copy link</button>
+            	</div>
+            	<div class="col-2">
+            		<button type="submit" class="btn_orange">Save</button>
+            	</div>
+		    </div>    	
 		</div>
+	</div>
 			
 		
 	<script src="./js/script.js"></script>	

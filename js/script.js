@@ -30,32 +30,50 @@ for (var i = 0; i < menuPages.length; i++) {
 }
 
 // Short menu show and fullwidth
-function toggleMenu(cur = document.querySelector('#navigation').className) {
+function toggleMenu(cur = document.getElementById('navigation').className) {
   if (cur == 'long')
   {
-    document.querySelector('#navigation').classList.remove("long");
-    document.querySelector('#navigation').classList.add("short");
-    document.querySelector('#fullscreen').classList.remove("main");
-    document.querySelector('#fullscreen').classList.add("fullwidth");
+    document.getElementById('navigation').classList.remove("long");
+    document.getElementById('navigation').classList.add("short");
+    document.getElementById('fullscreen').classList.remove("main");
+    document.getElementById('fullscreen').classList.add("fullwidth");
   }
   else {
-    document.querySelector('#navigation').classList.remove("short");
-    document.querySelector('#navigation').classList.add("long");
-    document.querySelector('#fullscreen').classList.remove("fullwidth");
-    document.querySelector('#fullscreen').classList.add("main");
+    document.getElementById('navigation').classList.remove("short");
+    document.getElementById('navigation').classList.add("long");
+    document.getElementById('fullscreen').classList.remove("fullwidth");
+    document.getElementById('fullscreen').classList.add("main");
   }
 }
 
-document.querySelector('#toggle').addEventListener('click', function(e) {
+document.getElementById('toggle').addEventListener('click', function(e) {
 	e.preventDefault();
   toggleMenu();  
 });
 
 // Postback slide
-document.querySelector('#triangle').style.marginLeft='61.9%';
-document.querySelector('#torange').style.width='61.9%';
+document.getElementById('triangle').style.marginLeft='61.9%';
+document.getElementById('torange').style.width='61.9%';
 /*document.querySelector('#triangle').addEventListener('pointerdown', function(e){
   var ct=document.querySelector('#triangle').style.marginLeft;   
 });*/
-    
 
+// Popup Add URL
+function newLink() {
+  document.getElementById('url_popup').classList.remove('alert_hide');  
+  document.getElementById('url_popup_wrapper').classList.remove('alert_hide');  
+  
+}
+
+function closePopup(){
+  document.getElementById('url_popup').classList.add('alert_hide');  
+  document.getElementById('url_popup_wrapper').classList.add('alert_hide');  
+}
+
+document.querySelector("#add_link1").addEventListener('click', function(){ newLink(); });
+document.querySelector("#add_link2").addEventListener('click', function(){ newLink(); });
+document.querySelector("#add_link3").addEventListener('click', function(){ newLink(); });
+document.querySelector("#add_link4").addEventListener('click', function(){ newLink(); });
+
+document.querySelector('#url_popup_x').addEventListener('click', function(){ closePopup(); 
+});
