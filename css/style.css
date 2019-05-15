@@ -236,6 +236,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .btn_disabled { height: 40px; width: 180px; border: none; display: block; border-radius: 4px; background: #E3E3E3; color: #fff; transition: all .4s; }
 
+.btn_disabled .icon-links { padding-right: 10px; }
+
 .section_header { display: flex; justify-content: flex-start; text-transform: uppercase; margin: 0; padding: 20px 20px; font-size: 16px; color: #979797; border-bottom: 1px solid #E3E3E3; }
 
 .personal_unit { display: flex; justify-content: center; flex-wrap: wrap; width: 600px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; font-size: 16px; }
