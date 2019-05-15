@@ -234,7 +234,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .btn_orange:hover { background-color: #FFA200; }
 
-.btn_disabled { height: 40px; width: 180px; border: none; display: block; border-radius: 4px; background: #E3E3E3; color: #fff; transition: all .4s; }
+.btn_disabled { height: 40px; width: 180px; border: none; margin: 0px auto; display: block; border-radius: 4px; background: #E3E3E3; color: #fff; transition: all .4s; }
 
 .btn_disabled .icon-links { padding-right: 10px; }
 
@@ -498,7 +498,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .url .postback_checkbox .checkbox:hover .icon-show { opacity: 1; }
 
-.url .btn_orange { margin: 0; }
+.url .btn_orange { margin: 0 auto; }
 
 /* Pages / Views */
 .general_result { max-width: 800px; text-align: left; color: #979797; font-size: 16px; line-height: 30px; }
