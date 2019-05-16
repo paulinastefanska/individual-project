@@ -16,8 +16,10 @@
 @import "sections/top";
 @import "sections/menu";
 @import "sections/dates";
-@import "sections/add_url";
 
 /* Pages / Views */
 @import "pages/general";
 @import "pages/postback";
+@import "pages/add_url";
+@import "pages/add_banner";
+@import "pages/popups";

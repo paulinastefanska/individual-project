@@ -75,5 +75,44 @@ document.querySelector("#add_link2").addEventListener('click', function(){ newLi
 document.querySelector("#add_link3").addEventListener('click', function(){ newLink(); });
 document.querySelector("#add_link4").addEventListener('click', function(){ newLink(); });
 
-document.querySelector('#url_popup_x').addEventListener('click', function(){ closePopup(); 
+document.querySelector('#url_closeU').addEventListener('click', function(){ closePopup(); 
 });
+document.querySelector('#url_save').addEventListener('click', function(){ closePopup(); 
+});
+
+// Popup Add banners
+function newBanner() {
+  document.getElementById('banner_popup').classList.remove('alert_hideB');  
+  document.getElementById('banner_popup_wrapper').classList.remove('alert_hideB');  
+  
+}
+
+function closePopupB(){
+  document.getElementById('banner_popup').classList.add('alert_hideB');  
+  document.getElementById('banner_popup_wrapper').classList.add('alert_hideB');  
+}
+
+document.querySelector("#add_banner1").addEventListener('click', function(){ newBanner(); });
+document.querySelector("#add_banner2").addEventListener('click', function(){ newBanner(); });
+
+document.querySelector('#url_closeB').addEventListener('click', function(){ closePopupB();
+});
+document.querySelector('#banner_save').addEventListener('click', function(){ closePopupB();
+});  
+
+// Other popups
+function chat() {
+  document.getElementById('message_chat').classList.remove('hide_chat');  
+  document.getElementById('message').classList.remove('hide_chat');  
+}
+
+function closeChat(){
+  document.getElementById('message_chat').classList.add('hide_chat');  
+  document.getElementById('message').classList.add('hide_chat');  
+}
+
+document.getElementById('start_chat').addEventListener('click', function(){ chat(); 
+});
+
+document.getElementById('chat_close').addEventListener('click', function(){ closeChat();
+}); 
