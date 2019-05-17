@@ -13,22 +13,67 @@
 }
 .message_chat {
 	width: calc(100% - 260px);
+	//height: 400px;
 	z-index: 4;
 	background: #fff;
 	position: fixed;
     top: 10%;
     left: 130px;
     .icon-close {
+    	cursor: pointer;
     	position: absolute;
     	right: 25px;
     }
     .message_avatar {
-    	border: 1px solid red;
+    	border-bottom: 1px solid $grey;
     	text-align: left;
-    	margin: 10px 20px;
+    	padding: 15px;
+    }
+    .message_online {
+    	display: flex;
+    	flex-direction: column;
+    	padding-left: 15px;
     }
     .message_user {
     	font-size: 20px;
     	font-weight: 700;
+    }
+    [class*="col-"] {
+    	padding: 15px;
+    }
+    .chat {
+    	text-align: left;
+    	border-bottom: 1px solid $grey;
+    	padding-bottom: 60px;
+    	font-size: $paragraph_font_size;
+    	font-weight: 400;
+    	&_light {
+    		background: $light_grey;
+    		padding: 2px;
+    		margin: 15px;
+    		width: 150px;
+    		border-radius: 5px;
+    		&_p {
+    			padding-left: 5px;
+    		}
+    	}
+    	&_dark {
+    		background: $dark_grey;
+    		color: #fff;
+    		padding: 2px;
+    		margin: 15px;
+    		width: 280px;
+    		border-radius: 5px;
+    		&_p {
+    			padding-left: 5px;
+    		}
+    	}
+    }
+    .personal_input {
+    	width: 100%;
+    	margin: 0;
+    }
+    .btn_orange {
+    	margin: 0 auto;
     }
 }
