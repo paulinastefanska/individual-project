@@ -13,7 +13,6 @@
 }
 .message_chat {
 	width: calc(100% - 260px);
-	//height: 400px;
 	z-index: 4;
 	background: #fff;
 	position: fixed;
@@ -30,12 +29,11 @@
     	padding: 15px;
     }
     .message_online {
-    	display: flex;
-    	flex-direction: column;
     	padding-left: 15px;
+        padding-top: 8px;
     }
     .message_user {
-    	font-size: 20px;
+    	font-size: 28px;
     	font-weight: 700;
     }
     [class*="col-"] {

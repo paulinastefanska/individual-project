@@ -554,9 +554,9 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .message_chat .message_avatar { border-bottom: 1px solid #E3E3E3; text-align: left; padding: 15px; }
 
-.message_chat .message_online { display: flex; flex-direction: column; padding-left: 15px; }
+.message_chat .message_online { padding-left: 15px; padding-top: 8px; }
 
-.message_chat .message_user { font-size: 20px; font-weight: 700; }
+.message_chat .message_user { font-size: 28px; font-weight: 700; }
 
 .message_chat [class*="col-"] { padding: 15px; }
 
