@@ -17,6 +17,7 @@
 	position: fixed;
     top: 10%;
     left: 130px;
+    overflow-y: scroll;
 	&_select {
 		border-bottom: 1px solid $grey;
 	}

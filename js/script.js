@@ -104,13 +104,13 @@ document.querySelector('#banner_save').addEventListener('click', function(){ clo
 
 //Chat
 function chat() {
-  document.getElementById('message_chat').classList.remove('hide_chat');  
-  document.getElementById('message').classList.remove('hide_chat');  
+  document.getElementById('message_chat').classList.remove('chat_hide');  
+  document.getElementById('message').classList.remove('chat_hide');  
 }
 
 function closeChat(){
-  document.getElementById('message_chat').classList.add('hide_chat');  
-  document.getElementById('message').classList.add('hide_chat');  
+  document.getElementById('message_chat').classList.add('chat_hide');  
+  document.getElementById('message').classList.add('chat_hide');  
 }
 
 document.getElementById('start_chat').addEventListener('click', function(){ chat(); 
