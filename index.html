@@ -19,7 +19,7 @@
 						<li><a hfer="#">Banner 03 don't work<div class="orange_circle"></div></a></li>-->	
 				<li class="top_item"><i class="icon-notification"></i><div class="notific_circle"></div></li>
 				<li class="top_item" id="start_login"><i class="icon-profile"></i><span class="top_name">Leonardo Dicaprio</span></li>
-				<li class="top_item"><i class="icon-quit"></i></li>
+				<li class="top_item" id="start_quit"><i class="icon-quit"></i></li>
 			</ul>
 					<!--rember add line notification javascrpit random positive or negative-->
 		</header>
@@ -1018,14 +1018,14 @@ subid=%p%"></textarea>
 	        </div>
             <div class="row">
             	<div class="col-8">
-        			<input class="personal_input" type="text" placeholder="Generated link" name="generated" id="name3">
-        		</div>
-        		<div class="col-2">
-        			<button type="button" disabled class="btn_disabled"><i class="icon-links"></i>Copy link</button>
-        		</div>
-        		<div class="col-2">
-        			<button type="submit" class="btn_orange" id="url_save">Save</button>
-        		</div>
+    				<input class="personal_input" type="text" placeholder="Generated link" name="generated" id="name3">
+    			</div>
+    			<div class="col-2">
+    				<button type="button" disabled class="btn_disabled"><i class="icon-links"></i>Copy link</button>
+    			</div>
+    			<div class="col-2">
+    				<button type="submit" class="btn_orange" id="url_save">Save</button>
+    			</div>
 		    </div>    	
 		</div>
 	</div>
@@ -1302,7 +1302,7 @@ subid=%p%"></textarea>
 			</div>
 			<div class="row message_send">
             		<input class="personal_input" type="text" placeholder="Enter the message..." name="chat" id="chat">
-            		<button type="submit" class="btn_orange" id="banner_save">Send</button>
+            		<button type="submit" class="btn_orange" id="chat_send">Send</button>
 		    </div>    
 		</div>
 	</div>
@@ -1314,6 +1314,16 @@ subid=%p%"></textarea>
 				<input class="personal_input" type="text" placeholder="login name" name="login-name" id="login_name">
 				<input class="personal_input" type="password" placeholder="password" name="login-name" id="login_password">
 				<button type="submit" class="btn_orange" id="close_login">Enter</button>
+			</div>
+		</div>
+	</div>
+	<!--QUIT-->
+	<div class="quit_wrapper quit_hide" id="quit_wrapper">
+		<div clsss="quit quit_hide" id="quit">
+			<h3 class="section_header">Do you really want to Quit?</h3>
+			<div class="row">
+				<button type="button" class="btn_grey" id="close_quit">Cancel</button>
+				<button type="button" class="btn_orange" id="go_quit">Quit</button>
 			</div>
 		</div>
 	</div>

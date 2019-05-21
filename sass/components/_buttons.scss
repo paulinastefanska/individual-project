@@ -42,3 +42,18 @@
         padding-right: 10px;
     }
 }
+.btn_grey {
+    height: 40px;
+    width: 125px;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+    background: $dark_grey;
+    color: #fff;
+    transition: all .4s;
+    &:hover {
+        background-color: $grey;
+    }
+}

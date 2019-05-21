@@ -54,9 +54,6 @@ document.getElementById('toggle').addEventListener('click', function(e) {
 // Postback slide
 document.getElementById('triangle').style.marginLeft='61.9%';
 document.getElementById('torange').style.width='61.9%';
-/*document.querySelector('#triangle').addEventListener('pointerdown', function(e){
-  var ct=document.querySelector('#triangle').style.marginLeft;   
-});*/
 
 // Popup Add URL
 function newLink() {
@@ -135,3 +132,23 @@ document.getElementById('start_login').addEventListener('click', function(){ log
 
 document.getElementById('close_login').addEventListener('click', function(){ closeLogin();
 });
+
+//Quit
+function quit() {
+  document.getElementById('quit_wrapper').classList.remove('quit_hide');  
+  document.getElementById('quit').classList.remove('quit_hide');  
+}
+
+function closeQuit(){
+  document.getElementById('quit_wrapper').classList.add('quit_hide');  
+  document.getElementById('quit').classList.add('quit_hide');  
+}
+document.getElementById('start_quit').addEventListener('click', function(){ quit();
+});
+
+document.getElementById('close_quit').addEventListener('click', function(){ closeQuit();
+});
+
+//document.getElementById('go_quit').addEventListener('click', function () { closeQuit();
+//      window.location.replace("https://github.com/paulinastefanska");
+//});
