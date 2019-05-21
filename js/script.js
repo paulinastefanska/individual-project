@@ -101,6 +101,8 @@ document.querySelector('#banner_save').addEventListener('click', function(){ clo
 });  
 
 // Other popups
+
+//Chat
 function chat() {
   document.getElementById('message_chat').classList.remove('hide_chat');  
   document.getElementById('message').classList.remove('hide_chat');  
@@ -116,3 +118,20 @@ document.getElementById('start_chat').addEventListener('click', function(){ chat
 
 document.getElementById('chat_close').addEventListener('click', function(){ closeChat();
 }); 
+
+//Login
+function login() {
+  document.getElementById('login_wrapper').classList.remove('login_hide');  
+  document.getElementById('login').classList.remove('login_hide');  
+}
+
+function closeLogin(){
+  document.getElementById('login_wrapper').classList.add('login_hide');  
+  document.getElementById('login').classList.add('login_hide');  
+}
+
+document.getElementById('start_login').addEventListener('click', function(){ login(); 
+});
+
+document.getElementById('close_login').addEventListener('click', function(){ closeLogin();
+});
