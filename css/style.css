@@ -484,7 +484,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .alert_wrapper { position: fixed; top: 0; left: 0; z-index: 3; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
 
-.url { width: calc(100% - 260px); z-index: 4; background: #fff; position: fixed; top: 8%; left: 130px; }
+.url { width: calc(100% - 260px); z-index: 4; background: #fff; position: fixed; top: 8%; left: 130px; overflow: auto; }
 
 .url_select { border-bottom: 1px solid #E3E3E3; }
 
@@ -592,4 +592,4 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .quit { z-index: 4; background: #fff; width: 500px; position: fixed; top: 20%; left: calc(50% - 250px); }
 
-.quit .section_header { text-transform: lowercase; }
+.quit .section_header { text-transform: none; }
