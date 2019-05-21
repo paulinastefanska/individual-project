@@ -58,8 +58,7 @@ document.getElementById('torange').style.width='61.9%';
 // Popup Add URL
 function newLink() {
   document.getElementById('url_popup').classList.remove('alert_hide');  
-  document.getElementById('url_popup_wrapper').classList.remove('alert_hide');  
-  
+  document.getElementById('url_popup_wrapper').classList.remove('alert_hide');   
 }
 
 function closePopup(){
@@ -71,17 +70,13 @@ document.querySelector("#add_link1").addEventListener('click', function(){ newLi
 document.querySelector("#add_link2").addEventListener('click', function(){ newLink(); });
 document.querySelector("#add_link3").addEventListener('click', function(){ newLink(); });
 document.querySelector("#add_link4").addEventListener('click', function(){ newLink(); });
-
-document.querySelector('#url_closeU').addEventListener('click', function(){ closePopup(); 
-});
-document.querySelector('#url_save').addEventListener('click', function(){ closePopup(); 
-});
+document.querySelector('#url_closeU').addEventListener('click', function(){ closePopup(); });
+document.querySelector('#url_save').addEventListener('click', function(){ closePopup(); });
 
 // Popup Add banners
 function newBanner() {
   document.getElementById('banner_popup').classList.remove('alert_hideB');  
-  document.getElementById('banner_popup_wrapper').classList.remove('alert_hideB');  
-  
+  document.getElementById('banner_popup_wrapper').classList.remove('alert_hideB');    
 }
 
 function closePopupB(){
@@ -91,11 +86,8 @@ function closePopupB(){
 
 document.querySelector("#add_banner1").addEventListener('click', function(){ newBanner(); });
 document.querySelector("#add_banner2").addEventListener('click', function(){ newBanner(); });
-
-document.querySelector('#url_closeB').addEventListener('click', function(){ closePopupB();
-});
-document.querySelector('#banner_save').addEventListener('click', function(){ closePopupB();
-});  
+document.querySelector('#url_closeB').addEventListener('click', function(){ closePopupB();});
+document.querySelector('#banner_save').addEventListener('click', function(){ closePopupB();});  
 
 // Other popups
 
@@ -110,11 +102,8 @@ function closeChat(){
   document.getElementById('message').classList.add('chat_hide');  
 }
 
-document.getElementById('start_chat').addEventListener('click', function(){ chat(); 
-});
-
-document.getElementById('chat_close').addEventListener('click', function(){ closeChat();
-}); 
+document.getElementById('start_chat').addEventListener('click', function(){ chat(); });
+document.getElementById('chat_close').addEventListener('click', function(){ closeChat(); }); 
 
 //Login
 function login() {
@@ -127,11 +116,9 @@ function closeLogin(){
   document.getElementById('login').classList.add('login_hide');  
 }
 
-document.getElementById('start_login').addEventListener('click', function(){ login(); 
-});
+document.getElementById('start_login').addEventListener('click', function(){ login(); });
 
-document.getElementById('close_login').addEventListener('click', function(){ closeLogin();
-});
+document.getElementById('close_login').addEventListener('click', function(){ closeLogin(); });
 
 //Quit
 function quit() {
@@ -143,12 +130,9 @@ function closeQuit(){
   document.getElementById('quit_wrapper').classList.add('quit_hide');  
   document.getElementById('quit').classList.add('quit_hide');  
 }
-document.getElementById('start_quit').addEventListener('click', function(){ quit();
-});
+document.getElementById('start_quit').addEventListener('click', function(){ quit(); });
 
-document.getElementById('close_quit').addEventListener('click', function(){ closeQuit();
-});
+document.getElementById('close_quit').addEventListener('click', function(){ closeQuit(); });
 
-//document.getElementById('go_quit').addEventListener('click', function () { closeQuit();
-//      window.location.replace("https://github.com/paulinastefanska");
-//});
+document.getElementById('go_quit').addEventListener('click', function () { closeQuit();
+      window.location.replace("https://github.com/paulinastefanska"); });
