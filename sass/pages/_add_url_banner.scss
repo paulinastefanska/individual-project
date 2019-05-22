@@ -1,0 +1,166 @@
+.overlay {
+	@include fixedStyle($top:0, $right:0, $width:100%, $height:100%);
+	z-index: 3;
+	background: rgba(0,0,0,0.6);
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	padding: 30px;
+	display: none;
+}
+.overlay::webkit-scrollbar {
+  display: none;
+}
+.overlay.show {
+  display: flex;
+}
+
+// Add url/link
+.url.show {
+  display: block;
+}
+.url {
+	width: calc(100% - 260px);
+	margin: auto;
+	background-color: #fff;
+	position: relative;
+	display: none;
+
+	//z-index: 4;
+	//background: #fff;
+	//@include fixedStyle($top:8%, $right:130px, $width:calc(100% - 260px), $height:none);
+    //overflow: auto;
+	&_select {
+		border-bottom: 1px solid $grey;
+	}
+	&_label {
+		font-size: $header_font_size;
+		font-weight: 500;
+		color: $dark_grey;
+		text-align: left;
+		margin-top: 5px;
+	}
+	.icon-show {
+		opacity: 0;
+		position: absolute;
+		right: 20px;
+		color: $blue;
+		&:hover {
+			color: $orange;
+		}
+	}
+	.personal_input {
+		color: $dark_grey;
+		margin: 0;
+		width: 100%;
+	}
+	.postback_select {
+		color: $dark_grey;
+		margin: 0;
+	}
+	&_inputs {
+		border-bottom: 1px solid $grey;
+	}
+	&_compain {
+		margin-top: 40px !important;
+	}
+	.icon-close {
+		position: absolute;
+		right: 20px;
+		cursor: pointer;
+	}
+	&_paragraph {
+		text-align: left;
+		padding: 20px 25px;
+		margin: 0;
+		color: $dark_grey;
+		font-size: $header_font_size;
+		font-weight: 500;
+	}
+	.postback_checkbox {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: left;
+		height: 400px;
+		margin-right: 20px;
+		.checkbox_label {
+			padding-left: 45px;
+		}
+		.checkbox {
+			padding: 8px 25px;
+			&:hover .icon-show {
+				opacity: 1;
+			}
+		}
+	}
+	.btn_orange {
+		margin: 0 auto;
+	}
+}
+
+// Add banner
+.banner.show {
+  display: block;
+}
+.banner {
+	width: calc(100% - 260px);
+	margin: auto;
+	background-color: #fff;
+	position: relative;
+	display: none;
+	/*z-index: 4;
+	background: #fff;
+	@include fixedStyle($top:8%, $right:130px, $width:calc(100% - 260px), $height:none);*/
+    .col_top {
+    	padding-top: 0;
+    }
+    .col_left {
+		border-right: 1px solid $grey;
+		padding-left: 0;
+		padding-top: 0;
+    }
+    .col_right {
+		padding-left: 0;
+		padding-top: 0;
+    }
+    .personal_input {
+    	margin: 0;
+    	width: 100%;
+    }
+    .icon-close {
+		position: absolute;
+		right: 20px;
+		cursor: pointer;
+	}
+	.postback_select {
+		color: $dark_grey;
+	}
+	.icon-show {
+		opacity: 0;
+		position: absolute;
+		right: 20px;
+		color: $blue;
+		&:hover {
+			color: $orange;
+		}
+	}
+	.postback_checkbox {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		height: 300px;
+		.checkbox_label {
+			padding-left: 45px;
+		}
+		.checkbox {
+			padding: 8px 25px;
+			&:hover .icon-show {
+				opacity: 1;
+			}
+		}
+	}
+	.btn_orange {
+		margin: 0 auto;
+	}
+}

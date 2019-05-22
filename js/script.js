@@ -55,40 +55,66 @@ document.getElementById('toggle').addEventListener('click', function(e) {
 document.getElementById('triangle').style.marginLeft='61.9%';
 document.getElementById('torange').style.width='61.9%';
 
-// Popup Add URL
-function newLink() {
-  document.getElementById('url_popup').classList.remove('alert_hide');  
-  document.getElementById('url_popup_wrapper').classList.remove('alert_hide');   
+// Popups/Modals
+function closeModal() {
+  document.getElementById('overlay1').classList.remove('show')
+  document.getElementById('overlay2').classList.remove('show')
 }
+document.querySelectorAll('#overlay1 .icon-close').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault()
+    closeModal()
+  })
+})
+document.querySelectorAll('#overlay2 .icon-close').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault()
+    closeModal()
+  })
+})
+document.querySelector('#overlay1').addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeModal()
+  }
+})
+document.querySelector('#overlay2').addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeModal()
+  }
+})
+document.addEventListener('keyup', function(e) {
+  if(e.keyCode === 27) {
+    closeModal()
+  }
+})
 
-function closePopup(){
-  document.getElementById('url_popup').classList.add('alert_hide');  
-  document.getElementById('url_popup_wrapper').classList.add('alert_hide');  
+function openModal1(modal) {
+  document.querySelectorAll('#overlay1 > *').forEach(function(modal) {
+    modal.classList.remove('show')
+  })
+  document.querySelector('#overlay1').classList.add('show')
+  document.querySelector('#url_modal').classList.add('show')
 }
+document.querySelectorAll("#add_link1, #add_link2, #add_link3, #add_link4").forEach(function (e) {
+  e.addEventListener('click', function(){ openModal1(); 
+})});
 
-document.querySelector("#add_link1").addEventListener('click', function(){ newLink(); });
-document.querySelector("#add_link2").addEventListener('click', function(){ newLink(); });
-document.querySelector("#add_link3").addEventListener('click', function(){ newLink(); });
-document.querySelector("#add_link4").addEventListener('click', function(){ newLink(); });
-document.querySelector('#url_closeU').addEventListener('click', function(){ closePopup(); });
-document.querySelector('#url_save').addEventListener('click', function(){ closePopup(); });
 
-// Popup Add banners
-function newBanner() {
-  document.getElementById('banner_popup').classList.remove('alert_hideB');  
-  document.getElementById('banner_popup_wrapper').classList.remove('alert_hideB');    
+function openModal2(modal) {
+document.querySelectorAll('#overlay2 > *').forEach(function(modal) {
+    modal.classList.remove('show')
+  })
+  document.querySelector('#overlay2').classList.add('show')
+  document.querySelector('#banner_modal').classList.add('show')
 }
+document.querySelectorAll("#add_banner1, #add_banner2").forEach(function (e) {
+  e.addEventListener('click', function(){ openModal2(); 
+})});
 
-function closePopupB(){
-  document.getElementById('banner_popup').classList.add('alert_hideB');  
-  document.getElementById('banner_popup_wrapper').classList.add('alert_hideB');  
-}
 
-document.querySelector("#add_banner1").addEventListener('click', function(){ newBanner(); });
-document.querySelector("#add_banner2").addEventListener('click', function(){ newBanner(); });
-document.querySelector('#url_closeB').addEventListener('click', function(){ closePopupB();});
-document.querySelector('#banner_save').addEventListener('click', function(){ closePopupB();});  
 
+
+/*
 // Other popups
 
 //Chat
@@ -136,3 +162,4 @@ document.getElementById('close_quit').addEventListener('click', function(){ clos
 
 document.getElementById('go_quit').addEventListener('click', function () { closeQuit();
       window.location.replace("https://github.com/paulinastefanska"); });
+*/
