@@ -12,6 +12,7 @@
 }
 .btn_disabled {
     @include buttonStyle($width: 140px, $height: 40px, $margin: 0 auto, $background: $grey);
+    cursor: default;
     .icon-links {
         padding-right: 10px;
     }

@@ -225,7 +225,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .btn_orange:hover { background-color: #FFA200; }
 
-.btn_disabled { width: 140px; height: 40px; margin: 0 auto; background: #E3E3E3; border: none; display: inline-block; border-radius: 4px; cursor: pointer; color: #fff; transition: all .4s; }
+.btn_disabled { width: 140px; height: 40px; margin: 0 auto; background: #E3E3E3; border: none; display: inline-block; border-radius: 4px; cursor: pointer; color: #fff; transition: all .4s; cursor: default; }
 
 .btn_disabled .icon-links { padding-right: 10px; }
 
