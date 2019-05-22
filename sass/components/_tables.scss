@@ -27,8 +27,7 @@
         width: 100px;
         height: 40px;
         cursor: pointer;
-        display: flex;
-        align-items: center;
+        @include displayFlex($align-items:center, $justify-content:none);
         position: relative;
         &:hover {
             background: $light-grey;

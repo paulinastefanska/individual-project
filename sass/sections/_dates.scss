@@ -2,14 +2,10 @@
     border-bottom: 1px solid $grey;
 }
 .date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displayFlex($align-items:center, $justify-content:center);
     margin: 10px auto;  
     &_inputs {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include displayFlex($align-items:center, $justify-content:space-between);
         height: 40px;
         width: 340px;
         border: 1px solid $grey;

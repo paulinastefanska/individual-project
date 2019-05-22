@@ -1,12 +1,7 @@
 .header {
 	background: #fff;
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 60px;
-	display: flex;
-	justify-content: flex-end;
+	@include fixedStyle($top:0, $right:0, $width:100%, $height:60px);
+	@include displayFlex($align-items:none, $justify-content:flex-end);
 	border-bottom: 1px solid $grey;
 	z-index: 1;
 }
@@ -16,9 +11,7 @@
 	margin: 0;
 	padding: 0;
 	&_item {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@include displayFlex($align-items:center, $justify-content:center);
 		position: relative;
 		padding: 15px;
 		text-decoration: none;
@@ -39,14 +32,14 @@
     }
     [class*='icon-'] {
     	padding: 0 10px;
-    	font-size: 16px;
+    	font-size: $header_font_size;
     }
     .icon-arrow-down-small {
     	font-size: 10px;
     }
 }
 .notific_circle {
-	@include centerAbsolutely($top: 38%, $left: none, $right: 33%, $transform:translate(-50%, -50%));
+	@include centerAbsolutely($top:38%, $left:none, $right:33%, $transform:translate(-50%, -50%));
 	background: $dark_orange;
 	border-radius: 50%;
 	width: 8px;

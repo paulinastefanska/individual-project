@@ -1,9 +1,7 @@
 .long {
 	top: 0;
 	background: $black;
-	height: 100%;
-	width: 200px;
-	position: fixed;
+	@include fixedStyle($top:none, $right:none, $width:200px, $height:100%);
 	line-height: 46px;
 	text-align: left;
 	z-index: 2;
@@ -82,9 +80,7 @@
 .short {
 	top: 0;
 	background: $black;
-	height: 100%;
-	width: 60px;
-	position: fixed;
+	@include fixedStyle($top:none, $right:none, $width:60px, $height:100%);
 	line-height: 46px;
 	text-align: left;
 	z-index: 2;
