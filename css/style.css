@@ -509,7 +509,11 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .url .postback_checkbox .checkbox:hover .icon-show { opacity: 1; }
 
-.url .btn_orange { margin: 0 auto; }
+.url_generated .personal_input { color: #979797; margin: 20px auto; margin-right: 0; width: calc(100% - 340px); }
+
+.url_generated .btn_orange { margin: 20px auto; }
+
+.url_generated .btn_disabled { margin: 20px auto; margin-right: 0; }
 
 .banner.show { display: block; }
 

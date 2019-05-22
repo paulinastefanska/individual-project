@@ -90,9 +90,21 @@
 			}
 		}
 	}
-	.btn_orange {
-		margin: 0 auto;
-	}
+	&_generated {
+		.personal_input {
+			color: $dark_grey;
+			margin: 20px auto;
+			margin-right: 0;
+			width: calc(100% - 340px);
+		}
+		.btn_orange {
+			margin: 20px auto;
+		}
+		.btn_disabled {
+			margin: 20px auto;
+			margin-right: 0;
+		}
+	}	
 }
 
 // Add banner
