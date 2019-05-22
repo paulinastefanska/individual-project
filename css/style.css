@@ -519,13 +519,13 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .banner { width: calc(100% - 260px); margin: auto; background-color: #fff; position: relative; display: none; }
 
+.banner_inputs .personal_input { margin: 0; width: 100%; }
+
 .banner .col_top { padding-top: 0; }
 
 .banner .col_left { border-right: 1px solid #E3E3E3; padding-left: 0; padding-top: 0; }
 
 .banner .col_right { padding-left: 0; padding-top: 0; }
-
-.banner .personal_input { margin: 0; width: 100%; }
 
 .banner .icon-close { position: absolute; right: 20px; cursor: pointer; }
 
@@ -543,7 +543,11 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .banner .postback_checkbox .checkbox:hover .icon-show { opacity: 1; }
 
-.banner .btn_orange { margin: 0 auto; }
+.banner_generated .personal_input { color: #979797; margin: 20px auto; margin-right: 0; width: calc(100% - 340px); }
+
+.banner_generated .btn_orange { margin: 20px auto; }
+
+.banner_generated .btn_disabled { margin: 20px auto; margin-right: 0; }
 
 .message.show { display: block; }
 

@@ -117,6 +117,12 @@
 	background-color: #fff;
 	position: relative;
 	display: none;
+	&_inputs {
+		.personal_input {
+	    	margin: 0;
+	    	width: 100%;
+	    }
+	}
     .col_top {
     	padding-top: 0;
     }
@@ -128,10 +134,6 @@
     .col_right {
 		padding-left: 0;
 		padding-top: 0;
-    }
-    .personal_input {
-    	margin: 0;
-    	width: 100%;
     }
     .icon-close {
 		position: absolute;
@@ -165,9 +167,21 @@
 			}
 		}
 	}
-	.btn_orange {
-		margin: 0 auto;
-	}
+	&_generated {
+		.personal_input {
+			color: $dark_grey;
+			margin: 20px auto;
+			margin-right: 0;
+			width: calc(100% - 340px);
+		}
+		.btn_orange {
+			margin: 20px auto;
+		}
+		.btn_disabled {
+			margin: 20px auto;
+			margin-right: 0;
+		}
+	}	
 }
 
 // Message / chat 
