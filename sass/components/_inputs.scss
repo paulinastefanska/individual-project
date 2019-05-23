@@ -3,7 +3,7 @@
 	&_unit {
 		@include displayFlex($align-items:none, $justify-content:center);
 		flex-wrap: wrap;
-		width: 600px;
+		max-width: 600px;
 		margin: 0 auto;
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -22,6 +22,9 @@
 		&:hover {
 			transition: all .4s;
 			border: 1px solid $dark_grey;
+		}
+		@media(max-width: 767px) {
+			width: auto;
 		}
 	}
 	&_label {
@@ -90,6 +93,9 @@
 		border-top: 1px solid $grey;
 		border-bottom: 1px solid $grey;
 		margin-top: 30px;
+		@media(max-width: 767px) {
+			padding-bottom: 70px !important;
+		}
 	}
 	&_select {
 		-webkit-appearance: none;

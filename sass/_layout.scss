@@ -48,26 +48,28 @@ body {
     float: left;   
 }
 
-// Grid 
+// Grid
 @for $i from 1 through 12 {
-  .col-sm-#{$i} {
-    $width: 100% / 12 * $i;
-    flex: 0 0 $width;
-    max-width: $width;
-  }
-}
+        .col-sm-#{$i} {
+        $width: 100% / 12 * $i;
+        flex: 0 0 $width;
+        max-width: $width;
+        }
+    }
+
+// Media query
 @media(max-width: 767px) {
-  @include grid('sm');
+    @include grid('sm');
 }
 
 @media(min-width: 768px) {
-  @include grid('md');
+    @include grid('md');
 }
 
 @media(min-width: 992px) {
-  @include grid('lg');
+    @include grid('lg');
 }
 
 @media(min-width: 1200px) {
-  @include grid('xl');
+    @include grid('xl');
 }

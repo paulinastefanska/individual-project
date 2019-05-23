@@ -29,7 +29,7 @@
 	width: $width;
 	height: $height;
 }
-// Grid 
+// Grid media query
 @mixin grid($prefix) {
   @for $i from 1 through 12 {
     .col-#{$prefix}-#{$i} {

@@ -69,11 +69,11 @@
 				</div>
 				<div class="general_result container">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-md-6">
 							<p class="general_text">Visit Signups <span class="general_no">124</span></p>
 							<p class="general_text">FTD <span class="general_no">445</span></p>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-md-6">
 							<p class="general_text">New deposit <span class="general_no">564</span></p>
 							<p class="general_text">Turn over <span class="general_no">432</span></p>
 						</div>
@@ -593,7 +593,7 @@
 					<table class="details_table container">
 						<thead>
 							<tr class="details_name">
-								<th><div class="details_sorter">Date<i class="icon-arrow-up-small payout_icon"></i></div></th>
+								<th><div class="details_sorter">Date<i class="icon-arrow-up-small"></i></div></th>
 								<th>Amount ($)</th>
 								<th>Deal</th>
 								<th>Account</th>
@@ -672,19 +672,19 @@
 				<p class="postback_text">You can insert some parameters in this postback:</p>
 				<form>
 					<div class="row postback_inputs">
-						<div class="col-sm-6">
+						<div class="col-md-6">
 							<p class="postback_paragraph">Signup:</p>
 							<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
 subid=%p%"></textarea>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-md-6">
 							<p class="postback_paragraph">Deposit:</p>
 							<textarea rows="10" class="postback_input" placeholder="crm_userld=%user_id% 
 subid=%p%"></textarea>
 						</div>
 					</div>
 					<div class="row postback_inputs">
-						<div class="col-sm-4">
+						<div class="col-md-4">
 							<p class="postback_paragraph">Postback type:</p>
 							<select class="postback_select" name="postback-type">
 		                        <option value="S2S">S2S (http://..)</option>
@@ -694,7 +694,7 @@ subid=%p%"></textarea>
 		                        <option value="S2S">S2S (http://..)</option>
 		                	</select>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-md-4">
 							<p class="postback_paragraph">To countries:</p>
 							<select class="postback_select" name="to-countries">
 		                        <option value="select-countries">Select countries</option>
@@ -704,7 +704,7 @@ subid=%p%"></textarea>
 		                        <option value="select-countries">Select countries</option>
 		                	</select>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-md-4">
 							<p class="postback_paragraph">Sending options:</p>
 							<select class="postback_select" name="sending-options">
 		                        <option value="select">Select</option>
@@ -716,7 +716,7 @@ subid=%p%"></textarea>
 						</div>
 					</div>
 					<div class="row postback_inputs">
-						<div class="col-sm-6 postback_col_left">
+						<div class="col-md-6 postback_col_left">
 							<p class="postback_paragraph"><span>NOT</span> send statuses:</p>
 							<div class="postback_checkbox">
 								<div class="checkbox">	
@@ -769,7 +769,7 @@ subid=%p%"></textarea>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 postback_col_right">
+						<div class="col-md-6 postback_col_right">
 							<p class="postback_paragraph">Send after:</p>
 							<label class="postback_label">0 <span class="postback_left">168</span></label>
 							<div class="postback_range">
@@ -794,15 +794,16 @@ subid=%p%"></textarea>
 		<div class="url" id="url_modal">
 			<h2 class="section_header">ADD URL<i class="icon-close"></i></h2>
 			<div class="row url_inputs">
-				<div class="col-sm-5">
+				<div class="col-md-5">
 					<form>
 						<p class="url_label">Scheme name</p>
 						<input class="personal_input" type="text" placeholder="Name" name="name" id="name2" required>
 					</form>
 				</div>
-				<div class="col-sm-5">
+				<div class="col-md-5">
 					<form>
-						<select class="postback_select url_compain" name="postback-type">
+						<p class="url_label">Compain</p>
+						<select class="postback_select name="postback-type">
 	                        <option value="select-compain">Select compain</option>
 	                        <option value="select-compain">Select compain</option>
 	                        <option value="select-compain">Select compain</option>
@@ -811,7 +812,7 @@ subid=%p%"></textarea>
 	                    </select>
 	                </form>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-md-2">
                 	<form>
 	                	<p class="url_label">Language</p>
 						<select class="postback_select" name="postback-type">
@@ -1024,13 +1025,13 @@ subid=%p%"></textarea>
 		<div class="banner" id="banner_modal">
 			<h2 class="section_header">ADD BANNERS<i class="icon-close"></i></h2>
 			<div class="row banner_inputs">
-				<div class="col-sm-5">
+				<div class="col-md-5">
 					<form>
 						<p class="url_label">Scheme name</p>
 						<input class="personal_input" type="text" placeholder="Name" name="name" id="name4" required>
 					</form>
 				</div>
-				<div class="col-sm-5">
+				<div class="col-md-5">
 					<form>
 						<p class="url_label">Compain</p>
 						<select class="postback_select" name="postback-type">
@@ -1042,7 +1043,7 @@ subid=%p%"></textarea>
 	                    </select>
 	                </form>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-md-2">
                 	<form>
 	                	<p class="url_label">Language</p>
 						<select class="postback_select" name="postback-type">
@@ -1056,7 +1057,7 @@ subid=%p%"></textarea>
                 </div>
             </div>
             <div class="row url_inputs">
-				<div class="col-sm-4 col_top">
+				<div class="col-md-4 col_top">
 					<form>
 						<p class="url_label">Weight-Height</p>
 						<select class="postback_select" name="postback-type">
@@ -1068,7 +1069,7 @@ subid=%p%"></textarea>
 	                    </select>
 					</form>
 				</div>
-				<div class="col-sm-4 col_top">
+				<div class="col-md-4 col_top">
 					<form>
 						<p class="url_label">Design</p>
 						<select class="postback_select" name="postback-type">
@@ -1080,7 +1081,7 @@ subid=%p%"></textarea>
 	                    </select>
 	                </form>
                 </div>
-                <div class="col-sm-4 col_top">
+                <div class="col-md-4 col_top">
                 	<form>
 	                	<p class="url_label">File type</p>
 						<select class="postback_select" name="postback-type">
@@ -1094,7 +1095,7 @@ subid=%p%"></textarea>
                 </div>
             </div>
             <div class="row url_select">
-            	<div class="col-sm-6 col_left">
+            	<div class="col-md-6 col_left">
 	            	<p class="url_paragraph">Select banners</p>
 	            	<form>
 	            		<div class="postback_checkbox">
@@ -1173,7 +1174,7 @@ subid=%p%"></textarea>
 						</div>	
 					</form>
 				</div>
-				<div class="col-sm-6 col_right">
+				<div class="col-md-6 col_right">
 					<p class="url_paragraph">Select websites</p>
 	            	<form>
 						<div class="postback_checkbox">

@@ -10,14 +10,9 @@
         font-size: $paragraph_font_size;
         border-collapse: collapse;
         line-height: 60px;
-        text-align: left;
-        th {
-            padding-left: 8px;
+        text-align: center;
+        th, td {
             border-bottom: 1px solid $grey;
-        }
-        td {
-            border-bottom: 1px solid $grey;
-            padding-left: 10px;
         }
     }
     &_name {
@@ -29,8 +24,7 @@
         transition: all .2s ease-in-out;
     }
     &_sorter {
-        width: 100px;
-        height: 40px;
+        padding-left: 10px;
         cursor: pointer;
         @include displayFlex($align-items:center, $justify-content:none);
         position: relative;
@@ -40,7 +34,7 @@
         }
     }
     &_pagination {
-        width: 100%;
+        margin: auto;
         display: inline-block;
         padding-top: 30px;
         padding-bottom: 10px;
@@ -64,12 +58,21 @@
 }
 .icon-arrow-up-small {
     font-size: 10px;
-    margin-left: 8px;
-    @include centerAbsolutely($top: 40%, $left: none, $right: 0%, $transform:translate(-50%, -50%));
+    @include centerAbsolutely($top: 40%, $left: none, $right: 10%, $transform:translate(-50%, -50%));
 }
-.payout_icon {
-    margin-left: 8px;
-    @include centerAbsolutely($top: 40%, $left: 50%, $right: none, $transform:translate(-50%, -50%));
+.payout {
+    .details_table {
+        text-align: left;
+    }
+    .details_row td {
+        padding-left: 10px;
+    }
+    .details_sorter {
+        width: 80px;
+    }
+    .icon-arrow-up-small {
+        @include centerAbsolutely($top: 40%, $left: none, $right: 20%, $transform:translate(-50%, -50%));
+    }
 }
 
 // Links and banners page table
@@ -119,5 +122,8 @@
         opacity: 0;
         text-align: right;
         padding-right: 20px;
+        @media(max-width: 767px) {
+            opacity: 1;
+        }
     }
 }

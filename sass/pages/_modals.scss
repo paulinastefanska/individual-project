@@ -25,6 +25,9 @@
 	background-color: #fff;
 	position: relative;
 	display: none;
+	@media(max-width: 767px) {
+		width: calc(100% - 60px);
+	}
 	&_select {
 		border-bottom: 1px solid $grey;
 	}
@@ -55,9 +58,6 @@
 	}
 	&_inputs {
 		border-bottom: 1px solid $grey;
-	}
-	&_compain {
-		margin-top: 40px !important;
 	}
 	.icon-close {
 		position: absolute;
@@ -117,6 +117,9 @@
 	background-color: #fff;
 	position: relative;
 	display: none;
+	@media(max-width: 767px) {
+		width: calc(100% - 60px);
+	}
 	&_inputs {
 		.personal_input {
 	    	margin: 0;
@@ -194,6 +197,9 @@
 	background-color: #fff;
 	position: relative;
 	display: none;
+	@media(max-width: 767px) {
+		width: calc(100% - 60px);
+	}
     .icon-close {
     	cursor: pointer;
     	position: absolute;
@@ -260,6 +266,9 @@
 	background-color: #fff;
 	position: relative;
 	display: none;
+	@media(max-width: 767px) {
+		width: 400px;
+	}
     .row {
     	margin: 20px 20px;
     }
@@ -267,6 +276,14 @@
 		width: 250px;
 		margin: 20px auto;
 		margin-right: 10px;
+		@media(max-width: 767px) {
+			width: 150px;
+			margin: 10px auto;
+		}
+	}
+	.btn_orange {
+		margin: 10px auto;
+		width: auto;
 	}
 }
 // Quit
