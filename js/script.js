@@ -110,7 +110,7 @@ document.querySelectorAll("#add_banner1, #add_banner2").forEach(function (e) {
   e.addEventListener('click', function(){ openModal2(); 
 })});
 
-// Popups
+// Popups chat login quit
 function closePopup() {
   document.getElementById('overlay_chat').classList.remove('show')
   document.getElementById('overlay_login').classList.remove('show')
@@ -188,4 +188,43 @@ document.querySelectorAll('#overlay_quit > *').forEach(function(modal) {
   document.querySelector('#quit_modal').classList.add('show')
 }
 document.querySelector("#start_quit").addEventListener('click', function(){ openPopup3(); 
+});
+
+// Chart
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+        datasets: [{
+            label: "Signups",
+            backgroundColor: '#8DBEC8',
+            borderColor: '#8DBEC8',
+            data: [ 350, 200, 220, 350, 420, 400, 300, 280, 300, 280 ],
+        },
+        {
+            label: "FTD",
+            backgroundColor: '#F29E4E',
+            borderColor: '#F29E4E',
+            data: [ 400, 180, 300, 280, 450, 150, 200, 480, 320, 200 ],
+        },
+        {
+            label: "Earned",
+            backgroundColor: '#71B374',
+            borderColor: '#71B374',
+            data: [ 350, 200, 220, 350, 420, 400, 300, 280, 300, 280 ],
+            hidden: true,
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                  max: 600,
+                  min: 0,
+                  stepSize: 100
+                }
+            }]
+        }
+    }
 });
