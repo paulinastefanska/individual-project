@@ -655,7 +655,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 @media (max-width: 767px) { .login .personal_input { width: 150px; margin: 10px auto; } }
 
-.login .btn_orange { margin: 10px auto; width: auto; }
+@media (max-width: 767px) { .login .btn_orange { width: auto; margin: 10px auto; } }
 
 .quit.show { display: block; }
 
