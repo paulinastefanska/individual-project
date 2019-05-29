@@ -43,6 +43,10 @@
     [class*='icon-'] {
     	padding: 0 10px;
     	font-size: $header_font_size;
+    	@media(max-width: 767px) {
+    		padding: 0 5px;
+    		font-size: 14px;
+    	}
     }
     .icon-arrow-down-small {
     	font-size: 10px;
