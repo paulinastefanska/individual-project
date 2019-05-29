@@ -22,13 +22,23 @@
 		&:hover {
 			background: $light_grey;
 		}
+		@media(max-width: 767px) {
+			padding: 5px;
+			font-size: 14px;
+		}
 	}
 	&_money {
 		font-weight: 700;
+		@media(max-width: 767px) {
+			font-size: 14px;
+		}
 	}
 	&_name {
 		font-size: $paragraph_font_size;
         color: $blue;
+        @media(max-width: 767px) {
+			font-size: 14px;
+		}
     }
     [class*='icon-'] {
     	padding: 0 10px;

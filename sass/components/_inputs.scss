@@ -8,6 +8,11 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 		font-size: $header_font_size;
+		@media(max-width: 767px) {
+			font-size: 14px;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&_input {
 		justify-content: space-around;
@@ -24,7 +29,7 @@
 			border: 1px solid $dark_grey;
 		}
 		@media(max-width: 767px) {
-			width: auto;
+			width: 90%;
 		}
 	}
 	&_label {
