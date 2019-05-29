@@ -130,6 +130,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 [class*="col-"] { width: 100%; padding: 25px; float: left; }
 
+@media (max-width: 767px) { [class*="col-"] { padding: 15px; } }
+
 .col-sm-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
 
 .col-sm-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
