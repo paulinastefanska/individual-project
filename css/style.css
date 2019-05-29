@@ -295,9 +295,11 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .personal_input:hover { transition: all .4s; border: 1px solid #979797; }
 
-@media (max-width: 767px) { .personal_input { width: 90%; } }
+@media (max-width: 767px) { .personal_input { width: 90%; height: 30px; margin: 5px 0; } }
 
 .personal_label { width: 150px; height: 40px; line-height: 40px; text-align: left; margin: 10px 0; font-weight: 700; color: #979797; }
+
+@media (max-width: 767px) { .personal_label { height: 20px; margin: 5px 0; } }
 
 .personal_line { border-top: 1px solid #E3E3E3; }
 
@@ -450,15 +452,15 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .top_item:hover { background: #F5F5F2; }
 
-@media (max-width: 767px) { .top_item { padding: 5px; font-size: 14px; } }
+@media (max-width: 767px) { .top_item { padding: 5px; font-size: 12px; } }
 
 .top_money { font-weight: 700; }
 
-@media (max-width: 767px) { .top_money { font-size: 14px; } }
+@media (max-width: 767px) { .top_money { font-size: 12px; } }
 
 .top_name { font-size: 14px; color: #56819F; }
 
-@media (max-width: 767px) { .top_name { font-size: 14px; } }
+@media (max-width: 767px) { .top_name { font-size: 12px; } }
 
 .top [class*='icon-'] { padding: 0 10px; font-size: 16px; }
 
@@ -466,7 +468,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .notific_circle { position: absolute; top: 38%; left: none; right: 33%; transform: translate(-50%, -50%); background: #F58220; border-radius: 50%; width: 8px; height: 8px; }
 
-.long { top: 0; background: #191919; position: fixed; top: none; right: none; width: 200px; height: 100%; line-height: 46px; text-align: left; z-index: 2; transition: .45s ease; }
+.long { top: 0; background: #191919; position: fixed; top: none; right: none; width: 200px; height: 100%; line-height: 46px; text-align: left; z-index: 2; transition: all .45s ease; }
 
 .long .logo { padding-left: 20px; padding-top: 20px; }
 
@@ -496,7 +498,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .long .menu_user { padding-left: 8px; color: #56819F; }
 
-.short { top: 0; background: #191919; position: fixed; top: none; right: none; width: 60px; height: 100%; line-height: 46px; text-align: left; z-index: 2; transition: .45s ease; }
+.short { top: 0; background: #191919; position: fixed; top: none; right: none; width: 60px; height: 100%; line-height: 46px; text-align: left; z-index: 2; transition: all .45s ease; }
 
 .short .hamburger { display: inline-block; padding-top: 16px; float: right; margin-right: 18px; opacity: 0.6; }
 
@@ -528,11 +530,19 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .date_inputs:hover .date_icon { color: #191919; }
 
+@media (max-width: 767px) { .date_inputs { width: 90%; font-size: 14px; margin-left: 10px; } }
+
 .date_start { justify-content: flex-start; padding: 5px 0 5px 15px; }
+
+@media (max-width: 767px) { .date_start { padding: 5px 0 5px 5px; } }
 
 .date_end { justify-content: flex-start; padding: 5px 0 5px 15px; border-left: 1px solid #E3E3E3; }
 
+@media (max-width: 767px) { .date_end { padding: 5px 0 5px 5px; } }
+
 .date_icon { justify-content: flex-end; color: #979797; padding-right: 15px; }
+
+@media (max-width: 767px) { .date_icon { padding-right: 5px; } }
 
 /* Pages / Views */
 .general_result { max-width: 800px; text-align: left; color: #979797; font-size: 16px; line-height: 30px; }
@@ -555,7 +565,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .url { width: calc(100% - 260px); margin: auto; background-color: #fff; position: relative; display: none; }
 
-@media (max-width: 767px) { .url { width: calc(100% - 60px); } }
+@media (max-width: 767px) { .url { width: calc(100% - 40px); } }
 
 .url_select { border-bottom: 1px solid #E3E3E3; }
 
@@ -584,6 +594,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .url .postback_checkbox .checkbox:hover .icon-show { opacity: 1; }
 
 .url_generated .personal_input { color: #979797; margin: 20px auto; margin-right: 0; width: calc(100% - 340px); }
+
+@media (max-width: 767px) { .url_generated .personal_input { width: 100%; margin-left: 5px; margin-right: 5px; } }
 
 .url_generated .btn_orange { margin: 20px auto; }
 
@@ -629,7 +641,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .message { width: calc(100% - 260px); margin: auto; background-color: #fff; position: relative; display: none; }
 
-@media (max-width: 767px) { .message { width: calc(100% - 60px); } }
+@media (max-width: 767px) { .message { width: calc(100% - 40px); } }
 
 .message .icon-close { cursor: pointer; position: absolute; right: 25px; }
 

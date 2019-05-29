@@ -26,7 +26,7 @@
 	position: relative;
 	display: none;
 	@media(max-width: 767px) {
-		width: calc(100% - 60px);
+		width: calc(100% - 40px);
 	}
 	&_select {
 		border-bottom: 1px solid $grey;
@@ -96,13 +96,24 @@
 			margin: 20px auto;
 			margin-right: 0;
 			width: calc(100% - 340px);
+			@media(max-width: 767px) {
+				width: 100%;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
 		}
 		.btn_orange {
 			margin: 20px auto;
+			//@media(max-width: 767px) {
+			//	width: auto;
+			//}
 		}
 		.btn_disabled {
 			margin: 20px auto;
 			margin-right: 0;
+			//@media(max-width: 767px) {
+			//	width: auto;
+			//}
 		}
 	}	
 }
@@ -198,7 +209,7 @@
 	position: relative;
 	display: none;
 	@media(max-width: 767px) {
-		width: calc(100% - 60px);
+		width: calc(100% - 40px);
 	}
     .icon-close {
     	cursor: pointer;
