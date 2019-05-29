@@ -452,15 +452,15 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .top_item:hover { background: #F5F5F2; }
 
-@media (max-width: 767px) { .top_item { padding: 5px; font-size: 12px; } }
+@media (max-width: 767px) { .top_item { padding: 5px; font-size: 14px; overflow-wrap: break-word; } }
 
 .top_money { font-weight: 700; }
 
-@media (max-width: 767px) { .top_money { font-size: 12px; } }
+@media (max-width: 767px) { .top_money { font-size: 14px; } }
 
 .top_name { font-size: 14px; color: #56819F; }
 
-@media (max-width: 767px) { .top_name { font-size: 12px; } }
+@media (max-width: 767px) { .top_name { font-size: 14px; } }
 
 .top [class*='icon-'] { padding: 0 10px; font-size: 16px; }
 
@@ -567,7 +567,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .url { width: calc(100% - 260px); margin: auto; background-color: #fff; position: relative; display: none; }
 
-@media (max-width: 767px) { .url { width: calc(100% - 40px); } }
+@media (max-width: 767px) { .url { width: calc(100% - 20px); } }
 
 .url_select { border-bottom: 1px solid #E3E3E3; }
 
@@ -601,13 +601,17 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .url_generated .btn_orange { margin: 20px auto; }
 
+@media (max-width: 767px) { .url_generated .btn_orange { margin: 10px; width: 120px; } }
+
 .url_generated .btn_disabled { margin: 20px auto; margin-right: 0; }
+
+@media (max-width: 767px) { .url_generated .btn_disabled { margin: 10px; width: 120px; } }
 
 .banner.show { display: block; }
 
 .banner { width: calc(100% - 260px); margin: auto; background-color: #fff; position: relative; display: none; }
 
-@media (max-width: 767px) { .banner { width: calc(100% - 60px); } }
+@media (max-width: 767px) { .banner { width: calc(100% - 20px); } }
 
 .banner_inputs .personal_input { margin: 0; width: 100%; }
 
@@ -643,7 +647,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .message { width: calc(100% - 260px); margin: auto; background-color: #fff; position: relative; display: none; }
 
-@media (max-width: 767px) { .message { width: calc(100% - 40px); } }
+@media (max-width: 767px) { .message { width: calc(100% - 20px); } }
 
 .message .icon-close { cursor: pointer; position: absolute; right: 25px; }
 

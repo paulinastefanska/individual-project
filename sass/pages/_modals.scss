@@ -26,7 +26,7 @@
 	position: relative;
 	display: none;
 	@media(max-width: 767px) {
-		width: calc(100% - 40px);
+		width: calc(100% - 20px);
 	}
 	&_select {
 		border-bottom: 1px solid $grey;
@@ -104,10 +104,18 @@
 		}
 		.btn_orange {
 			margin: 20px auto;
+			@media(max-width: 767px) {
+				margin: 10px;
+				width: 120px;
+			}
 		}
 		.btn_disabled {
 			margin: 20px auto;
 			margin-right: 0;
+			@media(max-width: 767px) {
+				margin: 10px;
+				width: 120px;
+			}
 		}
 	}	
 }
@@ -123,7 +131,7 @@
 	position: relative;
 	display: none;
 	@media(max-width: 767px) {
-		width: calc(100% - 60px);
+		width: calc(100% - 20px);
 	}
 	&_inputs {
 		.personal_input {
@@ -203,7 +211,7 @@
 	position: relative;
 	display: none;
 	@media(max-width: 767px) {
-		width: calc(100% - 40px);
+		width: calc(100% - 20px);
 	}
     .icon-close {
     	cursor: pointer;
@@ -298,7 +306,6 @@
 	}
 	.btn_orange {
 		@media(max-width: 767px) {
-			//width: auto;
 			margin: 10px auto;
 		}
 	}
