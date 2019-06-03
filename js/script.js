@@ -57,7 +57,7 @@ document.getElementById('torange').style.width='61.9%';
 
 // Modals add url, add banner
 
-function(){ 
+/*function(){ 
   var showModal = function(event){
     event.preventDefault();
     document.querySelector('.overlay').classList.add('show');
@@ -93,8 +93,9 @@ function(){
     hideModal()}
   })
 };
+*/
 
-/*
+
 function closeModal() {
   document.getElementById('overlay1').classList.remove('show')
   document.getElementById('overlay2').classList.remove('show')
@@ -148,8 +149,6 @@ document.querySelectorAll('#overlay2 > *').forEach(function(modal) {
 document.querySelectorAll("#add_banner1, #add_banner2").forEach(function (e) {
   e.addEventListener('click', function(){ openModal2(); 
 })});
-
-*/
 
 // Popups chat login quit
 function closePopup() {
