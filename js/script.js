@@ -56,6 +56,45 @@ document.getElementById('triangle').style.marginLeft='61.9%';
 document.getElementById('torange').style.width='61.9%';
 
 // Modals add url, add banner
+
+function(){ 
+  var showModal = function(event){
+    event.preventDefault();
+    document.querySelector('.overlay').classList.add('show');
+    document.querySelector('.modal').classList.add('show');
+  }
+  
+  var modalLinks = document.querySelectorAll('.add_link');
+  for(var i = 0; i < modalLinks.length; i++){
+    modalLinks[i].addEventListener('click', showModal);
+  }
+
+  var hideModal = function(event){
+    event.preventDefault();
+    document.querySelector('.overlay').classList.remove('show');
+    document.querySelector('.modal').classList.remove('show');
+  }
+  
+  var closeButtons = document.querySelectorAll('.modal .icon-close');
+  for(var i = 0; i < closeButtons.length; i++){
+    closeButtons[i].addEventListener('click', hideModal);
+  }
+  
+  document.querySelector('.overlay').addEventListener('click', hideModal);
+  
+  var modals = document.querySelectorAll('.modal');
+  for(var i = 0; i < modals.length; i++){
+    modals[i].addEventListener('click', function(event){
+      event.stopPropagation();
+    })
+  }
+  document.addEventListener('keyup', function(e) {
+  if(e.keyCode === 27) {
+    hideModal()}
+  })
+};
+
+/*
 function closeModal() {
   document.getElementById('overlay1').classList.remove('show')
   document.getElementById('overlay2').classList.remove('show')
@@ -109,6 +148,8 @@ document.querySelectorAll('#overlay2 > *').forEach(function(modal) {
 document.querySelectorAll("#add_banner1, #add_banner2").forEach(function (e) {
   e.addEventListener('click', function(){ openModal2(); 
 })});
+
+*/
 
 // Popups chat login quit
 function closePopup() {
