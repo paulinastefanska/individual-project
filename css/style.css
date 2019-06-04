@@ -474,6 +474,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .long { top: 0; background: #191919; position: fixed; top: none; right: none; width: 200px; height: 100%; line-height: 46px; text-align: left; z-index: 2; transition: all .45s ease; }
 
+.long .logo_ham { height: 60px; overflow: hidden; }
+
 .long .logo { padding-left: 20px; padding-top: 20px; }
 
 .long .hamburger { display: inline-block; padding-top: 16px; float: right; margin-right: 18px; opacity: 0.6; }
@@ -492,15 +494,17 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .long .menu_line { border-top: 1px solid #414141; margin-top: 20px; }
 
-.long .menu_manager { text-transform: uppercase; font-weight: 500; margin-top: 20px; padding-left: 18px; color: #979797; }
+.long .menu_manager { height: 46px; overflow: hidden; text-transform: uppercase; font-weight: 500; margin-top: 20px; padding-left: 18px; color: #979797; }
 
-.long .menu_avatar { cursor: pointer; padding-left: 18px; }
+.long .menu_avatar { height: 46px; overflow: hidden; cursor: pointer; padding-left: 18px; }
 
 .long .menu_avatar:hover .menu_user { color: #FFA200; }
 
 .long .menu_avatar img { vertical-align: middle; }
 
 .long .menu_user { padding-left: 8px; color: #56819F; }
+
+.long .menu li { height: 46px; overflow: hidden; }
 
 .short { top: 0; background: #191919; position: fixed; top: none; right: none; width: 60px; height: 100%; line-height: 46px; text-align: left; z-index: 2; transition: all .45s ease; }
 
@@ -523,6 +527,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .short .menu_avatar { cursor: pointer; margin-top: 30px; padding-left: 8px; }
 
 .short .menu_avatar img { vertical-align: middle; }
+
+.short .menu li { height: 46px; overflow: hidden; }
 
 .date_section { border-bottom: 1px solid #E3E3E3; }
 
