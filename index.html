@@ -14,22 +14,22 @@
 		<header class="header">
 			<ul class="top">
 				<li class="top_item">
-					<button class="modalTrigger">
+					<button class="btn_top modalTrigger">
 						<i class="icon-wallet"></i><span class="top_money">$1,500.00</span><i class="icon-arrow-down-small"></i>
 					</button>
 				</li>
 				<li class="top_item">
-					<button class="modalTrigger">
+					<button class="btn_top modalTrigger">
 						<i class="icon-notification"></i><div class="notific_circle"></div>
 					</button>
 				</li>
 				<li class="top_item">
-					<button class="modalTrigger" data-target="start_login">
+					<button class="btn_top modalTrigger" data-target="start_login">
 						<i class="icon-profile"></i><span class="top_name">Leonardo Dicaprio</span>
 					</button>
 				</li>
 				<li class="top_item">
-					<button class="modalTrigger" data-target="start_quit">
+					<button class="btn_top modalTrigger" data-target="start_quit">
 						<i class="icon-quit"></i>
 					</button>
 				</li>
@@ -102,7 +102,7 @@
 			</section>
 			<section class="section gen_links">
 				<h1 class="section_header">links</h1>
-				<button class="btn_orange add_link" id="add_link1">+ add new</button>
+				<button class="btn_orange modalTrigger" data-target="url_modal">+ add new</button>
 				<div class="scroll_wrapper">
 					<table class="links_table container">
 						<tbody>
@@ -208,7 +208,7 @@
 						</tbody>
 					</table>
 				</div>
-				<button class="btn_orange add_link" id="add_link2">+ add new</button>
+				<button class="btn_orange modalTrigger" data-target="url_modal">+ add new</button>
 			</section>
 		</div>
 
@@ -372,7 +372,7 @@
 	<!--LINKS PAGE-->
 			<section class="section links toggle hidden" id="links_section">
 				<h1 class="section_header">links</h1>
-				<button class="btn_orange add_link" id="add_link3">+ add new</button>
+				<button class="btn_orange modalTrigger" data-target="url_modal">+ add new</button>
 				<div class="scroll_wrapper">
 					<table class="links_table container">
 						<tbody>
@@ -478,13 +478,13 @@
 						</tbody>
 					</table>
 				</div>
-				<button class="btn_orange add_link" id="add_link4">+ add new</button>
+				<button class="btn_orange modalTrigger" data-target="url_modal">+ add new</button>
 			</section>
 
 	<!--BANNERS PAGE-->
 			<section class="section banners toggle hidden" id="banners_section">
 				<h1 class="section_header">banners</h1>
-				<button class="btn_orange" id="add_banner1">+ add new</button>
+				<button class="btn_orange modalTrigger" data-target="url_modal">+ add new</button>
 				<div class="scroll_wrapper">
 					<table class="links_table container">
 						<tbody>
@@ -551,7 +551,7 @@
 						</tbody>
 					</table>
 				</div>
-				<button class="btn_orange" id="add_banner2">+ add new</button>
+				<button class="btn_orange modalTrigger" data-target="url_modal">+ add new</button>
 			</section>
 
 	<!--PERSONAL DATA PAGE-->
@@ -812,9 +812,9 @@ subid=%p%"></textarea>
 <!--POPUPS/MODALS-->
 
 	<!--ADD URL/LINK-->
-	<div class="overlay">		
-		<div class="url modal" id="url_modal">
-			<h2 class="section_header">ADD URL<i class="icon-close"></i></h2>
+	<div class="overlay" id="url_modal">		
+		<div class="url modal">
+			<h2 class="section_header">ADD URL<i class="icon-close closeButton"></i></h2>
 			<div class="row url_inputs">
 				<div class="col-md-5">
 					<form>
@@ -1037,14 +1037,14 @@ subid=%p%"></textarea>
             <div class="row url_generated">
 				<input class="personal_input" type="text" placeholder="Generated link" name="generated" id="name3">
 				<button type="button" disabled class="btn_disabled"><i class="icon-links"></i>Copy link</button>
-				<button type="submit" class="btn_orange" id="url_save">Save</button>
+				<button type="submit" class="btn_orange closeButton">Save</button>
 		    </div>    	
 		</div>
 	</div>
 
 	<!--ADD BANNERS-->
-	<div class="overlay">		
-		<div class="banner modal" id="banner_modal">
+	<div class="overlay" id="banner_modal">		
+		<div class="banner modal">
 			<h2 class="section_header">ADD BANNERS<i class="icon-close"></i></h2>
 			<div class="row banner_inputs">
 				<div class="col-md-5">
