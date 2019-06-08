@@ -589,6 +589,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .url .postback_checkbox .checkbox:hover .icon-show { opacity: 1; }
 
+@media (max-width: 767px) { .url .postback_checkbox .checkbox { opacity: 1; } }
+
 .url_generated .personal_input { color: #979797; margin: 20px auto; margin-right: 0; width: calc(100% - 340px); }
 
 @media (max-width: 767px) { .url_generated .personal_input { width: 100%; margin-left: 5px; margin-right: 5px; } }
@@ -628,6 +630,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .banner .postback_checkbox .checkbox { padding: 8px 25px; }
 
 .banner .postback_checkbox .checkbox:hover .icon-show { opacity: 1; }
+
+@media (max-width: 767px) { .banner .postback_checkbox .checkbox { opacity: 1; } }
 
 .banner_generated .personal_input { color: #979797; margin: 20px auto; margin-right: 0; width: calc(100% - 340px); }
 
