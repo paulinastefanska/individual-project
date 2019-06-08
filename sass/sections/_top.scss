@@ -53,7 +53,7 @@
     }
 }
 .notific_circle {
-	@include centerAbsolutely($top:39%, $left:auto, $right:25%, $transform:translate(-50%, -50%));
+	@include centerAbsolutely($top:39%, $left:auto, $right:33%, $transform:translate(-50%, -50%));
 	background: $dark_orange;
 	border-radius: 50%;
 	width: 8px;
