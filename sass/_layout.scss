@@ -12,11 +12,16 @@ body {
     width: calc(100% - 240px);
     transition: all .45s ease;
 }
-.fullwidth {
+.active_menu{
     margin: 80px 0 0 80px;
     width: calc(100% - 100px);
     transition: all .45s ease;
 }
+//.fullwidth {
+  //  margin: 80px 0 0 80px;
+    //width: calc(100% - 100px);
+   // transition: all .45s ease;
+//}
 .container {
     margin: 0 auto;
     width: 100%;

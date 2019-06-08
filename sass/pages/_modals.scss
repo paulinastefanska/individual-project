@@ -9,22 +9,28 @@
 	display: none;
 }
 .overlay::webkit-scrollbar {
-  display: none;
+  	display: none;
 }
-.overlay.show {
-  display: flex;
+.show {
+	display: flex;
+}
+.modalTrigger {
+	background: none; 
+	border: none; 
+	padding: 15px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	color: $dark_grey;
+
 }
 
-// Add url/link
-.url.show {
-  display: block;
-}
 .url {
 	width: calc(100% - 260px);
 	margin: auto;
 	background-color: #fff;
 	position: relative;
-	display: none;
+	display: block;
 	@media(max-width: 767px) {
 		width: calc(100% - 20px);
 	}
@@ -120,16 +126,12 @@
 	}	
 }
 
-// Add banner
-.banner.show {
-  display: block;
-}
 .banner {
 	width: calc(100% - 260px);
 	margin: auto;
 	background-color: #fff;
 	position: relative;
-	display: none;
+	display: block;
 	@media(max-width: 767px) {
 		width: calc(100% - 20px);
 	}
@@ -213,16 +215,12 @@
 	}	
 }
 
-// Message / chat 
-.message.show {
-  display: block;
-}
 .message {
 	width: calc(100% - 260px);
 	margin: auto;
 	background-color: #fff;
 	position: relative;
-	display: none;
+	display: block;
 	@media(max-width: 767px) {
 		width: calc(100% - 20px);
 	}
@@ -292,16 +290,12 @@
     }
 }
 
-// Login
-.login.show {
-  display: block;
-}
 .login {
 	width: 700px;
 	margin: auto;
 	background-color: #fff;
 	position: relative;
-	display: none;
+	display: block;
 	@media(max-width: 767px) {
 		width: auto;
 	}
@@ -323,16 +317,13 @@
 		}
 	}
 }
-// Quit
-.quit.show {
-  display: block;
-}
+
 .quit {
 	width: 350px;
 	margin: auto;
 	background-color: #fff;
 	position: relative;
-	display: none;
+	display: block;
     .section_header {
         text-transform: none;
     }

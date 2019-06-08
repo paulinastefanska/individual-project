@@ -1,7 +1,6 @@
-.long {
-	top: 0;
+.menu_long {
 	background: $black;
-	@include fixedStyle($top:none, $right:none, $width:200px, $height:100%);
+	@include fixedStyle($top:0, $right:auto, $width:200px, $height:100%);
 	line-height: 46px;
 	text-align: left;
 	z-index: 2;
@@ -90,64 +89,16 @@
 
 // Short menu
 .short {
-	top: 0;
-	background: $black;
-	@include fixedStyle($top:none, $right:none, $width:60px, $height:100%);
-	line-height: 46px;
-	text-align: left;
-	z-index: 2;
-	transition: all .45s ease;
-	.hamburger {
-		display: inline-block;
-		padding-top: 16px;
-		float: right;
-		margin-right: 18px;
-		opacity: 0.6;
-		&:hover {
-		opacity: 1;
-		}
-		.menu_ham {
-			width: 25px;
-			height: 2px;
-			background-color: #fff;
-			margin: 6px 0;
-		}
-	}
+	@include fixedStyle($top:0, $right:auto, $width:60px, $height:100%);
 	.logo, .menu_page, .menu_manager, .menu_user {
 		display:none;
 	}
-	.menu_link {
-			display: block;
-			padding-left: 16px;
-			text-decoration: none;
-			font-weight: 300;
-			border-left: 5px solid $black;
-			color: $dark_grey;
-	}
-	.active, .menu_link:hover {
-		border-left: 5px solid $dark_orange;
-		background: $light_black;
-		color: #fff;
-	}
-	.menu {
-		margin: 60px 0 24px;
-        padding: 0;
-        list-style-type: none;        
-		&_line {
-			border-top: 1px solid #414141;
-			margin-top: 20px;
-		}
-		&_avatar {
-			cursor: pointer;
-			margin-top: 30px;
-	    	padding-left: 8px;
-			img {
-				vertical-align: middle;
-			}
-		}
-		li {
-			height: 46px;
-			overflow: hidden;
+	.menu_avatar {
+		cursor: pointer;
+		margin-top: 30px;
+    	padding-left: 8px;
+		img {
+			vertical-align: middle;
 		}
 	}
 }

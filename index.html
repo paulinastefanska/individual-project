@@ -13,17 +13,33 @@
 	<!--TOP NAV-->	
 		<header class="header">
 			<ul class="top">
-				<li class="top_item"><i class="icon-wallet"></i><span class="top_money">$1,500.00</span><i class="icon-arrow-down-small"></i></li>
-				<li class="top_item"><i class="icon-notification"></i><div class="notific_circle"></div></li>
-				<li class="top_item" id="start_login"><i class="icon-profile"></i><span class="top_name">Leonardo Dicaprio</span></li>
-				<li class="top_item" id="start_quit"><i class="icon-quit"></i></li>
+				<li class="top_item">
+					<button class="modalTrigger">
+						<i class="icon-wallet"></i><span class="top_money">$1,500.00</span><i class="icon-arrow-down-small"></i>
+					</button>
+				</li>
+				<li class="top_item">
+					<button class="modalTrigger">
+						<i class="icon-notification"></i><div class="notific_circle"></div>
+					</button>
+				</li>
+				<li class="top_item">
+					<button class="modalTrigger" data-target="start_login">
+						<i class="icon-profile"></i><span class="top_name">Leonardo Dicaprio</span>
+					</button>
+				</li>
+				<li class="top_item">
+					<button class="modalTrigger" data-target="start_quit">
+						<i class="icon-quit"></i>
+					</button>
+				</li>
 			</ul>
 		</header>
 
 	<!--LEFT MENU-->	
-		<nav class="long" id="navigation">
+		<nav class="menu_long" id="navigation">
 			<div class="logo_ham">
-				<a href="#general"><img class="logo" src="images/logo.png" alt="logo"></a>
+				<a href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
 				<a href="#menu" id="toggle" class="hamburger">
 					<div class="menu_ham"></div>
 					<div class="menu_ham"></div>
@@ -47,7 +63,7 @@
 			</div>
 		</nav>
 
-		<main class="main" id="fullscreen">
+		<main class="main">
 
 	<!--GENERAL PAGE-->
 		<div class="general toggle" id="general_section">
@@ -796,7 +812,7 @@ subid=%p%"></textarea>
 <!--POPUPS/MODALS-->
 
 	<!--ADD URL/LINK-->
-	<div class="overlay" id="overlay1">		
+	<div class="overlay">		
 		<div class="url modal" id="url_modal">
 			<h2 class="section_header">ADD URL<i class="icon-close"></i></h2>
 			<div class="row url_inputs">
@@ -1027,7 +1043,7 @@ subid=%p%"></textarea>
 	</div>
 
 	<!--ADD BANNERS-->
-	<div class="overlay" id="overlay2">		
+	<div class="overlay">		
 		<div class="banner modal" id="banner_modal">
 			<h2 class="section_header">ADD BANNERS<i class="icon-close"></i></h2>
 			<div class="row banner_inputs">
@@ -1297,22 +1313,22 @@ subid=%p%"></textarea>
 		</div>
 	</div>
 	<!--LOGIN-->
-	<div class="overlay" id="overlay_login">
-		<div class="login" id="login_modal">
+	<div class="overlay" id="start_login">
+		<div class="login">
 			<h3 class="section_header">LOGIN</h3>
 			<div class="row">
 				<input class="personal_input" type="text" placeholder="&#xf007; login name" style="font-family:Arial, FontAwesome" name="login-name" id="login_name">
 				<input class="personal_input" type="password" placeholder="&#xf023; password" style="font-family:Arial, FontAwesome" name="login-name" id="login_password">
-				<button type="submit" class="btn_orange" id="close_login">Enter</button>
+				<button type="submit" class="btn_orange closeButton">Enter</button>
 			</div>
 		</div>
 	</div>
 	<!--QUIT-->
-	<div class="overlay" id="overlay_quit">
-		<div class="quit" id="quit_modal">
+	<div class="overlay" id="start_quit">
+		<div class="quit">
 			<h3 class="section_header">Do you really want to Quit?</h3>
 			<div class="row">
-				<button type="button" class="btn_grey" id="close_quit">Cancel</button>
+				<button type="button" class="btn_grey closeButton">Cancel</button>
 				<button type="button" class="btn_orange" id="go_quit">Quit</button>
 			</div>
 		</div>

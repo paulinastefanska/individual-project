@@ -1,8 +1,40 @@
 'use strict';
 
-// Highlight current page
 var menuPages = document.getElementsByClassName("menu_link");
+var modalTrigger = document.querySelectorAll('.modalTrigger');
+var modalWrapper = document.querySelectorAll('.overlay');
+var closeButtons = document.querySelectorAll('.closeButton');
+var mainElement = document.querySelector('.main');
+var leftMenu = document.getElementById('navigation');
 
+// Check user screen width (mobile/desktop)
+if (window.screen.width < 768) {
+  mainElement.classList.add('active_menu');
+  leftMenu.classList.add("short");
+}
+ 
+// Menu long short
+function shortMenu(cur = leftMenu.className) {
+  if (cur == 'menu_long')
+  {
+    leftMenu.classList.add("short");
+    mainElement.classList.add('active_menu');
+    
+  }
+  else {
+    leftMenu.classList.remove("short");
+    mainElement.classList.remove('active_menu');
+  
+  }
+}
+ 
+// Add event-listener for toggle button (hamburger)
+document.getElementById('toggle').addEventListener('click', function(e) {
+  e.preventDefault();
+  shortMenu();
+});
+
+// Highlight current page
 for (var i = 0; i < menuPages.length; i++) {
 
   menuPages[i].addEventListener("click", function() {
@@ -22,213 +54,49 @@ for (var i = 0; i < menuPages.length; i++) {
     if (content) {
 
     for (var j = 0; j < all.length; j++) {
-    	all[j].classList.add("hidden");
+      all[j].classList.add("hidden");
       }
       content.classList.remove("hidden");
-    	}
+      }
   });
 }
-
-// Short menu - fullwidth, long menu
-function toggleMenu(cur = document.getElementById('navigation').className) {
-  if (cur == 'long')
-  {
-    document.getElementById('navigation').classList.remove("long");
-    document.getElementById('navigation').classList.add("short");
-    document.getElementById('fullscreen').classList.remove("main");
-    document.getElementById('fullscreen').classList.add("fullwidth");
-  }
-  else {
-    document.getElementById('navigation').classList.remove("short");
-    document.getElementById('navigation').classList.add("long");
-    document.getElementById('fullscreen').classList.remove("fullwidth");
-    document.getElementById('fullscreen').classList.add("main");
+ 
+// Modals
+function closeAllModals() {
+  for (var i = 0; i < modalWrapper.length; i++) {
+    modalWrapper[i].classList.remove('show');
   }
 }
+for (var i = 0; i < closeButtons.length; i++) {
+  closeButtons[i].addEventListener('click', closeAllModals);
+}
+/*document.modalWrapper.addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeAllModals();
+  }
+})*/
 
-document.getElementById('toggle').addEventListener('click', function(e) {
-	e.preventDefault();
-  toggleMenu();  
+document.addEventListener('keyup', function(e) {
+  if (e.keyCode === 27) {
+    closeAllModals();
+  }
+})
+document.getElementById('go_quit').addEventListener('click', function () { 
+  closeAllModals();
+      window.location.replace("https://github.com/paulinastefanska"); 
 });
+
+function openModal(e) {
+  var currentModal = document.getElementById(e.currentTarget.dataset.target);
+  currentModal.classList.add('show');
+} 
+for (var i = 0; i < modalTrigger.length; i++) {
+  modalTrigger[i].addEventListener('click', openModal);
+}
 
 // Postback slide
 document.getElementById('triangle').style.marginLeft='61.9%';
 document.getElementById('torange').style.width='61.9%';
-
-// Modals add url, add banner
-
-/*function(){ 
-  var showModal = function(event){
-    event.preventDefault();
-    document.querySelector('.overlay').classList.add('show');
-    document.querySelector('.modal').classList.add('show');
-  }
-  
-  var modalLinks = document.querySelectorAll('.add_link');
-  for(var i = 0; i < modalLinks.length; i++){
-    modalLinks[i].addEventListener('click', showModal);
-  }
-
-  var hideModal = function(event){
-    event.preventDefault();
-    document.querySelector('.overlay').classList.remove('show');
-    document.querySelector('.modal').classList.remove('show');
-  }
-  
-  var closeButtons = document.querySelectorAll('.modal .icon-close');
-  for(var i = 0; i < closeButtons.length; i++){
-    closeButtons[i].addEventListener('click', hideModal);
-  }
-  
-  document.querySelector('.overlay').addEventListener('click', hideModal);
-  
-  var modals = document.querySelectorAll('.modal');
-  for(var i = 0; i < modals.length; i++){
-    modals[i].addEventListener('click', function(event){
-      event.stopPropagation();
-    })
-  }
-  document.addEventListener('keyup', function(e) {
-  if(e.keyCode === 27) {
-    hideModal()}
-  })
-};
-*/
-
-
-function closeModal() {
-  document.getElementById('overlay1').classList.remove('show')
-  document.getElementById('overlay2').classList.remove('show')
-}
-document.querySelectorAll('#overlay1 .icon-close').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closeModal()
-  })
-})
-document.querySelectorAll('#overlay2 .icon-close').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closeModal()
-  })
-})
-document.querySelector('#overlay1').addEventListener('click', function(e) {
-  if(e.target === this) {
-    closeModal()
-  }
-})
-document.querySelector('#overlay2').addEventListener('click', function(e) {
-  if(e.target === this) {
-    closeModal()
-  }
-})
-document.addEventListener('keyup', function(e) {
-  if(e.keyCode === 27) {
-    closeModal()
-  }
-})
-
-function openModal1(modal) {
-  document.querySelectorAll('#overlay1 > *').forEach(function(modal) {
-    modal.classList.remove('show')
-  })
-  document.querySelector('#overlay1').classList.add('show')
-  document.querySelector('#url_modal').classList.add('show')
-}
-document.querySelectorAll("#add_link1, #add_link2, #add_link3, #add_link4").forEach(function (e) {
-  e.addEventListener('click', function(){ openModal1(); 
-})});
-
-function openModal2(modal) {
-document.querySelectorAll('#overlay2 > *').forEach(function(modal) {
-    modal.classList.remove('show')
-  })
-  document.querySelector('#overlay2').classList.add('show')
-  document.querySelector('#banner_modal').classList.add('show')
-}
-document.querySelectorAll("#add_banner1, #add_banner2").forEach(function (e) {
-  e.addEventListener('click', function(){ openModal2(); 
-})});
-
-// Popups chat login quit
-function closePopup() {
-  document.getElementById('overlay_chat').classList.remove('show')
-  document.getElementById('overlay_login').classList.remove('show')
-  document.getElementById('overlay_quit').classList.remove('show')
-}
-document.querySelectorAll('#overlay_chat .icon-close').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closePopup()
-  })
-})
-document.querySelectorAll('#overlay_login #close_login').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closePopup()
-  })
-})
-document.querySelectorAll('#overlay_quit #close_quit').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closePopup()
-  })
-})
-document.querySelector('#overlay_chat').addEventListener('click', function(e) {
-  if(e.target === this) {
-    closePopup()
-  }
-})
-document.querySelector('#overlay_login').addEventListener('click', function(e) {
-  if(e.target === this) {
-    closePopup()
-  }
-})
-document.querySelector('#overlay_quit').addEventListener('click', function(e) {
-  if(e.target === this) {
-    closePopup()
-  }
-})
-document.getElementById('go_quit').addEventListener('click', function () { closePopup();
-      window.location.replace("https://github.com/paulinastefanska"); 
-});
-
-document.addEventListener('keyup', function(e) {
-  if(e.keyCode === 27) {
-    closePopup()
-  }
-})
-
-
-function openPopup1(modal) {
-  document.querySelectorAll('#overlay_chat > *').forEach(function(modal) {
-    modal.classList.remove('show')
-  })
-  document.querySelector('#overlay_chat').classList.add('show')
-  document.querySelector('#chat_modal').classList.add('show')
-}
-document.querySelector("#start_chat").addEventListener('click', function(){ openPopup1(); 
-});
-
-function openPopup2(modal) {
-document.querySelectorAll('#overlay_login > *').forEach(function(modal) {
-    modal.classList.remove('show')
-  })
-  document.querySelector('#overlay_login').classList.add('show')
-  document.querySelector('#login_modal').classList.add('show')
-}
-document.querySelector("#start_login").addEventListener('click', function(){ openPopup2(); 
-});
-
-function openPopup3(modal) {
-document.querySelectorAll('#overlay_quit > *').forEach(function(modal) {
-    modal.classList.remove('show')
-  })
-  document.querySelector('#overlay_quit').classList.add('show')
-  document.querySelector('#quit_modal').classList.add('show')
-}
-document.querySelector("#start_quit").addEventListener('click', function(){ openPopup3(); 
-});
 
 // Chart
 var ctx = document.getElementById('myChart').getContext('2d');
