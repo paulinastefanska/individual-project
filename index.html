@@ -57,10 +57,10 @@
 			</ul>
 			<div class="menu_line"></div>
 			<div class="menu_manager">Your manager</div>
-			<div class="menu_avatar" id="start_chat">
+			<button class="menu_avatar modalTrigger" data-target="chat_modal">
 				<img src="images/avatar.png" alt="mikhael">
 				<span class="menu_user">Mikhael E.</span>
-			</div>
+			</button>
 		</nav>
 
 		<main class="main">
@@ -484,7 +484,7 @@
 	<!--BANNERS PAGE-->
 			<section class="section banners toggle hidden" id="banners_section">
 				<h1 class="section_header">banners</h1>
-				<button class="btn_orange modalTrigger" data-target="url_modal">+ add new</button>
+				<button class="btn_orange modalTrigger" data-target="banner_modal">+ add new</button>
 				<div class="scroll_wrapper">
 					<table class="links_table container">
 						<tbody>
@@ -551,7 +551,7 @@
 						</tbody>
 					</table>
 				</div>
-				<button class="btn_orange modalTrigger" data-target="url_modal">+ add new</button>
+				<button class="btn_orange modalTrigger" data-target="banner_modal">+ add new</button>
 			</section>
 
 	<!--PERSONAL DATA PAGE-->
@@ -1045,7 +1045,7 @@ subid=%p%"></textarea>
 	<!--ADD BANNERS-->
 	<div class="overlay" id="banner_modal">		
 		<div class="banner modal">
-			<h2 class="section_header">ADD BANNERS<i class="icon-close"></i></h2>
+			<h2 class="section_header">ADD BANNERS<i class="icon-close closeButton"></i></h2>
 			<div class="row banner_inputs">
 				<div class="col-md-5">
 					<form>
@@ -1279,15 +1279,15 @@ subid=%p%"></textarea>
             <div class="row url_generated">
         		<input class="personal_input" type="text" placeholder="Generated link" name="name" id="name5">
         		<button type="button" disabled class="btn_disabled"><i class="icon-links"></i>Copy link</button>
-        		<button type="submit" class="btn_orange" id="banner_save">Save</button>
+        		<button type="submit" class="btn_orange closeButton">Save</button>
 		    </div>    	
 		</div>
 	</div>
 
 	<!--MESSAGE/CHAT-->
-	<div class="overlay" id="overlay_chat">
-		<div class="message" id="chat_modal">
-			<h3 class="section_header">ONLINE CHAT WITH YOUR PERSONAL MENAGER<i class="icon-close"></i></h3>
+	<div class="overlay" id="chat_modal">
+		<div class="message">
+			<h3 class="section_header">ONLINE CHAT WITH YOUR PERSONAL MENAGER<i class="icon-close closeButton"></i></h3>
 			<div class="message_avatar row">
 				<img src="images/chatavatar.png" alt="mikhael">
 				<div class="message_online">
