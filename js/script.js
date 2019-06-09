@@ -70,11 +70,6 @@ function closeAllModals() {
 for (var i = 0; i < closeButtons.length; i++) {
   closeButtons[i].addEventListener('click', closeAllModals);
 }
-/*document.modalWrapper.addEventListener('click', function(e) {
-  if(e.target === this) {
-    closeAllModals();
-  }
-})*/
 
 document.addEventListener('keyup', function(e) {
   if (e.keyCode === 27) {
