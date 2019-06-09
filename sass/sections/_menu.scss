@@ -67,7 +67,6 @@
 		&_avatar {
 			background: none; 
     		border: none; 
-    		padding: 0;
 			height: 46px;
 			overflow: hidden;
 			cursor: pointer;
@@ -97,13 +96,8 @@
 		display:none;
 	}
 	.menu_avatar {
-		height: 46px;
-		overflow: hidden;
 		margin-top: 30px;
     	padding-left: 8px;
-		img {
-			vertical-align: middle;
-		}
 	}
 }
 
