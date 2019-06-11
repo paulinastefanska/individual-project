@@ -635,7 +635,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .banner .postback_checkbox .checkbox:hover .icon-show { opacity: 1; }
 
-@media (max-width: 767px) { .banner .postback_checkbox .checkbox { opacity: 1; } }
+@media (max-width: 767px) { .banner .postback_checkbox .checkbox:hover .icon-show { opacity: 0; } }
 
 .banner_generated .personal_input { color: #979797; margin: 20px auto; margin-right: 0; width: calc(100% - 340px); }
 
