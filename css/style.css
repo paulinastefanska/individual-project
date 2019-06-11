@@ -649,7 +649,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 @media (max-width: 767px) { .banner_generated .btn_disabled { margin: 10px; width: 130px; } }
 
-.message { width: calc(100% - 260px); margin: auto; background-color: #fff; position: relative; display: block; }
+.message { width: 600px; margin: auto; background-color: #fff; position: relative; display: block; }
 
 @media (max-width: 767px) { .message { width: 100%; } }
 
@@ -677,7 +677,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .message .chat_dark_p { padding-left: 5px; }
 
-@media (max-width: 767px) { .message .chat_dark { width: auto; } }
+@media (max-width: 767px) { .message .chat_dark { width: 250px; } }
 
 .message .personal_input { margin: 20px auto; margin-right: 0; width: calc(100% - 180px); }
 

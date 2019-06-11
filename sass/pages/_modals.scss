@@ -212,7 +212,7 @@
 }
 
 .message {
-	width: calc(100% - 260px);
+	width: 600px;
 	margin: auto;
 	background-color: #fff;
 	position: relative;
@@ -275,7 +275,7 @@
     			padding-left: 5px;
     		}
     		@media(max-width: 767px) {
-    			width: auto;
+    			width: 250px;
     		}
     	}
     }

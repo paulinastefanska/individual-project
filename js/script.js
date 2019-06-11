@@ -66,7 +66,11 @@ function closeAllModals() {
   for (var l = 0; l < modalWrapper.length; l++) {
     modalWrapper[l].classList.remove('show');
   }
-}
+  modalWrapper.addEventListener('click', function(e) {
+    closeAllModals();
+})}
+
+
 for (var m = 0; m < closeButtons.length; m++) {
   closeButtons[m].addEventListener('click', closeAllModals);
 }
