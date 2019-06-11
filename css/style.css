@@ -116,11 +116,13 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .main { margin: 80px 0 0 220px; width: calc(100% - 240px); transition: all .40s ease; }
 
-.active_menu { margin: 80px 0 0 60px; width: calc(100% - 60px); transition: all .40s ease; }
+.active_menu { margin: 80px 0 0 80px; width: calc(100% - 100px); transition: all .40s ease; }
+
+@media (max-width: 767px) { .active_menu { margin: 80px 0 0 60px; width: calc(100% - 60px); } }
 
 .container { margin: 0 auto; width: 100%; max-width: 1024px; padding-left: 15px; padding-right: 15px; }
 
-.section { box-shadow: 0 0 1em #E3E3E3; padding-bottom: 20px; margin-bottom: 20px; background: #fff; }
+.section { box-shadow: 0 0 1em #E3E3E3; margin-bottom: 20px; background: #fff; }
 
 .hidden { display: none; }
 
@@ -385,7 +387,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .postback_number { width: 80px; font-size: 14px; margin-left: -20px; text-align: center; color: #191919; }
 
-.postback_button { width: 100%; }
+.postback_button { width: 100%; padding-bottom: 20px; }
 
 .postback .btn_orange { margin: 20px 20px 0; float: right; }
 
@@ -405,7 +407,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .details_sorter:hover { background: #F5F5F2; color: #191919; }
 
-.details_pagination { margin: auto; display: inline-block; padding-top: 30px; padding-bottom: 10px; }
+.details_pagination { margin: auto; display: inline-block; padding-top: 30px; padding-bottom: 30px; }
 
 .details_pagination a { color: #56819F; padding: 8px 16px; text-decoration: none; }
 
@@ -549,7 +551,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .general_no { float: right; font-weight: normal; color: #191919; }
 
-.graphs { position: relative; min-width: 280px; max-width: 800px; margin: 20px auto; }
+.graphs { position: relative; min-width: 280px; max-width: 800px; margin: 20px auto; padding-bottom: 40px; }
 
 .graphs_header { text-align: left; padding: 20px 20px; font-size: 16px; color: #979797; }
 
