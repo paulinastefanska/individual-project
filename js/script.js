@@ -88,7 +88,7 @@ document.addEventListener('keyup', function(e) {
 })
 document.getElementById('go_quit').addEventListener('click', function () { 
   closeAllModals();
-      window.location.replace("https://github.com/paulinastefanska"); 
+      window.location.replace("https://github.com/paulinastefanska/"); 
 });
 
 function openModal(e) {
