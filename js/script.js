@@ -65,10 +65,16 @@ for (var j = 0; j < menuPages.length; j++) {
 function closeAllModals() {
   for (var l = 0; l < modalWrapper.length; l++) {
     modalWrapper[l].classList.remove('show');
-  }
-  modalWrapper.addEventListener('click', function(e) {
-    closeAllModals();
-})}
+  }  
+};
+
+modalWrapper.forEach( function (event) {
+  event.addEventListener("click", function (e) {
+      if (e.target === this) {
+        closeAllModals();
+      }
+  });
+});
 
 
 for (var m = 0; m < closeButtons.length; m++) {
