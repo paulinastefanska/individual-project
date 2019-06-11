@@ -46,7 +46,7 @@ for (var i = 0; i < menuPages.length; i++) {
 
 // Pages toggling
 for (var j = 0; j < menuPages.length; j++) {
-  menuPages[i].addEventListener("click", function () {
+  menuPages[j].addEventListener("click", function () {
     var menuPages = this.getAttribute("href");
     var content = document.querySelector(menuPages + '_section');
     var all = document.querySelectorAll(".toggle");
@@ -54,7 +54,7 @@ for (var j = 0; j < menuPages.length; j++) {
     if (content) {
 
     for (var k = 0; k < all.length; k++) {
-      all[j].classList.add("hidden");
+      all[k].classList.add("hidden");
       }
       content.classList.remove("hidden");
       }
@@ -64,11 +64,11 @@ for (var j = 0; j < menuPages.length; j++) {
 // Modals
 function closeAllModals() {
   for (var l = 0; l < modalWrapper.length; l++) {
-    modalWrapper[i].classList.remove('show');
+    modalWrapper[l].classList.remove('show');
   }
 }
 for (var m = 0; m < closeButtons.length; m++) {
-  closeButtons[i].addEventListener('click', closeAllModals);
+  closeButtons[m].addEventListener('click', closeAllModals);
 }
 
 document.addEventListener('keyup', function(e) {
@@ -86,7 +86,7 @@ function openModal(e) {
   currentModal.classList.add('show');
 } 
 for (var n = 0; n < modalTrigger.length; n++) {
-  modalTrigger[i].addEventListener('click', openModal);
+  modalTrigger[n].addEventListener('click', openModal);
 }
 
 // Postback slide
