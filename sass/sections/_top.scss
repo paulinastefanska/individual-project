@@ -58,4 +58,8 @@
 	border-radius: 50%;
 	width: 8px;
 	height: 8px;
+	@media(max-width: 767px) {
+		top: 37%;
+		right: 19%;
+	}
 }

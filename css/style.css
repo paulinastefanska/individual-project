@@ -482,6 +482,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .notific_circle { position: absolute; top: 39%; left: auto; right: 33%; transform: translate(-50%, -50%); background: #F58220; border-radius: 50%; width: 8px; height: 8px; }
 
+@media (max-width: 767px) { .notific_circle { top: 37%; right: 19%; } }
+
 .menu_long { background: #191919; position: fixed; top: 0; right: auto; width: 200px; height: 100%; line-height: 46px; text-align: left; z-index: 2; transition: all .40s ease; }
 
 .menu_long .logo_ham { height: 60px; overflow: hidden; }
