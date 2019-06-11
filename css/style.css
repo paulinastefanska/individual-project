@@ -395,6 +395,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .details_table th, .details_table td { border-bottom: 1px solid #E3E3E3; }
 
+@media (max-width: 767px) { .details_table { margin-top: 10px; margin-left: 10px; } }
+
 .details_name { color: #979797; font-weight: 500; }
 
 .details_row:hover { background: #F5F5F2; transition: all .2s ease-in-out; }
