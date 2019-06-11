@@ -45,7 +45,7 @@ for (var i = 0; i < menuPages.length; i++) {
 }
 
 // Pages toggling
-for (var i = 0; i < menuPages.length; i++) {
+for (var j = 0; j < menuPages.length; j++) {
   menuPages[i].addEventListener("click", function () {
     var menuPages = this.getAttribute("href");
     var content = document.querySelector(menuPages + '_section');
@@ -53,7 +53,7 @@ for (var i = 0; i < menuPages.length; i++) {
 
     if (content) {
 
-    for (var j = 0; j < all.length; j++) {
+    for (var k = 0; k < all.length; k++) {
       all[j].classList.add("hidden");
       }
       content.classList.remove("hidden");
@@ -63,11 +63,11 @@ for (var i = 0; i < menuPages.length; i++) {
  
 // Modals
 function closeAllModals() {
-  for (var i = 0; i < modalWrapper.length; i++) {
+  for (var l = 0; l < modalWrapper.length; l++) {
     modalWrapper[i].classList.remove('show');
   }
 }
-for (var i = 0; i < closeButtons.length; i++) {
+for (var m = 0; m < closeButtons.length; m++) {
   closeButtons[i].addEventListener('click', closeAllModals);
 }
 
@@ -85,7 +85,7 @@ function openModal(e) {
   var currentModal = document.getElementById(e.currentTarget.dataset.target);
   currentModal.classList.add('show');
 } 
-for (var i = 0; i < modalTrigger.length; i++) {
+for (var n = 0; n < modalTrigger.length; n++) {
   modalTrigger[i].addEventListener('click', openModal);
 }
 
