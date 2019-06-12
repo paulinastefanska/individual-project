@@ -508,7 +508,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .menu_long .menu_manager { height: 46px; overflow: hidden; text-transform: uppercase; font-weight: 500; margin-top: 20px; padding-left: 18px; color: #979797; }
 
-.menu_long .menu_avatar { background: none; border: none; height: 46px; overflow: hidden; cursor: pointer; padding-left: 18px; }
+.menu_long .menu_avatar { background: none; border: none; height: 43px; width: 100%; overflow: hidden; cursor: pointer; padding-left: 18px; text-align: left; }
 
 .menu_long .menu_avatar:hover .menu_user { color: #FFA200; }
 

@@ -67,10 +67,12 @@
 		&_avatar {
 			background: none; 
     		border: none; 
-			height: 46px;
+			height: 43px;
+			width: 100%;
 			overflow: hidden;
 			cursor: pointer;
 			padding-left: 18px;
+			text-align: left;
 			&:hover .menu_user {
 				color: $orange;
 			}	
