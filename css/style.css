@@ -273,7 +273,7 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 .icon-wallet:before { content: '\0062'; }
 
 /* Components */
-.btn_refresh { width: 40px; height: 40px; margin: 10px; background: #F58220; border: none; display: inline-block; border-radius: 4px; cursor: pointer; color: #fff; transition: all .4s; }
+.btn_refresh { width: 40px; height: 40px; margin: 10px; background: #F58220; border: none; display: inline-block; border-radius: 4px; cursor: pointer; color: #fff; transition: all .4s; align-items: center; }
 
 .btn_refresh:hover { background: #FFA200; }
 
