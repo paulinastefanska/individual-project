@@ -3,6 +3,9 @@
     &:hover {
         background: $orange;
     }
+    .icon-refresh {
+    	padding: 0;
+    }
 }
 .btn_orange {
     @include buttonStyle($width: 125px, $height: 40px, $margin: 20px auto, $background: $dark_orange);

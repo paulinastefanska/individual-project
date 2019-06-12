@@ -277,6 +277,8 @@ body { margin: 0 auto; font-family: "Roboto", sans-serif; text-align: center; ba
 
 .btn_refresh:hover { background: #FFA200; }
 
+.btn_refresh .icon-refresh { padding: 0; }
+
 .btn_orange { width: 125px; height: 40px; margin: 20px auto; background: #F58220; border: none; display: inline-block; border-radius: 4px; cursor: pointer; color: #fff; transition: all .4s; }
 
 .btn_orange:hover { background-color: #FFA200; }
