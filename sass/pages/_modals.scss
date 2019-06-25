@@ -21,6 +21,7 @@
 	background-color: #fff;
 	position: relative;
 	display: block;
+	border-radius: 5px;
 	@media(max-width: 767px) {
 		width: 100%;
 	}
@@ -125,6 +126,7 @@
 	background-color: #fff;
 	position: relative;
 	display: block;
+	border-radius: 5px;
 	@media(max-width: 767px) {
 		width: 100%;
 	}
@@ -217,6 +219,7 @@
 	background-color: #fff;
 	position: relative;
 	display: block;
+	border-radius: 5px;
 	@media(max-width: 767px) {
 		width: 100%;
 	}
@@ -250,6 +253,7 @@
     	padding-bottom: 60px;
     	font-size: $paragraph_font_size;
     	font-weight: 400;
+    	border-radius: 5px;
     	@media(max-width: 767px) {
     		font-size: 12px;
     		padding-bottom: 40px;
@@ -297,6 +301,7 @@
 	background-color: #fff;
 	position: relative;
 	display: block;
+	border-radius: 5px;
 	@media(max-width: 767px) {
 		width: auto;
 	}
@@ -325,6 +330,7 @@
 	background-color: #fff;
 	position: relative;
 	display: block;
+	border-radius: 5px;
     .section_header {
         text-transform: none;
     }
